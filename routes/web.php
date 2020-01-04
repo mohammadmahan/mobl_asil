@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomeController@main');
+
+Route::get('/home-member', 'HomeController@homeMember');

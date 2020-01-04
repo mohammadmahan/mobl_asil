@@ -10,4 +10,7 @@ class HomeController extends Controller
     {
         return view('layout/main');
     }
+    public function homeMember(){
+        return view('memberViews/home');
+    }
 }
