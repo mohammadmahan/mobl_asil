@@ -16,4 +16,14 @@ class HomeController extends Controller
     public function contactMember(){
         return view('contactViews/contact');
     }
+
+    public function aboutMember()
+    {
+        return view('memberViews/about');
+    }
+
+    public function allProductMember()
+    {
+        return view('memberViews/allProduct');
+    }
 }

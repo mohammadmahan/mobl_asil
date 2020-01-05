@@ -16,3 +16,7 @@ Route::get('/', 'HomeController@main');
 Route::get('/home-member', 'HomeController@homeMember');
 
 Route::get('/contact-member', 'HomeController@contactMember');
+
+Route::get('/about-member', 'HomeController@aboutMember');
+
+Route::get('/allProduct-member', 'HomeController@allProductMember');

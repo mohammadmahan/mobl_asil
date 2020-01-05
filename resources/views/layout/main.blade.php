@@ -318,58 +318,7 @@
 </header>
 
 
-<section class="slide1 ">
-    <div class="wrap-slick1 ltr-dir">
-        <div class="slick1">
-            <div class="item-slick1 item1-slick1" style="background-image: url(images/master-slide-02.jpg);">
-                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15"
-                              data-appear="fadeInDown">
 
-						</span>
-                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37"
-                        data-appear="fadeInUp">
-                        فروشگاه مبل اصیل
-                    </h2>
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
-                    </div>
-                </div>
-            </div>
-            <div class="item-slick1 item2-slick1" style="background-image: url(images/master-slide-03.jpg);">
-                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15"
-                              data-appear="rollIn">
-
-						</span>
-                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37"
-                        data-appear="lightSpeedIn">
-                        تازه رسیده ها
-                    </h2>
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
-
-                    </div>
-                </div>
-            </div>
-            <div class="item-slick1 item3-slick1" style="background-image: url(images/master-slide-04.jpg);">
-                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15"
-                              data-appear="rotateInDownLeft">
-
-						</span>
-                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37"
-                        data-appear="rotateInUpRight">
-                        تازه رسیده ها
-                    </h2>
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<Br><Br><Br><Br>
 
 <!--START :: content-->
 
