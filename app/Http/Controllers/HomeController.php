@@ -13,4 +13,7 @@ class HomeController extends Controller
     public function homeMember(){
         return view('memberViews/home');
     }
+    public function contactMember(){
+        return view('contactViews/contact');
+    }
 }
