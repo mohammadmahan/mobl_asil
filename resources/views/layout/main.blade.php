@@ -34,9 +34,17 @@
 
     <link rel="stylesheet" type="text/css" href="/vendor/lightbox2/css/lightbox.min.css">
 
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="/css/util.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" href="/css/style.css">
+=======
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+>>>>>>> e9d56ae6510a9189dc0a93669405d2de7705c937
     @yield('style')
 </head>
 
@@ -47,11 +55,11 @@
     <div class="container-menu-header">
         <div class="topbar">
             <div class="topbar-social">
-                <a href="#" class="topbar-social-item fa fa-facebook"></a>
+                <!-- <a href="#" class="topbar-social-item fa fa-facebook"></a>
                 <a href="#" class="topbar-social-item fa fa-instagram"></a>
                 <a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
                 <a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
-                <a href="#" class="topbar-social-item fa fa-youtube-play"></a>
+                <a href="#" class="topbar-social-item fa fa-youtube-play"></a> -->
             </div>
             <div class="topbar-child2">
 					<span class="topbar-email">
@@ -62,7 +70,7 @@
         <div class="wrap_header">
 
 
-            <a href="index-2.html" class="logo">
+            <a href="#" class="logo">
                 <img src="images/icons/logo.png" alt="IMG-LOGO">
             </a>
 
@@ -313,6 +321,61 @@
     </div>
 </header>
 
+<<<<<<< HEAD
+=======
+<section class="slide1 ">
+    <div class="wrap-slick1 ltr-dir">
+        <div class="slick1">
+            <div class="item-slick1 item1-slick1" style="background-image: url(images/master-slide-02.jpg);">
+                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15"
+                              data-appear="fadeInDown">
+
+						</span>
+                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37"
+                        data-appear="fadeInUp">
+                        فروشگاه مبل اصیل
+                    </h2>
+                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
+                    </div>
+                </div>
+            </div>
+            <div class="item-slick1 item2-slick1" style="background-image: url(images/master-slide-03.jpg);">
+                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15"
+                              data-appear="rollIn">
+
+						</span>
+                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37"
+                        data-appear="lightSpeedIn">
+                        تازه رسیده ها
+                    </h2>
+                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
+
+                    </div>
+                </div>
+            </div>
+            <div class="item-slick1 item3-slick1" style="background-image: url(images/master-slide-04.jpg);">
+                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15"
+                              data-appear="rotateInDownLeft">
+
+						</span>
+                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37"
+                        data-appear="rotateInUpRight">
+                        تازه رسیده ها
+                    </h2>
+                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<Br><Br><Br><Br>
+>>>>>>> e9d56ae6510a9189dc0a93669405d2de7705c937
 <!--START :: content-->
 
 @yield('content')
@@ -330,11 +393,11 @@
                     ادرس فروشگاه: <span>تهران-ونک-خیابان 124جنوبی</span>
                 </p>
                 <div class="flex-m p-t-30">
-                    <a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
+                    <!-- <a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
                     <a href="#" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
                     <a href="#" class="fs-18 color1 p-r-20 fa fa-pinterest-p"></a>
                     <a href="#" class="fs-18 color1 p-r-20 fa fa-snapchat-ghost"></a>
-                    <a href="#" class="fs-18 color1 p-r-20 fa fa-youtube-play"></a>
+                    <a href="#" class="fs-18 color1 p-r-20 fa fa-youtube-play"></a> -->
                 </div>
             </div>
         </div>
@@ -394,7 +457,7 @@
         </div>
         <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
             <h4 class="s-text12 p-b-30">
-                Help
+                لینکهای کمکی
             </h4>
             <ul>
                 <li class="p-b-9">
@@ -468,6 +531,7 @@
 
 <div id="dropDownSelect1"></div>
 
+<<<<<<< HEAD
 <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/jquery/jquery-3.2.1.min.js"></script>
 
@@ -478,12 +542,25 @@
 
 <script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/select2/select2.min.js"></script>
 <script type="888a2198ced61eb2d090dfdc-text/javascript">
+=======
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script type="" src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+
+<script type="" src="/vendor/animsition/js/animsition.min.js"></script>
+
+<script type="" src="/vendor/bootstrap/js/popper.js"></script>
+<script type="" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script type="" src="/vendor/select2/select2.min.js"></script>
+<script type="">
+>>>>>>> e9d56ae6510a9189dc0a93669405d2de7705c937
 		$(".selection-1").select2({
 			minimumResultsForSearch: 20,
 			dropdownParent: $('#dropDownSelect1')
 		});
 	</script>
 
+<<<<<<< HEAD
 <script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/slick/slick.min.js"></script>
 <script type="888a2198ced61eb2d090dfdc-text/javascript" src="/js/slick-custom.js"></script>
 
@@ -493,6 +570,17 @@
 
 <script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/sweetalert/sweetalert.min.js"></script>
 <script type="888a2198ced61eb2d090dfdc-text/javascript">
+=======
+<script type="" src="/vendor/slick/slick.min.js"></script>
+<script type="" src="/js/slick-custom.js"></script>
+
+<script type="" src="/vendor/countdowntime/countdowntime.js"></script>
+
+<script type="" src="/vendor/lightbox2/js/lightbox.min.js"></script>
+
+<script type="" src="/vendor/sweetalert/sweetalert.min.js"></script>
+<script type="">
+>>>>>>> e9d56ae6510a9189dc0a93669405d2de7705c937
 		$('.block2-btn-addcart').each(function () {
 			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
 			$(this).on('click', function () {
@@ -508,9 +596,14 @@
 		});
 	</script>
 
+<<<<<<< HEAD
 <script src="/js/main.js" type="888a2198ced61eb2d090dfdc-text/javascript"></script>
+=======
+<script src="/js/main.js" type=""></script>
+>>>>>>> e9d56ae6510a9189dc0a93669405d2de7705c937
 <script src="ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
         data-cf-settings="888a2198ced61eb2d090dfdc-|49" defer=""></script>
+        <script src="/js/all.min.js"></script>
 
 @yield('script')
 

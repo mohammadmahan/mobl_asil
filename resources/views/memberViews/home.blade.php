@@ -1,6 +1,6 @@
 @extends('layout.main')
 @section("title")
-صفحه اصلی | مبلمان اصیل
+مبلمان اصیل| صفحه اصلی
 @stop
 @section("content")
 
@@ -75,7 +75,7 @@
 						<div class="block1-wrapbtn w-size2">
 
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Dresses
+							مشاهده محصول
 							</a>
 						</div>
 					</div>
@@ -85,7 +85,7 @@
 						<div class="block1-wrapbtn w-size2">
 
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Sunglasses
+							مشاهده محصول
 							</a>
 						</div>
 					</div>
@@ -97,7 +97,7 @@
 						<div class="block1-wrapbtn w-size2">
 
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Watches
+								مشاهده محصول
 							</a>
 						</div>
 					</div>
@@ -107,7 +107,7 @@
 						<div class="block1-wrapbtn w-size2">
 
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Footerwear
+							مشاهده محصول
 							</a>
 						</div>
 					</div>
@@ -119,7 +119,7 @@
 						<div class="block1-wrapbtn w-size2">
 
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Bags
+							مشاهده محصول
 							</a>
 						</div>
 					</div>
@@ -146,7 +146,7 @@
 		</div>
 	</section>
 
-	<section class="newproduct bgwhite p-t-45 p-b-105">
+	<section class="newproduct bgwhite p-t-45 p-b-105 ltr-dir">
 		<div class="container">
 			<div class="sec-title p-b-60">
 				<h3 class="m-text5 t-center">
@@ -169,14 +169,14 @@
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
+											مشاهده محصول
 										</button>
 									</div>
 								</div>
 							</div>
-							<div class="block2-txt p-t-20">
+							<div class="block2-txt direction-rtl p-t-20">
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-									Herschel supply co 25l
+									مبل درجه یک راحتی در مبلمان اصیل
 								</a>
 								<span class="block2-price m-text6 p-r-5">
 									$75.00
@@ -197,14 +197,14 @@
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
+										مشاهده محصول
 										</button>
 									</div>
 								</div>
 							</div>
-							<div class="block2-txt p-t-20">
+							<div class="block2-txt direction-rtl p-t-20">
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-									Denim jacket blue
+								مبل درجه یک راحتی در مبلمان اصیل
 								</a>
 								<span class="block2-price m-text6 p-r-5">
 									$92.50
@@ -225,14 +225,14 @@
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
+										مشاهده محصول
 										</button>
 									</div>
 								</div>
 							</div>
-							<div class="block2-txt p-t-20">
+							<div class="block2-txt direction-rtl p-t-20">
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-									Coach slim easton black
+								مبل درجه یک راحتی در مبلمان اصیل
 								</a>
 								<span class="block2-price m-text6 p-r-5">
 									$165.90
@@ -253,14 +253,14 @@
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
+										مشاهده محصول
 										</button>
 									</div>
 								</div>
 							</div>
-							<div class="block2-txt p-t-20">
+							<div class="block2-txt direction-rtl p-t-20">
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-									Frayed denim shorts
+								مبل درجه یک راحتی در مبلمان اصیل
 								</a>
 								<span class="block2-oldprice m-text7 p-r-5">
 									$29.50
@@ -284,14 +284,14 @@
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
+										مشاهده محصول
 										</button>
 									</div>
 								</div>
 							</div>
-							<div class="block2-txt p-t-20">
+							<div class="block2-txt direction-rtl p-t-20">
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-									Herschel supply co 25l
+								مبل درجه یک راحتی در مبلمان اصیل
 								</a>
 								<span class="block2-price m-text6 p-r-5">
 									$75.00
@@ -312,14 +312,14 @@
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
+										مشاهده محصول
 										</button>
 									</div>
 								</div>
 							</div>
-							<div class="block2-txt p-t-20">
+							<div class="block2-txt direction-rtl p-t-20">
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-									Denim jacket blue
+								مبل درجه یک راحتی در مبلمان اصیل
 								</a>
 								<span class="block2-price m-text6 p-r-5">
 									$92.50
@@ -340,14 +340,14 @@
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
+										مشاهده محصول
 										</button>
 									</div>
 								</div>
 							</div>
-							<div class="block2-txt p-t-20">
+							<div class="block2-txt direction-rtl p-t-20">
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-									Coach slim easton black
+								مبل درجه یک راحتی در مبلمان اصیل
 								</a>
 								<span class="block2-price m-text6 p-r-5">
 									$165.90
@@ -368,14 +368,14 @@
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
+										مشاهده محصول
 										</button>
 									</div>
 								</div>
 							</div>
-							<div class="block2-txt p-t-20">
+							<div class="block2-txt direction-rtl p-t-20">
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-									Frayed denim shorts
+									مبل درجه یک راحتی در مبلمان اصیل
 								</a>
 								<span class="block2-oldprice m-text7 p-r-5">
 									$29.50
@@ -391,82 +391,8 @@
 		</div>
 	</section>
 
-	<section class="banner2 bg5 p-t-55 p-b-55">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
-					<div class="hov-img-zoom pos-relative">
-						<img src="images/banner-08.jpg" alt="IMG-BANNER">
-						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
-							<span class="m-text9 p-t-45 fs-20-sm">
-								The Beauty
-							</span>
-							<h3 class="l-text1 fs-35-sm">
-								Lookbook
-							</h3>
-							<a href="#" class="s-text4 hov2 p-t-20 ">
-								View Collection
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
-					<div class="bgwhite hov-img-zoom pos-relative p-b-20per-ssm">
-						<img src="images/shop-item-09.jpg" alt="IMG-BANNER">
-						<div class="ab-t-l sizefull flex-col-c-b p-l-15 p-r-15 p-b-20">
-							<div class="t-center">
-								<a href="product-detail.html" class="dis-block s-text3 p-b-5">
-									Gafas sol Hawkers one
-								</a>
-								<span class="block2-oldprice m-text7 p-r-5">
-									$29.50
-								</span>
-								<span class="block2-newprice m-text8">
-									$15.90
-								</span>
-							</div>
-							<div class="flex-c-m p-t-44 p-t-30-xl">
-								<div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
-									<span class="m-text10 p-b-1 days">
-										69
-									</span>
-									<span class="s-text5">
-										days
-									</span>
-								</div>
-								<div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
-									<span class="m-text10 p-b-1 hours">
-										04
-									</span>
-									<span class="s-text5">
-										hrs
-									</span>
-								</div>
-								<div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
-									<span class="m-text10 p-b-1 minutes">
-										32
-									</span>
-									<span class="s-text5">
-										mins
-									</span>
-								</div>
-								<div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
-									<span class="m-text10 p-b-1 seconds">
-										05
-									</span>
-									<span class="s-text5">
-										secs
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<section class="blog bgwhite p-t-94 p-b-65">
+	<section class="blog bgwhite bg5 p-t-94 p-b-65">
 		<div class="container">
 			<div class="sec-title p-b-52">
 				<h3 class="m-text5 t-center">
@@ -480,7 +406,7 @@
 						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
 							<img src="images/blog-01.jpg" alt="IMG-BLOG">
 						</a>
-						<div class="block3-txt p-t-14">
+						<div class="block3-txt background-blog p-t-14">
 							<h4 class="p-b-7">
 								<a href="blog-detail.html" class="m-text11">
 									Black Friday Guide: Best Sales & Discount Codes
@@ -501,7 +427,7 @@
 						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
 							<img src="images/blog-02.jpg" alt="IMG-BLOG">
 						</a>
-						<div class="block3-txt p-t-14">
+						<div class="block3-txt background-blog p-t-14">
 							<h4 class="p-b-7">
 								<a href="blog-detail.html" class="m-text11">
 									The White Sneakers Nearly Every Fashion Girls Own
@@ -522,7 +448,7 @@
 						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
 							<img src="images/blog-03.jpg" alt="IMG-BLOG">
 						</a>
-						<div class="block3-txt p-t-14">
+						<div class="block3-txt background-blog p-t-14">
 							<h4 class="p-b-7">
 								<a href="blog-detail.html" class="m-text11">
 									New York SS 2018 Street Style: Annina Mislin

@@ -1,4 +1,23 @@
 html,body,div,header,span,h1,h2,h3,h4,h5,h6,a,p,table,button,input{
     font-family: IRANSansWeb !important;
+<<<<<<< HEAD
     direction: rtl;
+=======
+    
+}
+body{
+    direction: rtl;
+}
+.ltr-dir{
+    direction: ltr !important;
+}
+.direction-rtl{
+    direction: rtl !important;
+    padding: 20px !important;
+}
+.background-blog{
+    background-color: #fff;
+    padding: 20px;
+    height: 210px;
+>>>>>>> e9d56ae6510a9189dc0a93669405d2de7705c937
 }
