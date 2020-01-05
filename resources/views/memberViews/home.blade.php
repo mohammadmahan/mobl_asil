@@ -89,7 +89,7 @@
 		<div class="container">
 			<div class="sec-title p-b-60">
 				<h3 class="m-text5 t-center">
-					Featured Products
+					ویژگی محصولات
 				</h3>
 			</div>
 
