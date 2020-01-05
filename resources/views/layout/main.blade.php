@@ -71,7 +71,7 @@
                 <nav class="menu">
                     <ul class="main_menu">
                         <li>
-                            <a href="{{route('homeMember')}}}">صفحه اصلی</a>
+                            <a href="{{route('homeMember')}}">صفحه اصلی</a>
                         </li>
                         <li class="sale-noti">
                             <a href="{{route('allProductMember')}}">محصولات ما</a>

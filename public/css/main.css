@@ -541,7 +541,7 @@ iframe {
 .logo {
   display: block;
   position: absolute;
-  left: 52px;
+  right: 52px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -662,7 +662,7 @@ li.sale-noti > a {
   display: flex;
   align-items: center;
   position: absolute;
-  right: 52px;
+  left: 52px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -723,9 +723,9 @@ li.sale-noti > a {
 .header-cart {
   position: absolute;
   z-index: 1100;
-  width: 339px;
+  width: 350px;
   top: 190%;
-  right: -10px;
+  left: -5px;
   padding: 20px;
   border-top: 3px solid #e6e6e6;
   background-color: white;
@@ -741,7 +741,7 @@ li.sale-noti > a {
   -o-transition: all 0.3s;
   -moz-transition: all 0.3s;
   
-  transform-origin: top right;
+  transform-origin: top left;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
