@@ -1,6 +1,6 @@
 @extends('layout.main')
 @section("title")
-مبلمان اصیل| صفحه اصلی
+مبلمان اصیل | صفحه اصلی
 @stop
 @section("content")
 

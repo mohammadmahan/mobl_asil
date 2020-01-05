@@ -34,17 +34,13 @@
 
     <link rel="stylesheet" type="text/css" href="/vendor/lightbox2/css/lightbox.min.css">
 
-<<<<<<< HEAD
+
     <link rel="stylesheet" type="text/css" href="/css/util.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" href="/css/style.css">
-=======
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
->>>>>>> e9d56ae6510a9189dc0a93669405d2de7705c937
+
     @yield('style')
 </head>
 
@@ -321,8 +317,7 @@
     </div>
 </header>
 
-<<<<<<< HEAD
-=======
+
 <section class="slide1 ">
     <div class="wrap-slick1 ltr-dir">
         <div class="slick1">
@@ -375,7 +370,7 @@
 </section>
 
 <Br><Br><Br><Br>
->>>>>>> e9d56ae6510a9189dc0a93669405d2de7705c937
+
 <!--START :: content-->
 
 @yield('content')
@@ -531,18 +526,7 @@
 
 <div id="dropDownSelect1"></div>
 
-<<<<<<< HEAD
-<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/jquery/jquery-3.2.1.min.js"></script>
 
-<script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/animsition/js/animsition.min.js"></script>
-
-<script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/bootstrap/js/popper.js"></script>
-<script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/select2/select2.min.js"></script>
-<script type="888a2198ced61eb2d090dfdc-text/javascript">
-=======
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script type="" src="/vendor/jquery/jquery-3.2.1.min.js"></script>
 
@@ -552,25 +536,13 @@
 <script type="" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 
 <script type="" src="/vendor/select2/select2.min.js"></script>
-<script type="">
->>>>>>> e9d56ae6510a9189dc0a93669405d2de7705c937
+    <script type="">
 		$(".selection-1").select2({
 			minimumResultsForSearch: 20,
 			dropdownParent: $('#dropDownSelect1')
 		});
 	</script>
 
-<<<<<<< HEAD
-<script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/slick/slick.min.js"></script>
-<script type="888a2198ced61eb2d090dfdc-text/javascript" src="/js/slick-custom.js"></script>
-
-<script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/countdowntime/countdowntime.js"></script>
-
-<script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/lightbox2/js/lightbox.min.js"></script>
-
-<script type="888a2198ced61eb2d090dfdc-text/javascript" src="/vendor/sweetalert/sweetalert.min.js"></script>
-<script type="888a2198ced61eb2d090dfdc-text/javascript">
-=======
 <script type="" src="/vendor/slick/slick.min.js"></script>
 <script type="" src="/js/slick-custom.js"></script>
 
@@ -579,8 +551,10 @@
 <script type="" src="/vendor/lightbox2/js/lightbox.min.js"></script>
 
 <script type="" src="/vendor/sweetalert/sweetalert.min.js"></script>
+
+
 <script type="">
->>>>>>> e9d56ae6510a9189dc0a93669405d2de7705c937
+
 		$('.block2-btn-addcart').each(function () {
 			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
 			$(this).on('click', function () {
@@ -596,11 +570,8 @@
 		});
 	</script>
 
-<<<<<<< HEAD
-<script src="/js/main.js" type="888a2198ced61eb2d090dfdc-text/javascript"></script>
-=======
 <script src="/js/main.js" type=""></script>
->>>>>>> e9d56ae6510a9189dc0a93669405d2de7705c937
+
 <script src="ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
         data-cf-settings="888a2198ced61eb2d090dfdc-|49" defer=""></script>
         <script src="/js/all.min.js"></script>
