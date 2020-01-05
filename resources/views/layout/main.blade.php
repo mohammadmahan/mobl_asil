@@ -64,32 +64,20 @@
             </div>
         </div>
         <div class="wrap_header">
-
-
             <a href="#" class="logo">
                 <img src="images/icons/logo.png" alt="IMG-LOGO">
             </a>
-
             <div class="wrap_menu">
                 <nav class="menu">
                     <ul class="main_menu">
                         <li>
-                            <a href="index.html">صفحه اصلی</a>
-                        </li>
-                        <li>
-                            <a href="product.html">فروشگاه</a>
+                            <a href="{{route('homeMember')}}}">صفحه اصلی</a>
                         </li>
                         <li class="sale-noti">
-                            <a href="product.html">فروش</a>
+                            <a href="{{route('allProductMember')}}">محصولات ما</a>
                         </li>
                         <li>
-                            <a href="cart.html">امکانات</a>
-                        </li>
-                        <li>
-                            <a href="blog.html">وبلاگ</a>
-                        </li>
-                        <li>
-                            <a href="about.html">درباره ما</a>
+                            <a href="{{route('aboutMember')}}">درباره ما</a>
                         </li>
                         <li>
                             <a href="{{route('contactMember')}}">تماس با ما</a>
@@ -265,25 +253,16 @@
         <nav class="side-menu">
                 <ul class="main_menu">
                         <li>
-                            <a href="index.html">صفحه اصلی</a>
-                        </li>
-                        <li>
-                            <a href="product.html">فروشگاه</a>
+                            <a href="{{route('homeMember')}}}">صفحه اصلی</a>
                         </li>
                         <li class="sale-noti">
-                            <a href="product.html">فروش</a>
+                            <a href="{{route('allProductMember')}}">محصولات ما</a>
                         </li>
                         <li>
-                            <a href="cart.html">امکانات</a>
+                            <a href="{{route('aboutMember')}}">درباره ما</a>
                         </li>
                         <li>
-                            <a href="blog.html">وبلاگ</a>
-                        </li>
-                        <li>
-                            <a href="about.html">درباره ما</a>
-                        </li>
-                        <li>
-                            <a href="contact.php">تماس با ما</a>
+                            <a href="{{route('contactMember')}}">تماس با ما</a>
                         </li>
                     </ul>
            

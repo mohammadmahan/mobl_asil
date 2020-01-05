@@ -13,12 +13,11 @@
 
 Route::get('/', 'HomeController@main');
 
-Route::get('/home-member', 'HomeController@homeMember');
+Route::get('/home-member', 'HomeController@homeMember')->name('homeMember');
 
 Route::get('/contact-member', 'HomeController@contactMember')->name('contactMember');
 
+Route::get('/about-member', 'HomeController@aboutMember')->name('aboutMember');
 
-Route::get('/about-member', 'HomeController@aboutMember');
-
-Route::get('/allProduct-member', 'HomeController@allProductMember');
+Route::get('/allProduct-member', 'HomeController@allProductMember')->name('allProductMember');
  
