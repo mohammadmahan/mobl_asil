@@ -20,4 +20,9 @@ Route::get('/contact-member', 'HomeController@contactMember')->name('contactMemb
 Route::get('/about-member', 'HomeController@aboutMember')->name('aboutMember');
 
 Route::get('/allProduct-member', 'HomeController@allProductMember')->name('allProductMember');
+
+Route::get('/singleProduct-member', 'HomeController@singleProductMember')->name('singleProduct');
+
+
+
  
