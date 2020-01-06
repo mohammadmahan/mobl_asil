@@ -92,7 +92,7 @@
                             <a href="about.html">درباره ما</a>
                         </li>
                         <li>
-                            <a href="contact.php">تماس با ما</a>
+                            <a href="{{route('contactMember')}}">تماس با ما</a>
                         </li>
                     </ul>
                 </nav>
@@ -263,61 +263,33 @@
 
     <div class="wrap-side-menu">
         <nav class="side-menu">
-            <ul class="main-menu">
-                <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
-						<span class="topbar-child1">
-							Free shipping for standard order over $100
-						</span>
-                </li>
-                <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
-                    <div class="topbar-child2-mobile">
-							<span class="topbar-email">
-								<a href="#" class="__cf_email__ font-13">mobl_asil@example.com</a>
-							</span>
-                    </div>
-                </li>
-                <li class="item-topbar-mobile p-l-10">
-                    <div class="topbar-social-mobile">
-                        <a href="#" class="topbar-social-item fa fa-facebook"></a>
-                        <a href="#" class="topbar-social-item fa fa-instagram"></a>
-                        <a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
-                        <a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
-                        <a href="#" class="topbar-social-item fa fa-youtube-play"></a>
-                    </div>
-                </li>
-                <li class="item-menu-mobile">
-                    <a href="index-2.html">Home</a>
-                    <ul class="sub-menu">
-                        <li><a href="index-2.html">Homepage V1</a></li>
-                        <li><a href="home-02.html">Homepage V2</a></li>
-                        <li><a href="home-03.html">Homepage V3</a></li>
+                <ul class="main_menu">
+                        <li>
+                            <a href="index.html">صفحه اصلی</a>
+                        </li>
+                        <li>
+                            <a href="product.html">فروشگاه</a>
+                        </li>
+                        <li class="sale-noti">
+                            <a href="product.html">فروش</a>
+                        </li>
+                        <li>
+                            <a href="cart.html">امکانات</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">وبلاگ</a>
+                        </li>
+                        <li>
+                            <a href="about.html">درباره ما</a>
+                        </li>
+                        <li>
+                            <a href="contact.php">تماس با ما</a>
+                        </li>
                     </ul>
-                    <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
-                </li>
-                <li class="item-menu-mobile">
-                    <a href="product.html">Shop</a>
-                </li>
-                <li class="item-menu-mobile">
-                    <a href="product.html">Sale</a>
-                </li>
-                <li class="item-menu-mobile">
-                    <a href="cart.html">Features</a>
-                </li>
-                <li class="item-menu-mobile">
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li class="item-menu-mobile">
-                    <a href="about.html">About</a>
-                </li>
-                <li class="item-menu-mobile">
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
+           
         </nav>
     </div>
 </header>
-
-<Br><Br><Br><Br>
 
 <!--START :: content-->
 
