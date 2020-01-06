@@ -13,14 +13,6 @@ class HomeController extends Controller
     public function homeMember(){
         return view('memberViews/home');
     }
-    public function contactMember(){
-        return view('memberViews/contact');
-    }
-
-    public function aboutMember()
-    {
-        return view('memberViews/about');
-    }
 
     public function allProductMember()
     {

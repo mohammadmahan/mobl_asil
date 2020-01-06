@@ -5,38 +5,39 @@
 @stop
 @section("content")
 
-<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/heading-pages-06.jpg);">
-<h2 class="l-text2 t-center">
-درباره ما
-</h2>
-</section>
+    <section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/heading-pages-06.jpg);">
+        <h2 class="l-text2 t-center">
+            درباره ما
+        </h2>
+    </section>
 
-<section class="bgwhite p-t-66 p-b-38">
-<div class="container">
-<div class="row">
-<div class="col-md-4 p-b-30">
-<div class="hov-img-zoom">
-<img src="images/banner-14.jpg" alt="IMG-ABOUT">
-</div>
-</div>
-<div class="col-md-8 p-b-30" style="direction: rtl;">
-<h3 class="m-text26 p-t-15 p-b-16">
-درباره مبلمان اصیل
-</h3>
-<p class="p-b-28">
-	لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. 
-</p>
-<div class="bo13 p-l-29 m-l-9 p-b-10">
-<p class="p-b-11">
-	از آنجایی که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می‌باشد آنها با استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند تا مرحله طراحی و صفحه‌بندی را به پایان برند.
-</p>
-<span class="s-text7">
--مدیریت مبلمان اصیل 
-</span>
-</div>
-</div>
-</div>
-</div>
-</section>
+    <section class="bgwhite p-t-66 p-b-38">
+        <div class="container">
+            @if($aboutmembers && count($aboutmembers)>0)
+            @foreach($aboutmembers as $aboutmember)
+                <div class="row">
+                    <div class="col-md-4 p-b-30">
+                        <div class="hov-img-zoom">
+                            <img src="{{$aboutmember->profile}}" alt="IMG-ABOUT">
+                        </div>
+                    </div>
+                    <div class="col-md-8 p-b-30" style="direction: rtl;">
+                        <h3 class="m-text26 p-t-15 p-b-16">
+                            {{$aboutmember->title}}
+                        </h3>
+                        <p class="p-b-28">
+                            {{$aboutmember->details}}
+                        </p>
+                        <div class="bo13 p-l-29 m-l-9 p-b-10">
+                            <span class="s-text7">
+                                {{$aboutmember->management}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+            @endif
+        </div>
+    </section>
 
 @stop

@@ -66,7 +66,7 @@
 						<img src="images/banner-02.jpg" alt="IMG-BENNER">
 						<div class="block1-wrapbtn w-size2">
 
-							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<a href="{{route('singleProduct')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 							مشاهده محصول
 							</a>
 						</div>
@@ -76,7 +76,7 @@
 						<img src="images/banner-05.jpg" alt="IMG-BENNER">
 						<div class="block1-wrapbtn w-size2">
 
-							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<a href="{{route('singleProduct')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 							مشاهده محصول
 							</a>
 						</div>
@@ -98,7 +98,7 @@
 						<img src="images/banner-07.jpg" alt="IMG-BENNER">
 						<div class="block1-wrapbtn w-size2">
 
-							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<a href="{{route('singleProduct')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 							مشاهده محصول
 							</a>
 						</div>
@@ -110,7 +110,7 @@
 						<img src="images/banner-04.jpg" alt="IMG-BENNER">
 						<div class="block1-wrapbtn w-size2">
 
-							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<a href="{{route('singleProduct')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 							مشاهده محصول
 							</a>
 						</div>
@@ -167,7 +167,7 @@
 								</div>
 							</div>
 							<div class="block2-txt direction-rtl p-t-20">
-								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+								<a href="{{route('singleProduct')}}" class="block2-name dis-block s-text3 p-b-5">
 									مبل درجه یک راحتی در مبلمان اصیل
 								</a>
 								<span class="block2-price m-text6 p-r-5">

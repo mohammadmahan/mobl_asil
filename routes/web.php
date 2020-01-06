@@ -15,9 +15,10 @@ Route::get('/', 'HomeController@main');
 
 Route::get('/home-member', 'HomeController@homeMember')->name('homeMember');
 
-Route::get('/contact-member', 'HomeController@contactMember')->name('contactMember');
+Route::get('/contact-member', 'ContactMemberController@ContactMember')->name('contactMember');
+Route::post('/contact-member','ContactMemberController@createContactMember')->name('contactMember.post');
 
-Route::get('/about-member', 'HomeController@aboutMember')->name('aboutMember');
+Route::get('/about-member', 'AboutMemberController@aboutMember')->name('aboutMember');
 
 Route::get('/allProduct-member', 'HomeController@allProductMember')->name('allProductMember');
 

@@ -408,23 +408,24 @@
 					</div>
 				</div>
 				<div class="col-md-6 p-b-30">
-					<form class="leave-comment">
+					<form action="" method="post" class="leave-comment">
+                        {{csrf_field()}}
 						<h4 class="m-text26 p-b-36 p-t-15">
 							پیامتان را ارسال کنید
 						</h4>
 						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="name"
+							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="fullname"
 								placeholder="نام و نام خانوادگی">
 						</div>
 						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="phone-number"
+							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="number"
 								placeholder="شماره تماس">
 						</div>
 						<div class="bo4 of-hidden size15 m-b-20">
 							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="email"
 								placeholder="ادرس ایمیل">
 						</div>
-						<textarea class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" name="message"
+						<textarea class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" name="massage"
 							placeholder="پیام"></textarea>
 						<div class="w-size25">
 
