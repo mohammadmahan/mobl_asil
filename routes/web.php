@@ -21,4 +21,5 @@ Route::get('/contact-member', 'HomeController@contactMember')->name('contactMemb
 Route::get('/about-member', 'HomeController@aboutMember');
 
 Route::get('/allProduct-member', 'HomeController@allProductMember');
+
  
