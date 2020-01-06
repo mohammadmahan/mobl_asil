@@ -154,10 +154,7 @@
 							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
 								<img src="images/item-02.jpg" alt="IMG-PRODUCT">
 								<div class="block2-overlay trans-0-4">
-									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-									</a>
+
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
@@ -182,10 +179,6 @@
 							<div class="block2-img wrap-pic-w of-hidden pos-relative">
 								<img src="images/item-03.jpg" alt="IMG-PRODUCT">
 								<div class="block2-overlay trans-0-4">
-									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-									</a>
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
@@ -210,10 +203,6 @@
 							<div class="block2-img wrap-pic-w of-hidden pos-relative">
 								<img src="images/item-05.jpg" alt="IMG-PRODUCT">
 								<div class="block2-overlay trans-0-4">
-									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-									</a>
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
@@ -238,10 +227,6 @@
 							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
 								<img src="images/item-07.jpg" alt="IMG-PRODUCT">
 								<div class="block2-overlay trans-0-4">
-									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-									</a>
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
@@ -269,10 +254,6 @@
 							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
 								<img src="images/item-02.jpg" alt="IMG-PRODUCT">
 								<div class="block2-overlay trans-0-4">
-									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-									</a>
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
@@ -297,10 +278,6 @@
 							<div class="block2-img wrap-pic-w of-hidden pos-relative">
 								<img src="images/item-03.jpg" alt="IMG-PRODUCT">
 								<div class="block2-overlay trans-0-4">
-									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-									</a>
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
@@ -325,10 +302,6 @@
 							<div class="block2-img wrap-pic-w of-hidden pos-relative">
 								<img src="images/item-05.jpg" alt="IMG-PRODUCT">
 								<div class="block2-overlay trans-0-4">
-									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-									</a>
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
@@ -353,10 +326,6 @@
 							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
 								<img src="images/item-07.jpg" alt="IMG-PRODUCT">
 								<div class="block2-overlay trans-0-4">
-									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-									</a>
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
@@ -459,140 +428,31 @@
 		</div>
 	</section>
 
-	<section class="instagram p-t-20">
-		<div class="sec-title p-b-52 p-l-15 p-r-15">
-			<h3 class="m-text5 t-center">
-				@ follow us on Instagram
-			</h3>
-		</div>
-		<div class="flex-w">
-
-			<div class="block4 wrap-pic-w">
-				<img src="images/gallery-03.jpg" alt="IMG-INSTAGRAM">
-				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
-						<span class="p-t-2">39</span>
-					</span>
-					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-						<p class="s-text10 m-b-15 h-size1 of-hidden">
-							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla
-							in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget
-							metus elit.
-						</p>
-						<span class="s-text9">
-							Photo by @nancyward
-						</span>
-					</div>
-				</a>
-			</div>
-
-			<div class="block4 wrap-pic-w">
-				<img src="images/gallery-07.jpg" alt="IMG-INSTAGRAM">
-				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
-						<span class="p-t-2">39</span>
-					</span>
-					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-						<p class="s-text10 m-b-15 h-size1 of-hidden">
-							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla
-							in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget
-							metus elit.
-						</p>
-						<span class="s-text9">
-							Photo by @nancyward
-						</span>
-					</div>
-				</a>
-			</div>
-
-			<div class="block4 wrap-pic-w">
-				<img src="images/gallery-09.jpg" alt="IMG-INSTAGRAM">
-				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
-						<span class="p-t-2">39</span>
-					</span>
-					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-						<p class="s-text10 m-b-15 h-size1 of-hidden">
-							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla
-							in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget
-							metus elit.
-						</p>
-						<span class="s-text9">
-							Photo by @nancyward
-						</span>
-					</div>
-				</a>
-			</div>
-
-			<div class="block4 wrap-pic-w">
-				<img src="images/gallery-13.jpg" alt="IMG-INSTAGRAM">
-				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
-						<span class="p-t-2">39</span>
-					</span>
-					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-						<p class="s-text10 m-b-15 h-size1 of-hidden">
-							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla
-							in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget
-							metus elit.
-						</p>
-						<span class="s-text9">
-							Photo by @nancyward
-						</span>
-					</div>
-				</a>
-			</div>
-
-			<div class="block4 wrap-pic-w">
-				<img src="images/gallery-15.jpg" alt="IMG-INSTAGRAM">
-				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
-						<span class="p-t-2">39</span>
-					</span>
-					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-						<p class="s-text10 m-b-15 h-size1 of-hidden">
-							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla
-							in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget
-							metus elit.
-						</p>
-						<span class="s-text9">
-							Photo by @nancyward
-						</span>
-					</div>
-				</a>
-			</div>
-		</div>
-	</section>
 
 	<section class="shipping bgwhite p-t-62 p-b-46">
 		<div class="flex-w p-l-15 p-r-15">
 			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
 				<h4 class="m-text12 t-center">
-					Free Delivery Worldwide
+					کیفیت کالا
 				</h4>
-				<a href="#" class="s-text11 t-center">
-					Click here for more info
-				</a>
+				<span class="s-text11 t-center">
+					بهترین کیفیت را از ما بخواهید
+				</span>
 			</div>
 			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
 				<h4 class="m-text12 t-center">
-					30 Days Return
+					تضمین قیمت
 				</h4>
 				<span class="s-text11 t-center">
-					Simply return it within 30 days for an exchange.
+					مناسب ترین قیمت ها را از ما بخواهید
 				</span>
 			</div>
 			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
 				<h4 class="m-text12 t-center">
-					Store Opening
+					مدل های مختلف
 				</h4>
 				<span class="s-text11 t-center">
-					Shop open from Monday to Sunday
+					تنوع رنگ ها و طرح ها را از ما بخواهید
 				</span>
 			</div>
 		</div>

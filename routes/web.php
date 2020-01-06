@@ -20,7 +20,7 @@ Route::post('/contact-member','ContactMemberController@createContactMember')->na
 
 Route::get('/about-member', 'AboutMemberController@aboutMember')->name('aboutMember');
 
-Route::get('/allProduct-member', 'HomeController@allProductMember')->name('allProductMember');
+Route::get('/allProduct-member', 'allProductMemberController@allProductMember')->name('allProductMember');
 
 Route::get('/singleProduct-member', 'HomeController@singleProductMember')->name('singleProduct');
 
