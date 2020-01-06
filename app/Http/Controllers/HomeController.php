@@ -26,4 +26,7 @@ class HomeController extends Controller
     {
         return view('memberViews/allProduct');
     }
+    public function singleProductMember(){
+        return view('memberViews/singleProduct');
+    }
 }

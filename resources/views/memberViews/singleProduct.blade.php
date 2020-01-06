@@ -8,186 +8,309 @@
     <div class="flex-w flex-sb">
         <div class="w-size13 p-t-30 respon5">
             <div class="wrap-slick3 flex-sb flex-w">
-                <div class="wrap-slick3-dots">
-                    <ul class="slick3-dots" role="tablist" style="">
-                        <li class="slick-active" role="presentation"><img src=" images/thumb-item-01.jpg ">
-                            <div class="slick3-dot-overlay"></div>
-                        </li>
-                        <li role="presentation" class=""><img src=" images/thumb-item-02.jpg ">
-                            <div class="slick3-dot-overlay"></div>
-                        </li>
-                        <li role="presentation" class=""><img src=" images/thumb-item-03.jpg ">
-                            <div class="slick3-dot-overlay"></div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="slick3 slick-initialized slick-slider slick-dotted">
-                    <div class="slick-list draggable">
-                        <div class="slick-track" style="opacity: 1; width: 1503px;">
-                            <div class="item-slick3 slick-slide slick-current slick-active"
-                                data-thumb="images/thumb-item-01.jpg" data-slick-index="0" aria-hidden="false"
-                                tabindex="0" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10"
-                                style="width: 501px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
-                                <div class="wrap-pic-w">
-                                    <img src="images/product-detail-01.jpg" alt="IMG-PRODUCT">
-                                </div>
-                            </div>
-                            <div class="item-slick3 slick-slide" data-thumb="images/thumb-item-02.jpg"
-                                data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide11"
-                                aria-describedby="slick-slide-control11"
-                                style="width: 501px; position: relative; left: -501px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
-                                <div class="wrap-pic-w">
-                                    <img src="images/product-detail-02.jpg" alt="IMG-PRODUCT">
-                                </div>
-                            </div>
-                            <div class="item-slick3 slick-slide" data-thumb="images/thumb-item-03.jpg"
-                                data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide12"
-                                aria-describedby="slick-slide-control12"
-                                style="width: 501px; position: relative; left: -1002px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
-                                <div class="wrap-pic-w">
-                                    <img src="images/product-detail-03.jpg" alt="IMG-PRODUCT">
-                                </div>
-                            </div>
+                <div class="wrap-slick3-dots"></div>
+                <div class="slick3">
+                    <div class="item-slick3" data-thumb="images/thumb-item-01.jpg" style="position: sticky !important;">
+                        <div class="wrap-pic-w  bb">
+                            <img src="images/product-detail-01.jpg" alt="IMG-PRODUCT">
                         </div>
                     </div>
 
-
+                    <div class="item-slick3" data-thumb="images/thumb-item-03.jpg" style="position: sticky !important;">
+                        <div class="wrap-pic-w bb">
+                            <img src="images/product-detail-03.jpg" alt="IMG-PRODUCT">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="w-size14 p-t-30 respon5">
-            <h4 class="product-detail-name m-text16 p-b-13">
-                Boxy T-Shirt with Roll Sleeve Detail
+            <h4 class="product-detail-name m-text16 p-b-13 mt-4">
+                خصوصیات این محصول
             </h4>
-            <span class="m-text17">
-                $22
-            </span>
-            <p class="s-text8 p-t-10">
-                Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
-            </p>
+            <p class="mb-5">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ،
+                صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن
+                صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی
+                نوع و اندازه فونت و ظاهر متن باشد. </p>
+            <h6>مشخصات محصول</h6>
 
-            <div class="p-t-33 p-b-60">
-                <div class="flex-m flex-w p-b-10">
-                    <div class="s-text15 w-size15 t-center">
-                        Size
-                    </div>
-                    <div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
-                        <select class="selection-2 select2-hidden-accessible" name="size" tabindex="-1"
-                            aria-hidden="true">
-                            <option>Choose an option</option>
-                            <option>Size S</option>
-                            <option>Size M</option>
-                            <option>Size L</option>
-                            <option>Size XL</option>
-                        </select><span class="select2 select2-container select2-container--default" dir="ltr"
-                            style="width: 166px;"><span class="selection"><span
-                                    class="select2-selection select2-selection--single" role="combobox"
-                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
-                                    aria-labelledby="select2-size-c7-container"><span
-                                        class="select2-selection__rendered" id="select2-size-c7-container"
-                                        title="Choose an option">Choose an option</span><span
-                                        class="select2-selection__arrow" role="presentation"><b
-                                            role="presentation"></b></span></span></span><span class="dropdown-wrapper"
-                                aria-hidden="true"></span></span>
-                    </div>
-                </div>
-                <div class="flex-m flex-w">
-                    <div class="s-text15 w-size15 t-center">
-                        Color
-                    </div>
-                    <div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
-                        <select class="selection-2 select2-hidden-accessible" name="color" tabindex="-1"
-                            aria-hidden="true">
-                            <option>Choose an option</option>
-                            <option>Gray</option>
-                            <option>Red</option>
-                            <option>Black</option>
-                            <option>Blue</option>
-                        </select><span class="select2 select2-container select2-container--default" dir="ltr"
-                            style="width: 166px;"><span class="selection"><span
-                                    class="select2-selection select2-selection--single" role="combobox"
-                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
-                                    aria-labelledby="select2-color-pp-container"><span
-                                        class="select2-selection__rendered" id="select2-color-pp-container"
-                                        title="Choose an option">Choose an option</span><span
-                                        class="select2-selection__arrow" role="presentation"><b
-                                            role="presentation"></b></span></span></span><span class="dropdown-wrapper"
-                                aria-hidden="true"></span></span>
-                    </div>
-                </div>
-                <div class="flex-r-m flex-w p-t-10">
-                    <div class="w-size16 flex-m flex-w">
-                        <div class="flex-w bo5 of-hidden m-r-22 m-t-10 m-b-10">
-                            <button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
-                                <i class="fs-12 fa fa-minus" aria-hidden="true"></i>
-                            </button>
-                            <input class="size8 m-text18 t-center num-product" type="number" name="num-product"
-                                value="1">
-                            <button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
-                                <i class="fs-12 fa fa-plus" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <div class="btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10">
+            <ul class="mb-5 mt-3 list-details">
+                <li>
+                    <span>
+                        <i class="fa fa-check"></i>
+                    </span>
+                    <span> مبلمان کلاسیک</span>
+                </li>
+                <li>
+                    <span>
+                        <i class="fa fa-check"></i>
+                    </span>
+                    <span>در رنگ بندی های: طوسی سبز سفید قهوه ای</span>
+                </li>
+                <li>
+                    <span>
+                        <i class="fa fa-check"></i>
+                    </span>
+                    <span>در تعداد 7 و 13 نفره</span>
+                </li>
+                <li>
+                    <span>
+                        <i class="fa fa-check"></i>
+                    </span>
+                    <span>دارای ست ناهار خوری</span>
+                </li>
+            </ul>
 
-                            <button class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p-b-45">
-                <span class="s-text8 m-r-35">SKU: MUG-01</span>
-                <span class="s-text8">Categories: Mug, Design</span>
-            </div>
-
-            <div class="wrap-dropdown-content bo6 p-t-15 p-b-14 active-dropdown-content">
-                <h5
-                    class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4 show-dropdown-content">
-                    Description
-                    <i class="down-mark fs-12 color1 fa fa-minus dis-none" aria-hidden="true"></i>
-                    <i class="up-mark fs-12 color1 fa fa-plus" aria-hidden="true"></i>
-                </h5>
-                <div class="dropdown-content dis-none p-t-15 p-b-23" style="display: block;">
-                    <p class="s-text8">
-                        Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed
-                        velit. Proin gravida arcu nisl, a dignissim mauris placerat
-                    </p>
-                </div>
-            </div>
-            <div class="wrap-dropdown-content bo7 p-t-15 p-b-14">
-                <h5 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
-                    Additional information
-                    <i class="down-mark fs-12 color1 fa fa-minus dis-none" aria-hidden="true"></i>
-                    <i class="up-mark fs-12 color1 fa fa-plus" aria-hidden="true"></i>
-                </h5>
-                <div class="dropdown-content dis-none p-t-15 p-b-23">
-                    <p class="s-text8">
-                        Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed
-                        velit. Proin gravida arcu nisl, a dignissim mauris placerat
-                    </p>
-                </div>
-            </div>
-            <div class="wrap-dropdown-content bo7 p-t-15 p-b-14">
-                <h5 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
-                    Reviews (0)
-                    <i class="down-mark fs-12 color1 fa fa-minus dis-none" aria-hidden="true"></i>
-                    <i class="up-mark fs-12 color1 fa fa-plus" aria-hidden="true"></i>
-                </h5>
-                <div class="dropdown-content dis-none p-t-15 p-b-23">
-                    <p class="s-text8">
-                        Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed
-                        velit. Proin gravida arcu nisl, a dignissim mauris placerat
-                    </p>
-                </div>
-            </div>
+            <span>قیمت:</span><span>7000000تومان</span>
         </div>
     </div>
 </div>
 
+<section class="newproduct bgwhite p-t-45 p-b-105 ltr-dir">
+    <div class="container">
+        <div class="sec-title p-b-60">
+            <h3 class="m-text5 t-center">
+                محصولات جدید
+            </h3>
+        </div>
 
+        <div class="wrap-slick2">
+            <div class="slick2">
+                <div class="item-slick2 p-l-15 p-r-15">
 
+                    <div class="block2">
+                        <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+                            <img src="images/item-02.jpg" alt="IMG-PRODUCT">
+                            <div class="block2-overlay trans-0-4">
+                                <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                </a>
+                                <div class="block2-btn-addcart w-size1 trans-0-4">
 
+                                    <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                        مشاهده محصول
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block2-txt direction-rtl p-t-20">
+                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                مبل درجه یک راحتی در مبلمان اصیل
+                            </a>
+                            <span class="block2-price m-text6 p-r-5">
+                                $75.00
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-slick2 p-l-15 p-r-15">
+
+                    <div class="block2">
+                        <div class="block2-img wrap-pic-w of-hidden pos-relative">
+                            <img src="images/item-03.jpg" alt="IMG-PRODUCT">
+                            <div class="block2-overlay trans-0-4">
+                                <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                </a>
+                                <div class="block2-btn-addcart w-size1 trans-0-4">
+
+                                    <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                        مشاهده محصول
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block2-txt direction-rtl p-t-20">
+                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                مبل درجه یک راحتی در مبلمان اصیل
+                            </a>
+                            <span class="block2-price m-text6 p-r-5">
+                                $92.50
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-slick2 p-l-15 p-r-15">
+
+                    <div class="block2">
+                        <div class="block2-img wrap-pic-w of-hidden pos-relative">
+                            <img src="images/item-05.jpg" alt="IMG-PRODUCT">
+                            <div class="block2-overlay trans-0-4">
+                                <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                </a>
+                                <div class="block2-btn-addcart w-size1 trans-0-4">
+
+                                    <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                        مشاهده محصول
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block2-txt direction-rtl p-t-20">
+                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                مبل درجه یک راحتی در مبلمان اصیل
+                            </a>
+                            <span class="block2-price m-text6 p-r-5">
+                                $165.90
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-slick2 p-l-15 p-r-15">
+
+                    <div class="block2">
+                        <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
+                            <img src="images/item-07.jpg" alt="IMG-PRODUCT">
+                            <div class="block2-overlay trans-0-4">
+                                <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                </a>
+                                <div class="block2-btn-addcart w-size1 trans-0-4">
+
+                                    <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                        مشاهده محصول
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block2-txt direction-rtl p-t-20">
+                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                مبل درجه یک راحتی در مبلمان اصیل
+                            </a>
+                            <span class="block2-oldprice m-text7 p-r-5">
+                                $29.50
+                            </span>
+                            <span class="block2-newprice m-text8 p-r-5">
+                                $15.90
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-slick2 p-l-15 p-r-15">
+
+                    <div class="block2">
+                        <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+                            <img src="images/item-02.jpg" alt="IMG-PRODUCT">
+                            <div class="block2-overlay trans-0-4">
+                                <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                </a>
+                                <div class="block2-btn-addcart w-size1 trans-0-4">
+
+                                    <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                        مشاهده محصول
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block2-txt direction-rtl p-t-20">
+                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                مبل درجه یک راحتی در مبلمان اصیل
+                            </a>
+                            <span class="block2-price m-text6 p-r-5">
+                                $75.00
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-slick2 p-l-15 p-r-15">
+
+                    <div class="block2">
+                        <div class="block2-img wrap-pic-w of-hidden pos-relative">
+                            <img src="images/item-03.jpg" alt="IMG-PRODUCT">
+                            <div class="block2-overlay trans-0-4">
+                                <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                </a>
+                                <div class="block2-btn-addcart w-size1 trans-0-4">
+
+                                    <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                        مشاهده محصول
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block2-txt direction-rtl p-t-20">
+                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                مبل درجه یک راحتی در مبلمان اصیل
+                            </a>
+                            <span class="block2-price m-text6 p-r-5">
+                                $92.50
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-slick2 p-l-15 p-r-15">
+
+                    <div class="block2">
+                        <div class="block2-img wrap-pic-w of-hidden pos-relative">
+                            <img src="images/item-05.jpg" alt="IMG-PRODUCT">
+                            <div class="block2-overlay trans-0-4">
+                                <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                </a>
+                                <div class="block2-btn-addcart w-size1 trans-0-4">
+
+                                    <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                        مشاهده محصول
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block2-txt direction-rtl p-t-20">
+                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                مبل درجه یک راحتی در مبلمان اصیل
+                            </a>
+                            <span class="block2-price m-text6 p-r-5">
+                                $165.90
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-slick2 p-l-15 p-r-15">
+
+                    <div class="block2">
+                        <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
+                            <img src="images/item-07.jpg" alt="IMG-PRODUCT">
+                            <div class="block2-overlay trans-0-4">
+                                <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                </a>
+                                <div class="block2-btn-addcart w-size1 trans-0-4">
+
+                                    <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                        مشاهده محصول
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block2-txt direction-rtl p-t-20">
+                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                مبل درجه یک راحتی در مبلمان اصیل
+                            </a>
+                            <span class="block2-oldprice m-text7 p-r-5">
+                                $29.50
+                            </span>
+                            <span class="block2-newprice m-text8 p-r-5">
+                                $15.90
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 

@@ -8,7 +8,7 @@
 }
 
 
-html,body,div,header,span,h1,h2,h3,h4,h5,h6,a,p,table,button,input{
+html,body,div,header,span,h1,h2,h3,h4,h5,h6,a,p,table,button,input,textarea{
     font-family: IRANSansWeb !important;
 }
 body{
@@ -25,4 +25,20 @@ body{
     background-color: #fff;
     padding: 20px;
     height: 210px;
+}
+.item-slick3{
+    position: sticky !important;
+}
+.list-details{
+    font-size: 15px;
+    line-height: 1.7;
+    color: #888888;
+    margin: 0px;
+}
+.list-details li span:nth-child(1){
+    color: #1a8d3d !important;
+    /* display: none; */
+}
+.bb img{
+    height: 510px !important;
 }

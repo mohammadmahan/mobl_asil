@@ -88,7 +88,7 @@
 						<img src="images/banner-03.jpg" alt="IMG-BENNER">
 						<div class="block1-wrapbtn w-size2">
 
-							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<a href="{{route('singleProduct')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 								مشاهده محصول
 							</a>
 						</div>
