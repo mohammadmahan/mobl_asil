@@ -106,16 +106,36 @@
 
 <div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true">
     <div class="main-menu-content">
-        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-            <li class=" nav-item"><a href="#"><span class="menu-title" data-i18n="">خانه</span></a>
+        <ul class="navigation navigation-main mt-1" id="main-menu-navigation" data-menu="menu-navigation">
+            <li class="nav-item">
+                <a href="#">
+                    <i class="fas fa-desktop ml-1"></i>
+                    <span class="menu-title ml-1" data-i18n="">داشبورد</span>
+                </a>
             </li>
-            <li class=" nav-item"><a href="#"><span class="menu-title" data-i18n="">فایل ها</span></a>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="fab fa-product-hunt ml-1"></i>
+                    <span class="menu-title ml-1" data-i18n="">محصولات</span>
+                </a>
             </li>
-            <li class=" nav-item"><a href="#"><span class="menu-title" data-i18n="">انتقال</span></a>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="far fa-address-book ml-1"></i>
+                    <span class="menu-title ml-1" data-i18n="">پیام ها</span>
+                </a>
             </li>
-            <li class=" nav-item"><a href="#"><span class="menu-title" data-i18n="">ویترین</span></a>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="fas fa-chart-bar ml-1"></i>
+                    <span class="menu-title ml-1" data-i18n="">تحلیل سیستم</span>
+                </a>
             </li>
-            <li class=" nav-item"><a href="#"><span class="menu-title" data-i18n="">سلام</span></a>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="far fa-newspaper ml-1"></i>
+                    <span class="menu-title ml-1" data-i18n="">مدیریت اخبار</span>
+                </a>
             </li>
         </ul>
     </div>
@@ -135,7 +155,7 @@
 
 <!-- BEGIN: Footer-->
 <footer class="footer footer-static footer-light navbar-border navbar-shadow">
-    <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">Copyright  &copy; 2019 <a class="text-bold-800 grey darken-2" href="#" target="_blank">PIXINVENT</a></span><span class="float-md-right d-none d-lg-block">Hand-crafted & Made with <i class="ft-heart pink"></i><span id="scroll-top"></span></span></p>
+    <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block"> کپی رایت &copy; 1398 <a class="text-bold-800 grey darken-2" href="#" target="_blank">CodeAdvance</a></span><span class="float-md-right d-none d-lg-block">طراحی شده توسط سانیار <span id="scroll-top"></span></span></p>
 </footer>
 <!-- END: Footer-->
 
