@@ -109,31 +109,31 @@
         <ul class="navigation navigation-main mt-1" id="main-menu-navigation" data-menu="menu-navigation">
             <li class="nav-item">
                 <a href="#">
-                    <i class="fas fa-desktop ml-1"></i>
+                    <i class="fas fa-desktop"></i>
                     <span class="menu-title ml-1" data-i18n="">داشبورد</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#">
-                    <i class="fab fa-product-hunt ml-1"></i>
+                    <i class="fab fa-product-hunt"></i>
                     <span class="menu-title ml-1" data-i18n="">محصولات</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#">
-                    <i class="far fa-address-book ml-1"></i>
+                    <i class="far fa-address-book"></i>
                     <span class="menu-title ml-1" data-i18n="">پیام ها</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#">
-                    <i class="fas fa-chart-bar ml-1"></i>
+                    <i class="fas fa-chart-bar"></i>
                     <span class="menu-title ml-1" data-i18n="">تحلیل سیستم</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#">
-                    <i class="far fa-newspaper ml-1"></i>
+                    <i class="far fa-newspaper "></i>
                     <span class="menu-title ml-1" data-i18n="">مدیریت اخبار</span>
                 </a>
             </li>
