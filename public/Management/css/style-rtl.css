@@ -1,0 +1,17 @@
+html,body,div,header,span,h1,h2,h3,h4,h5,h6,a,p,table,button,input{
+	font-family: IRANSansWeb;
+}
+.bg-customize-header{
+	background-color: #F4F5FA;
+}
+.navbar-collapse a{
+	color: #000 !important;
+}
+.dropdown-menu-right span span:nth-child(2){
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.dropdown-menu-right span span:nth-child(2) a{
+    font-size: 9px;
+    color: blue !important;
+}

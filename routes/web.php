@@ -25,5 +25,8 @@ Route::get('/allProduct-member', 'allProductMemberController@allProductMember')-
 Route::get('/singleProduct-member', 'HomeController@singleProductMember')->name('singleProduct');
 
 
-
+//////////////////start :: Management//////////////////
  
+Route::get('/ManagementDashboard','Management\DashboardController@dashboard');
+
+/////////////////end :: Management//////////////////
