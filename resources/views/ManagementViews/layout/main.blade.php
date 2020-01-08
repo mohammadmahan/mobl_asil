@@ -2,7 +2,7 @@
 <html class="loading" lang="en" data-textdirection="rtl">
 <!-- BEGIN: Head-->
 <head>
-    <title>test</title>
+    <title>@yield('title')</title>
     <link rel="apple-touch-icon" href="Management/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="">
     <link href="css/css.css" rel="stylesheet">
@@ -34,6 +34,8 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="Management/css/style-rtl.css">
     <!-- END: Custom CSS-->
+
+    @yield('stylesheet')
 
 </head>
 <!-- END: Head-->
@@ -144,7 +146,7 @@
 <!-- END: Main Menu-->
 <!-- BEGIN: Content-->
 <div class="app-content content">
-
+    @yield('content')
 </div>
 <!-- END: Content-->
 
@@ -183,6 +185,8 @@
 <!-- BEGIN: Page JS-->
 <script src="Management/js/scripts/pages/dashboard-crypto.min.js"></script>
 <!-- END: Page JS-->
+
+@yield('script')
 
 </body>
 <!-- END: Body-->

@@ -451,29 +451,11 @@
 
 <script type="" src="/vendor/sweetalert/sweetalert.min.js"></script>
 
-
-<script type="">
-
-		$('.block2-btn-addcart').each(function () {
-			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-			$(this).on('click', function () {
-				swal(nameProduct, "is added to cart !", "success");
-			});
-		});
-
-		$('.block2-btn-addwishlist').each(function () {
-			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-			$(this).on('click', function () {
-				swal(nameProduct, "is added to wishlist !", "success");
-			});
-		});
-	</script>
-
 <script src="/js/main.js" type=""></script>
 
-<script src="ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
-        data-cf-settings="888a2198ced61eb2d090dfdc-|49" defer=""></script>
-        <script src="/js/all.min.js"></script>
+<script src="/ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+            data-cf-settings="888a2198ced61eb2d090dfdc-|49" defer=""></script>
+<script src="/js/all.min.js"></script>
 
 @yield('script')
 

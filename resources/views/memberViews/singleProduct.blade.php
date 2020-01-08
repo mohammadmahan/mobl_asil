@@ -5,20 +5,22 @@
 @section("content")
 
 <div class="container bgwhite p-t-35 p-b-80">
+
+
     <div class="flex-w flex-sb">
         <div class="w-size13 p-t-30 respon5">
             <div class="wrap-slick3 flex-sb flex-w">
                 <div class="wrap-slick3-dots"></div>
                 <div class="slick3">
                     <div class="item-slick3" data-thumb="images/thumb-item-01.jpg" style="position: sticky !important;">
-                        <div class="wrap-pic-w  bb">
-                            <img src="images/product-detail-01.jpg" alt="IMG-PRODUCT">
+                        <div class="wrap-pic-w bb">
+                            <img src="{{old('name',isset($productItem) ? $productItem->image : '')}}" alt="IMG-PRODUCT">
                         </div>
                     </div>
 
                     <div class="item-slick3" data-thumb="images/thumb-item-03.jpg" style="position: sticky !important;">
                         <div class="wrap-pic-w bb">
-                            <img src="images/product-detail-03.jpg" alt="IMG-PRODUCT">
+                            <img src="{{old('name',isset($productItem) ? $productItem->image : '')}}" alt="IMG-PRODUCT">
                         </div>
                     </div>
                 </div>
@@ -27,7 +29,7 @@
 
         <div class="w-size14 p-t-30 respon5">
             <h4 class="product-detail-name m-text16 p-b-13 mt-4">
-                خصوصیات این محصول
+                {{old('name',isset($productItem) ? $productItem->name : '')}}
             </h4>
             <p class="mb-5">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ،
                 صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن
@@ -62,9 +64,12 @@
                 </li>
             </ul>
 
-            <span>قیمت:</span><span>7000000تومان</span>
+            <span> قیمت : </span><span>7000000 تومان  </span>
         </div>
     </div>
+
+
+
 </div>
 
 <section class="newproduct bgwhite p-t-45 p-b-105 ltr-dir">

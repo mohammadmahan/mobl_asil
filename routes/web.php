@@ -22,11 +22,13 @@ Route::get('/about-member', 'AboutMemberController@aboutMember')->name('aboutMem
 
 Route::get('/allProduct-member', 'allProductMemberController@allProductMember')->name('allProductMember');
 
-Route::get('/singleProduct-member', 'HomeController@singleProductMember')->name('singleProduct');
+Route::get('/singleProduct-member/{allProductMember_id}', 'allProductMemberController@singleProductMember')->name('singleProduct');
 
 
 //////////////////start :: Management//////////////////
  
 Route::get('/ManagementDashboard','Management\DashboardController@dashboard');
+
+Route::get('/ManagementProducts','Management\ProductsController@AllProducts');
 
 /////////////////end :: Management//////////////////
