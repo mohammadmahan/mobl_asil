@@ -26,3 +26,10 @@ html,body,div,header,span,h1,h2,h3,h4,h5,h6,a,p,table,button,input{
 .link-edit-product i{
     color: rgb(68, 143, 93);
 }
+.pad-box{
+    padding:30px;
+}
+.btn-form-update .btn{
+    width: 70px;
+    height: 37px;
+}
