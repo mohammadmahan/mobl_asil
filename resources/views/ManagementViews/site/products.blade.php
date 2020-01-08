@@ -1,5 +1,7 @@
 @extends('ManagementViews.layout.main')
-
+@section('title')
+محصولات ثبت شده
+@stop
 @section('content')
 
 <div class="content-wrapper">
@@ -21,34 +23,26 @@
                                         <th scope="col">ردیف</th>
                                         <th scope="col">نام محصول</th>
                                         <th scope="col">قیمت</th>
+                                        <th scope="col">کد محصول</th>
                                         <th scope="col">توضیحات</th>
                                         <th scope="col">عملیات</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>مبل آبی</td>
-                                        <td>1299000 تومان</td>
-                                        <td>توضیحات محصول این جا قرار بگیره</td>
-                                        <td><a href="{{route('ManagementEditProduct')}}" class="link-edit-product"><i class="fa fa-edit"></a></i>
+                                @if($allProductMembers && count($allProductMembers)>0)
+                                    @foreach($allProductMembers as $allProductMember)
+                                        <tr>
+                                            <th scope="row">{{$allProductMember->id}}</th>
+                                            <td>{{$allProductMember->name}}</td>
+                                            <td>{{$allProductMember->lastcost}}</td>
+                                            <td>{{$allProductMember->number_product}}</td>
+                                            <td>{{$allProductMember->Description}}</td>
+                                            <td><a href="{{route('ManagementEditProduct')}}" class="link-edit-product"><i class="fa fa-edit"></a></i>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>مبل راحتی</td>
-                                        <td>5999300 تومان</td>
-                                        <td>توضیحات محصول این جا قرار بگیره</td>
-                                        <td><a href=""><i class="fa fa-edit"></a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>مبل غیر راحتی</td>
-                                        <td>مجانی</td>
-                                        <td>توضیحات محصول این جا قرار بگیره</td>
-                                        <td><a href=""><i class="fa fa-edit"></a></td>
-                                    </tr>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                @endif
                                 </tbody>
                             </table>
                         </div>
