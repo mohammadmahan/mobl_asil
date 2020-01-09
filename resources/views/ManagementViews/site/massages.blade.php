@@ -1,5 +1,7 @@
 @extends('ManagementViews.layout.main')
-
+@section('title')
+    پیام های دریافتی
+@stop
 @section('content')
 
 <div class="content-wrapper">
@@ -37,7 +39,7 @@
                                             <td>{{$massage->email}}</td>
                                             <td>{{$massage->massage}}</td>
                                             <td>
-                                                <a href="" class="link-edit-product"><i class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i></a>
+                                                <a href="{{route('delete.massage',$massage->id)}}" class="link-edit-product"><i class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i></a>
                                             </td>
                                         </tr>
                                     

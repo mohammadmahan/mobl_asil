@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Management;
 
 use App\AddProduct;
+use App\allProductMember;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -14,14 +15,16 @@ class AddProductController extends Controller
    public function createProduct(Request $request)
    {
       $Create_Product = [
-         'name	' => request()->input('fullname'),
-         // 'number' => request()->input('number'),
-         'pastcost' => request()->input('email'),
-         'lastcost' => request()->input('massage'),
+         'name' => request()->input('name'),
+         'number_product' => request()->input('number_product'),
+         'lastcost' => request()->input('lastcost'),
+         'pastcost' => request()->input('pastcost'),
+         'image' => request()->input('imageproduct'),
+         'Description' => request()->input('Description'),
      ];
-     $new_Product_object = AddProduct::create( $Create_Product);
-     if ($new_Product_object && $new_Product_object instanceof AddProduct) {
-         return redirect()->route('AddProduct');
+     $new_Product_object = allProductMember::create( $Create_Product);
+     if ($new_Product_object && $new_Product_object instanceof allProductMember) {
+         return redirect()->route('ProductManagement');
      }
    }
 }
