@@ -42,7 +42,10 @@
                                             <td>{{$allProductMember->lastcost}}</td>
                                             <td>{{$allProductMember->number_product}}</td>
                                             <td>{{$allProductMember->Description}}</td>
-                                            <td><a href="{{route('ManagementEditProduct')}}" class="link-edit-product"><i class="fa fa-edit"></a></i>
+                                            <td>
+                                                <a href="{{route('ManagementEditProduct',$allProductMember->id)}}" class="link-edit-product">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
 
                                             </td>
                                         </tr>
