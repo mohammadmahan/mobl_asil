@@ -31,7 +31,7 @@
                                         <td>مبل آبی</td>
                                         <td>1299000 تومان</td>
                                         <td>توضیحات محصول این جا قرار بگیره</td>
-                                        <td><a href="" class="link-edit-product"><i class="fa fa-edit"></a></i>
+                                        <td><a href="{{route('ManagementEditProduct')}}" class="link-edit-product"><i class="fa fa-edit"></a></i>
 
                                         </td>
                                     </tr>

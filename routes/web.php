@@ -33,4 +33,6 @@ Route::get('/ManagementProducts','Management\ProductsController@AllProducts')->n
 
 Route::get('/ManagementMassages','Management\MassagesController@AllMassages')->name('massagesManagement');
 
+Route::get('/ManagementEditProduct','Management\EditProductController@EditProduct')->name('ManagementEditProduct');
+
 /////////////////end :: Management//////////////////
