@@ -5,7 +5,7 @@
 <div class="content-wrapper">
     <div class="content-header row mb-1">
         <div class="content-header-left col-md-6 col-12 mb-2">
-            <h3 class="content-header-title">محصولات ثبت شده</h3>
+            <h3 class="content-header-title">پیام های دریافتی</h3>
         </div>
     </div>
     <div class="content-body">
@@ -19,9 +19,10 @@
                                 <thead class="thead-dark">
                                     <tr>
                                         <th scope="col">ردیف</th>
-                                        <th scope="col">نام محصول</th>
-                                        <th scope="col">قیمت</th>
-                                        <th scope="col">توضیحات</th>
+                                        <th scope="col">نام و نام خانوادگی</th>
+                                        <th scope="col">شماره تماس</th>
+                                        <th scope="col">ایمیل</th>
+                                        <th scope="col">پیام</th>
                                         <th scope="col">عملیات</th>
                                     </tr>
                                 </thead>
@@ -31,24 +32,13 @@
                                         <td>مبل آبی</td>
                                         <td>1299000 تومان</td>
                                         <td>توضیحات محصول این جا قرار بگیره</td>
+                                        <td>توضیحات محصول این جا قرار بگیره</td>
                                         <td><a href="" class="link-edit-product"><i class="fa fa-edit"></a></i>
 
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>مبل راحتی</td>
-                                        <td>5999300 تومان</td>
-                                        <td>توضیحات محصول این جا قرار بگیره</td>
-                                        <td><a href=""><i class="fa fa-edit"></a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>مبل غیر راحتی</td>
-                                        <td>مجانی</td>
-                                        <td>توضیحات محصول این جا قرار بگیره</td>
-                                        <td><a href=""><i class="fa fa-edit"></a></td>
-                                    </tr>
+                                   
+                                   
                                 </tbody>
                             </table>
                         </div>

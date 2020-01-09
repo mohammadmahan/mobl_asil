@@ -31,4 +31,6 @@ Route::get('/ManagementDashboard','Management\DashboardController@dashboard');
 
 Route::get('/ManagementProducts','Management\ProductsController@AllProducts');
 
+Route::get('/ManagementMassages','Management\MassagesController@AllMassages');
+
 /////////////////end :: Management//////////////////
