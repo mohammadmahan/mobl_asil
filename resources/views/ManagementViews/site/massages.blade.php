@@ -5,7 +5,7 @@
 <div class="content-wrapper">
     <div class="content-header row mb-1">
         <div class="content-header-left col-md-6 col-12 mb-2">
-            <h3 class="content-header-title">پیام های دریافتی</h3>
+            <h4 class="content-header-title">پیام های دریافتی</h4>
         </div>
     </div>
     <div class="content-body">
@@ -36,8 +36,8 @@
                                             <td>{{$massage->number}}</td>
                                             <td>{{$massage->email}}</td>
                                             <td>{{$massage->massage}}</td>
-                                            <td><a href="" class="link-edit-product"><i class="fa fa-edit"></a></i>
-
+                                            <td>
+                                                <a href="" class="link-edit-product"><i class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i></a>
                                             </td>
                                         </tr>
                                     

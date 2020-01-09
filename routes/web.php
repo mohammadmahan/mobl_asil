@@ -36,4 +36,6 @@ Route::get('/ManagementMassages', 'Management\MassagesController@AllMassages')->
 Route::get('/ManagementEditProduct{allProductMember_id}', 'Management\ProductsController@editProduct')->name('ManagementEditProduct');
 Route::post('/ManagementEditProduct{allProductMember_id}', 'Management\ProductsController@updateProduct')->name('ManagementUpdateProduct');
 
+Route::get('/ManagementAddProduct','Management\AddProductController@AddProduct')->name('ManagementAddProduct');
+
 /////////////////end :: Management//////////////////
