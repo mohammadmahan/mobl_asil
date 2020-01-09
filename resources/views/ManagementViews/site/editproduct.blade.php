@@ -20,22 +20,22 @@
 								<div class="row">
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput1">اسم محصول</label>
-										<input type="text" id="projectinput1" class="form-control" value="{{old('name',isset($ProductItem) ? $ProductItem->name : '')}}" name="fname">
+										<input type="text" id="projectinput1" class="form-control" value="{{old('name',isset($ProductItem) ? $ProductItem->name : '')}}" name="name">
                                     </div>
                                     <div class="form-group col-md-6 mb-2">
 										<label for="projectinput4">کد محصول</label>
-										<input type="text" id="projectinput4" class="form-control" value="{{old('name',isset($ProductItem) ? $ProductItem->number_product : '')}}" name="phone">
+										<input type="text" id="projectinput4" class="form-control" value="{{old('name',isset($ProductItem) ? $ProductItem->number_product : '')}}" name="number_product">
 									</div>
 									
 								</div>
 								<div class="row">
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput3">قیمت جدید</label>
-										<input type="text" id="projectinput3" class="form-control" value="{{old('name',isset($ProductItem) ? $ProductItem->lastcost : '')}}" name="email">
+										<input type="text" id="projectinput3" class="form-control" value="{{old('name',isset($ProductItem) ? $ProductItem->lastcost : '')}}" name="lastcost">
 									</div>
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput2">قیمت قبلی</label>
-										<input type="text" id="projectinput2" class="form-control" value="{{old('name',isset($ProductItem) ? $ProductItem->pastcost : '')}}" name="lname">
+										<input type="text" id="projectinput2" class="form-control" value="{{old('name',isset($ProductItem) ? $ProductItem->pastcost : '')}}" name="pastcost">
 									</div>
 								</div>
 
@@ -51,7 +51,7 @@
 								<div class="row">
 									<div class="form-group col-12 mb-2">
 										<label for="projectinput9">توضیحات</label>
-										<textarea id="projectinput9" rows="5" class="form-control" name="comment">{{old('name',isset($ProductItem) ? $ProductItem->Description : '')}}</textarea>
+										<textarea id="projectinput9" rows="5" class="form-control" name="Description">{{old('name',isset($ProductItem) ? $ProductItem->Description : '')}}</textarea>
 									</div>
                                 </div>
                                 <div class="form-actions top btn-form-update">

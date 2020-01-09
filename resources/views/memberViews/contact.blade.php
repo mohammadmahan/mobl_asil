@@ -1,5 +1,4 @@
 @extends('layout.main')
-
 @section("title")
 ارتباط | مبلمان اصیل
 @stop

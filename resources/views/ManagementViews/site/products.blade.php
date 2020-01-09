@@ -47,7 +47,6 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-
                                     @if($allProductMembers && count($allProductMembers)>0)
                                         @foreach($allProductMembers as $allProductMember)
                                             <tr>
