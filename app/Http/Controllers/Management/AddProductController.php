@@ -15,7 +15,7 @@ class AddProductController extends Controller
    {
       $Create_Product = [
          'name	' => request()->input('fullname'),
-         'number' => request()->input('number'),
+         // 'number' => request()->input('number'),
          'pastcost' => request()->input('email'),
          'lastcost' => request()->input('massage'),
      ];

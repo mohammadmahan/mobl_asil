@@ -1,5 +1,7 @@
 @extends('ManagementViews.layout.main')
-
+@section('title')
+محصولات ثبت شده
+@stop
 @section('content')
 
 <div class="content-wrapper">
@@ -39,11 +41,13 @@
                                         <th scope="col">ردیف</th>
                                         <th scope="col">نام محصول</th>
                                         <th scope="col">قیمت</th>
+                                        <th scope="col">کد محصول</th>
                                         <th scope="col">توضیحات</th>
                                         <th scope="col">عملیات</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+<<<<<<< HEAD
                                     <tr>
                                         <th scope="row">1</th>
                                         <td>مبل آبی</td>
@@ -58,6 +62,22 @@
                                             </a>
                                         </td>
                                     </tr>
+=======
+                                @if($allProductMembers && count($allProductMembers)>0)
+                                    @foreach($allProductMembers as $allProductMember)
+                                        <tr>
+                                            <th scope="row">{{$allProductMember->id}}</th>
+                                            <td>{{$allProductMember->name}}</td>
+                                            <td>{{$allProductMember->lastcost}}</td>
+                                            <td>{{$allProductMember->number_product}}</td>
+                                            <td>{{$allProductMember->Description}}</td>
+                                            <td><a href="{{route('ManagementEditProduct')}}" class="link-edit-product"><i class="fa fa-edit"></a></i>
+
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                @endif
+>>>>>>> b698ac9888ec686cefa00e4aa194d868687c1266
                                 </tbody>
                             </table>
                         </div>

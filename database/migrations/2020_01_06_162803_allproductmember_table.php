@@ -17,10 +17,11 @@ class AllproductmemberTable extends Migration
             $table->bigIncrements('id');
             $table->string('image');
             $table->string('name');
+            $table->string('number_product');
             $table->string('pastcost');
             $table->string('lastcost');
+            $table->string('Description');
             $table->timestamps();
-
         });
     }
 

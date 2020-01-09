@@ -20,22 +20,22 @@
 								<div class="row">
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput1">اسم محصول</label>
-										<input type="text" id="projectinput1" class="form-control" name="fname">
+										<input type="text" id="projectinput1" class="form-control" name="name">
                                     </div>
                                     <div class="form-group col-md-6 mb-2">
 										<label for="projectinput4">کد محصول</label>
-										<input type="text" id="projectinput4" class="form-control" name="phone">
+										<input type="text" id="projectinput4" class="form-control" name="code">
 									</div>
 									
 								</div>
 								<div class="row">
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput3">قیمت جدید</label>
-										<input type="text" id="projectinput3" class="form-control" name="email">
+										<input type="text" id="projectinput3" class="form-control" name="lastcost">
 									</div>
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput2">قیمت قبلی</label>
-										<input type="text" id="projectinput2" class="form-control" name="lname">
+										<input type="text" id="projectinput2" class="form-control" name="pastcost">
 									</div>
 								</div>
 
@@ -43,7 +43,7 @@
 									<div class="form-group col-12 mb-2">
 										<label>تصویر محصول</label>
 										<label id="projectinput8" class="file center-block">
-											<input type="file" id="file">
+											<input type="file" id="file" name="image">
 											<span class="file-custom"></span>
 										</label>
 									</div>
