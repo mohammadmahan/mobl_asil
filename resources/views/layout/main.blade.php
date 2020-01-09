@@ -38,8 +38,7 @@
     <link rel="stylesheet" type="text/css" href="/css/util.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
 
     @yield('style')
 </head>
