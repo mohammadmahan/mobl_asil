@@ -5,8 +5,13 @@
 <div class="content-wrapper">
     <div class="content-header row mb-1">
         <div class="content-header-left col-md-6 col-12 mb-2">
-            <h3 class="content-header-title">محصولات ثبت شده</h3>
+            <h4 class="content-header-title">محصولات ثبت شده</h4>
         </div>
+        <div class="content-header-right col-md-6 col-12">
+            <div class="btn-group float-md-right">   
+              <button class="btn btn-info round box-shadow-2 px-2" type="button"> افزودن محصول</button>
+            </div>
+          </div>
     </div>
     <div class="content-body">
         <!-- Table head options start -->
