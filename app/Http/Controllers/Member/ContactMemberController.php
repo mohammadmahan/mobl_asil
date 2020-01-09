@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Member;
 
 use App\ContactMember;
 use App\Models\AboutMember;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ContactMemberController extends Controller
 {

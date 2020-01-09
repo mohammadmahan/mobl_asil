@@ -137,13 +137,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">
+                    <a href="{{route('ProductManagement')}}">
                         <i class="fab fa-product-hunt"></i>
                         <span class="menu-title ml-1" data-i18n="">محصولات</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">
+                    <a href="{{route('massagesManagement')}}">
                         <i class="far fa-address-book"></i>
                         <span class="menu-title ml-1" data-i18n="">پیام ها</span>
                     </a>

@@ -27,18 +27,24 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>مبل آبی</td>
-                                        <td>1299000 تومان</td>
-                                        <td>توضیحات محصول این جا قرار بگیره</td>
-                                        <td>توضیحات محصول این جا قرار بگیره</td>
-                                        <td><a href="" class="link-edit-product"><i class="fa fa-edit"></a></i>
+                                    @if($massages && count($massages)>0)
 
-                                        </td>
-                                    </tr>
-                                   
-                                   
+                                        @foreach($massages as $massage)
+                                        <tr>
+                                            <th scope="row">{{$massage->id}}</th>
+                                            <td>{{$massage->fullname}}</td>
+                                            <td>{{$massage->number}}</td>
+                                            <td>{{$massage->email}}</td>
+                                            <td>{{$massage->massage}}</td>
+                                            <td><a href="" class="link-edit-product"><i class="fa fa-edit"></a></i>
+
+                                            </td>
+                                        </tr>
+                                    
+                                        @endforeach
+                                    @endif
+
+
                                 </tbody>
                             </table>
                         </div>

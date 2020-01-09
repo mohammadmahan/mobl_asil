@@ -13,24 +13,24 @@
 
 Route::get('/', 'HomeController@main');
 
-Route::get('/home-member', 'HomeController@homeMember')->name('homeMember');
+Route::get('/home-member', 'Member\HomeController@homeMember')->name('homeMember');
 
-Route::get('/contact-member', 'ContactMemberController@ContactMember')->name('contactMember');
-Route::post('/contact-member','ContactMemberController@createContactMember')->name('contactMember.post');
+Route::get('/contact-member', 'Member\ContactMemberController@ContactMember')->name('contactMember');
+Route::post('/contact-member','Member\ContactMemberController@createContactMember')->name('contactMember.post');
 
-Route::get('/about-member', 'AboutMemberController@aboutMember')->name('aboutMember');
+Route::get('/about-member', 'Member\AboutMemberController@aboutMember')->name('aboutMember');
 
-Route::get('/allProduct-member', 'allProductMemberController@allProductMember')->name('allProductMember');
+Route::get('/allProduct-member', 'Member\allProductMemberController@allProductMember')->name('allProductMember');
 
-Route::get('/singleProduct-member/{allProductMember_id}', 'allProductMemberController@singleProductMember')->name('singleProduct');
+// Route::get('/singleProduct-member/{allProductMember_id}', 'Member\allProductMemberController@singleProductMember')->name('singleProduct');
 
 
 //////////////////start :: Management//////////////////
  
 Route::get('/ManagementDashboard','Management\DashboardController@dashboard');
 
-Route::get('/ManagementProducts','Management\ProductsController@AllProducts');
+Route::get('/ManagementProducts','Management\ProductsController@AllProducts')->name('ProductManagement');
 
-Route::get('/ManagementMassages','Management\MassagesController@AllMassages');
+Route::get('/ManagementMassages','Management\MassagesController@AllMassages')->name('massagesManagement');
 
 /////////////////end :: Management//////////////////
