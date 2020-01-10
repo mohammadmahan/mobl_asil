@@ -48,7 +48,7 @@
                                 </thead>
                                 <tbody>
 
-                                    @if($allProductMembers && count($allProductMembers)>0)
+                                    @if($allProductMembers && count($allProductM embers)>0)
                                     @foreach($allProductMembers as $allProductMember)
                                     <tr>
                                         <th scope="row">{{$allProductMember->id}}</th>
