@@ -1,42 +1,42 @@
 @extends('ManagementViews.layout.main')
 @section('title')
-محصولات ثبت شده
+    محصولات ثبت شده
 @stop
 @section('content')
 
-<div class="content-wrapper">
-    <div class="row">
-        <div class="col-md-6 col-12 mt-3">
-            <div class="btn-group">
-                <a href="{{route('ManagementAddProduct')}}">
-                    <button class="btn btn-info round box-shadow-2 px-2" type="button"> افزودن محصول</button>
-                </a>
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-6 col-12 mt-3">
+                <div class="btn-group">
+                    <a href="{{route('ManagementAddProduct')}}">
+                        <button class="btn btn-info round box-shadow-2 px-2" type="button"> افزودن محصول</button>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-6 col-12">
-            <div class="search-box-div">
-                <div class="cell"><input class="input-search" type="search" placeholder="جستجو کنید"></div>
-                <div class="cell">
-                    <div type="submit" class="button">جستجو</div>
+            <div class="col-md-6 col-12">
+                <div class="search-box-div">
+                    <div class="cell"><input class="input-search" type="search" placeholder="جستجو کنید"></div>
+                    <div class="cell">
+                        <div type="submit" class="button">جستجو</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="content-header row mb-1 mt-3">
-        <div class="content-header-left col-md-6 col-12">
-            <h4 class="content-header-title">محصولات ثبت شده</h4>
-        </div>
+        <div class="content-header row mb-1 mt-3">
+            <div class="content-header-left col-md-6 col-12">
+                <h4 class="content-header-title">محصولات ثبت شده</h4>
+            </div>
 
-    </div>
-    <div class="content-body">
-        <!-- Table head options start -->
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-content collapse show">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead class="thead-dark">
+        </div>
+        <div class="content-body">
+            <!-- Table head options start -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-content collapse show">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-dark">
                                     <tr>
                                         <th scope="col">ردیف</th>
                                         <th scope="col">نام محصول</th>
@@ -75,9 +75,8 @@
                     </div>
                 </div>
             </div>
+            <!-- Table head options end -->
         </div>
-        <!-- Table head options end -->
-    </div>
 
     <!------------------------start modal details-------------------------------->
     <div class="modal fade" id="modaldetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -117,9 +116,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!------------------------end modal details-------------------------------->
+        <!------------------------end modal details-------------------------------->
 
-</div>
+    </div>
 
 @stop

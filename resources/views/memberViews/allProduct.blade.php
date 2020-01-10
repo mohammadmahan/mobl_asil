@@ -151,7 +151,7 @@
                                         </div>
                                     </div>
                                     <div class="block2-txt p-t-20">
-                                        <a href="{{route('singleProduct')}}" class="block2-name dis-block s-text3 p-b-5">
+                                        <a href="{{route('singleProduct',$allProductMember->id)}}" class="block2-name dis-block s-text3 p-b-5">
                                             {{$allProductMember->name}}
                                         </a>
                                         <span class="block2-price m-text6 p-r-5">
