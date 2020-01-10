@@ -30,7 +30,7 @@
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Font-->
-    <link rel="stylesheet" href="Management/Fonts/css/all.css">
+    <link rel="stylesheet" href="../css/all.min">
     <!-- END: Font-->
 
     <!-- BEGIN: Custom CSS-->
@@ -38,13 +38,12 @@
     <!-- END: Custom CSS-->
 
     @yield('stylesheet')
-
 </head>
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu 2-columns   fixed-navbar" data-open="click" data-menu="vertical-menu"
+<body class="vertical-layout vertical-menu 2-columns fixed-navbar" data-open="click" data-menu="vertical-menu"
     data-col="2-columns">
 
     <!-- BEGIN: Header-->
@@ -127,7 +126,6 @@
 
 
     <!-- BEGIN: Main Menu-->
-
     <div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true">
         <div class="main-menu-content">
             <ul class="navigation navigation-main mt-1" id="main-menu-navigation" data-menu="menu-navigation">
@@ -150,7 +148,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">
+                    <a href="{{route('ManagementTahlilSystem')}}">
                         <i class="fas fa-chart-bar"></i>
                         <span class="menu-title ml-1" data-i18n="">تحلیل سیستم</span>
                     </a>
@@ -185,7 +183,6 @@
                 class="float-md-right d-none d-lg-block">طراحی شده توسط سانیار <span id="scroll-top"></span></span></p>
     </footer>
     <!-- END: Footer-->
-
 
     <!-- BEGIN: Vendor JS-->
     <script src="Management/js/vendors.min.js"></script>

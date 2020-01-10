@@ -37,4 +37,6 @@ Route::get('/ManagementEditProduct','Management\EditProductController@EditProduc
 
 Route::get('/ManagementAddProduct','Management\AddProductController@AddProduct')->name('ManagementAddProduct');
 
+Route::get('/ManagementTahlilSystem','Management\TahlilSystemController@TahlilSystem')->name('ManagementTahlilSystem');
+
 /////////////////end :: Management//////////////////
