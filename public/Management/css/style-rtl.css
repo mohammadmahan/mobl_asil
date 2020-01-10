@@ -79,3 +79,7 @@ html,body,div,header,span,h1,h2,h3,h4,h5,h6,a,p,table,button,input{
       overflow-y: hidden;
       width: 100%;
   }
+  .tbl-modal{
+    width: 100%;
+    height: 135px;
+  }

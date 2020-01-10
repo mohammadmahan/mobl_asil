@@ -14,8 +14,5 @@ class HomeController extends Controller
     public function homeMember(){
         return view('memberViews/home');
     }
-    public function singleProductMember(){
-        return view('memberViews/singleProduct');
-    }
 
 }

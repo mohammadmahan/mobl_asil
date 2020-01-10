@@ -30,7 +30,7 @@
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Font-->
-    <link rel="stylesheet" href="../css/all.min">
+    <link rel="stylesheet" href=" css/all.min.css">
     <!-- END: Font-->
 
     <!-- BEGIN: Custom CSS-->

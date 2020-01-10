@@ -47,37 +47,28 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-<<<<<<< HEAD
+
+                                    @if($allProductMembers && count($allProductMembers)>0)
+                                    @foreach($allProductMembers as $allProductMember)
                                     <tr>
-                                        <th scope="row">1</th>
-                                        <td>مبل آبی</td>
-                                        <td>1299000 تومان</td>
-                                        <td>توضیحات محصول این جا قرار بگیره</td>
+                                        <th scope="row">{{$allProductMember->id}}</th>
+                                        <td>{{$allProductMember->name}}</td>
+                                        <td>{{$allProductMember->lastcost}}</td>
+                                        <td>{{$allProductMember->number_product}}</td>
+                                        <td>{{$allProductMember->Description}}</td>
                                         <td>
-                                            <a href="{{route('ManagementEditProduct')}}" class="link-edit-product"><i
-                                                    class="fa fa-edit"></i>
+                                            <a href="{{route('ManagementEditProduct')}}" class="link-edit-product">
+                                                <i class="fa fa-edit"></i>
                                             </a>
                                             <a data-toggle="modal" data-target="#modaldetails">
-                                                <i class="fa fa-file-text" aria-hidden="true"></i>
+                                                <i class="fa fa-arrows-v" aria-hidden="true"></i>
                                             </a>
+
                                         </td>
                                     </tr>
-=======
-                                @if($allProductMembers && count($allProductMembers)>0)
-                                    @foreach($allProductMembers as $allProductMember)
-                                        <tr>
-                                            <th scope="row">{{$allProductMember->id}}</th>
-                                            <td>{{$allProductMember->name}}</td>
-                                            <td>{{$allProductMember->lastcost}}</td>
-                                            <td>{{$allProductMember->number_product}}</td>
-                                            <td>{{$allProductMember->Description}}</td>
-                                            <td><a href="{{route('ManagementEditProduct')}}" class="link-edit-product"><i class="fa fa-edit"></a></i>
-
-                                            </td>
-                                        </tr>
                                     @endforeach
-                                @endif
->>>>>>> b698ac9888ec686cefa00e4aa194d868687c1266
+                                    @endif
+
                                 </tbody>
                             </table>
                         </div>
@@ -100,29 +91,29 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                <div class="table-responsive responsive">
-                    <table class="table-striped">
-                        <tr> 
-                            <th>نام محصول</th>
-                            <td>لبزی</td>
-                        </tr>
-                        <tr>
-                            <th>کد محصول</th>
-                            <td>32234</td>
-                        </tr>
-                        <tr>
-                            <th>تصویر محصول</th>
-                            <td>البیسظ</td>
-                        </tr>
-                        <tr>
-                            <th>مشخصات محصول</th>
-                            <td>بزیطسظ</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
-                </div>
+                    <div class="table-responsive responsive">
+                        <table class="table-striped tbl-modal">
+                            <tr>
+                                <th>نام محصول</th>
+                                <td>لبزی</td>
+                            </tr>
+                            <tr>
+                                <th>کد محصول</th>
+                                <td>32234</td>
+                            </tr>
+                            <tr>
+                                <th>تصویر محصول</th>
+                                <td>البیسظ</td>
+                            </tr>
+                            <tr>
+                                <th>مشخصات محصول</th>
+                                <td>بزیطسظ</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                    </div>
                 </div>
             </div>
         </div>

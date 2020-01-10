@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'HomeController@main');
+Route::get('/', 'Member\HomeController@main');
 
 Route::get('/home-member', 'Member\HomeController@homeMember')->name('homeMember');
 
