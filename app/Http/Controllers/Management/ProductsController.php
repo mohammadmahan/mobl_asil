@@ -23,8 +23,19 @@ class ProductsController extends Controller
         }
     }
 
-    public function updateProduct()
+    public function updateProduct($allProductMember_id)
     {
-        
+        $products_data = [
+            'name' => request()->input('name'),
+            'number_product' => request()->input('number_product'),
+            'lastcost' => request()->input('lastcost'),
+            'pastcost' => request()->input('pastcost'),
+            'Description' => request()->input('Description'),
+        ];
+        $product = allProductMember::find($allProductMember_id);
+        $product->update($products_data);
+        if ($product) {
+            return redirect()->route('ProductManagement');
+        }
     }
 }

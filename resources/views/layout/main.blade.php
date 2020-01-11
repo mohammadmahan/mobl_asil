@@ -64,7 +64,7 @@
         </div>
         <div class="wrap_header">
             <a href="#" class="logo">
-                <img src="images/icons/logo.png" alt="IMG-LOGO">
+                <img src="/images/icons/logo.png" alt="IMG-LOGO">
             </a>
             <div class="wrap_menu">
                 <nav class="menu">
@@ -87,11 +87,11 @@
 
             <div class="header-icons">
                 <a href="#" class="header-wrapicon1 dis-block">
-                    <img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
+                    <img src="/images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
                 </a>
                 <span class="linedivide1"></span>
                 <div class="header-wrapicon2">
-                    <img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown"
+                    <img src="/images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown"
                          alt="ICON">
                     <span class="header-icons-noti">0</span>
 
@@ -99,7 +99,7 @@
                         <ul class="header-cart-wrapitem">
                             <li class="header-cart-item">
                                 <div class="header-cart-item-img">
-                                    <img src="images/item-cart-01.jpg" alt="IMG">
+                                    <img src="/images/item-cart-01.jpg" alt="IMG">
                                 </div>
                                 <div class="header-cart-item-txt">
                                     <a href="#" class="header-cart-item-name">
@@ -112,7 +112,7 @@
                             </li>
                             <li class="header-cart-item">
                                 <div class="header-cart-item-img">
-                                    <img src="images/item-cart-02.jpg" alt="IMG">
+                                    <img src="/images/item-cart-02.jpg" alt="IMG">
                                 </div>
                                 <div class="header-cart-item-txt">
                                     <a href="#" class="header-cart-item-name">
@@ -125,7 +125,7 @@
                             </li>
                             <li class="header-cart-item">
                                 <div class="header-cart-item-img">
-                                    <img src="images/item-cart-03.jpg" alt="IMG">
+                                    <img src="/images/item-cart-03.jpg" alt="IMG">
                                 </div>
                                 <div class="header-cart-item-txt">
                                     <a href="#" class="header-cart-item-name">
@@ -163,18 +163,18 @@
     <div class="wrap_header_mobile">
 
         <a href="index-2.html" class="logo-mobile">
-            <img src="images/icons/logo.png" alt="IMG-LOGO">
+            <img src="/images/icons/logo.png" alt="IMG-LOGO">
         </a>
 
         <div class="btn-show-menu">
 
             <div class="header-icons-mobile">
                 <a href="#" class="header-wrapicon1 dis-block">
-                    <img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
+                    <img src="/images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
                 </a>
                 <span class="linedivide2"></span>
                 <div class="header-wrapicon2">
-                    <img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown"
+                    <img src="/images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown"
                          alt="ICON">
                     <span class="header-icons-noti">0</span>
 
@@ -182,7 +182,7 @@
                         <ul class="header-cart-wrapitem">
                             <li class="header-cart-item">
                                 <div class="header-cart-item-img">
-                                    <img src="images/item-cart-01.jpg" alt="IMG">
+                                    <img src="/images/item-cart-01.jpg" alt="IMG">
                                 </div>
                                 <div class="header-cart-item-txt">
                                     <a href="#" class="header-cart-item-name">
@@ -195,7 +195,7 @@
                             </li>
                             <li class="header-cart-item">
                                 <div class="header-cart-item-img">
-                                    <img src="images/item-cart-02.jpg" alt="IMG">
+                                    <img src="/images/item-cart-02.jpg" alt="IMG">
                                 </div>
                                 <div class="header-cart-item-txt">
                                     <a href="#" class="header-cart-item-name">
@@ -208,7 +208,7 @@
                             </li>
                             <li class="header-cart-item">
                                 <div class="header-cart-item-img">
-                                    <img src="images/item-cart-03.jpg" alt="IMG">
+                                    <img src="/images/item-cart-03.jpg" alt="IMG">
                                 </div>
                                 <div class="header-cart-item-txt">
                                     <a href="#" class="header-cart-item-name">
@@ -396,19 +396,19 @@
     </div>
     <div class="t-center p-l-15 p-r-15">
         <a href="#">
-            <img class="h-size2" src="images/icons/paypal.png" alt="IMG-PAYPAL">
+            <img class="h-size2" src="/images/icons/paypal.png" alt="IMG-PAYPAL">
         </a>
         <a href="#">
-            <img class="h-size2" src="images/icons/visa.png" alt="IMG-VISA">
+            <img class="h-size2" src="/images/icons/visa.png" alt="IMG-VISA">
         </a>
         <a href="#">
-            <img class="h-size2" src="images/icons/mastercard.png" alt="IMG-MASTERCARD">
+            <img class="h-size2" src="/images/icons/mastercard.png" alt="IMG-MASTERCARD">
         </a>
         <a href="#">
-            <img class="h-size2" src="images/icons/express.png" alt="IMG-EXPRESS">
+            <img class="h-size2" src="/images/icons/express.png" alt="IMG-EXPRESS">
         </a>
         <a href="#">
-            <img class="h-size2" src="images/icons/discover.png" alt="IMG-DISCOVER">
+            <img class="h-size2" src="/images/icons/discover.png" alt="IMG-DISCOVER">
         </a>
         <div class="t-center s-text8 p-t-20">
             حق کپی و رایت محفوظ مبلمان اصیل است ©

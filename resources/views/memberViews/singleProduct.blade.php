@@ -31,40 +31,41 @@
                 <h4 class="product-detail-name m-text16 p-b-13 mt-4">
                     {{old('name',isset($productItem) ? $productItem->name : '')}}
                 </h4>
-                <p class="mb-5">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ،
-                    صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن
-                    صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی
-                    نوع و اندازه فونت و ظاهر متن باشد. </p>
-                <h6>مشخصات محصول</h6>
+                <p class="mb-5">
+                    {{old('name',isset($productItem) ? $productItem->Description : '')}}
+                </p>
 
-                <ul class="mb-5 mt-3 list-details">
-                    <li>
-                    <span>
-                        <i class="fa fa-check"></i>
-                    </span>
-                        <span> مبلمان کلاسیک</span>
-                    </li>
-                    <li>
-                    <span>
-                        <i class="fa fa-check"></i>
-                    </span>
-                        <span>در رنگ بندی های: طوسی سبز سفید قهوه ای</span>
-                    </li>
-                    <li>
-                    <span>
-                        <i class="fa fa-check"></i>
-                    </span>
-                        <span>در تعداد 7 و 13 نفره</span>
-                    </li>
-                    <li>
-                    <span>
-                        <i class="fa fa-check"></i>
-                    </span>
-                        <span>دارای ست ناهار خوری</span>
-                    </li>
-                </ul>
 
-                <span> قیمت : </span><span>7000000 تومان  </span>
+{{--                <h6>مشخصات محصول</h6>--}}
+
+{{--                <ul class="mb-5 mt-3 list-details">--}}
+{{--                    <li>--}}
+{{--                    <span>--}}
+{{--                        <i class="fa fa-check"></i>--}}
+{{--                    </span>--}}
+{{--                        <span> مبلمان کلاسیک</span>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                    <span>--}}
+{{--                        <i class="fa fa-check"></i>--}}
+{{--                    </span>--}}
+{{--                        <span>در رنگ بندی های: طوسی سبز سفید قهوه ای</span>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                    <span>--}}
+{{--                        <i class="fa fa-check"></i>--}}
+{{--                    </span>--}}
+{{--                        <span>در تعداد 7 و 13 نفره</span>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                    <span>--}}
+{{--                        <i class="fa fa-check"></i>--}}
+{{--                    </span>--}}
+{{--                        <span>دارای ست ناهار خوری</span>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+
+                <span> قیمت : </span><span>{{old('name',isset($productItem) ? $productItem->lastcost : '')}} تومان  </span>
             </div>
         </div>
 
