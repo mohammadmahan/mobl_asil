@@ -40,7 +40,6 @@ Route::post('/ManagementEditProduct{allProductMember_id}', 'Management\ProductsC
 Route::get('/ManagementAddProduct','Management\AddProductController@AddProduct')->name('ManagementAddProduct');
 Route::post('/ManagementAddProduct','Management\AddProductController@createProduct')->name('ManagementAddProduct.post');
 
-<<<<<<< HEAD
 Route::get('/ManagementTahlilSystem','Management\TahlilSystemController@TahlilSystem')->name('ManagementTahlilSystem');
 
 Route::get('/ManagementTahlilSlider','Management\TahlilSystemController@TahlilSlider')->name('ManagementTahlilSlider');
@@ -52,7 +51,6 @@ Route::get('/ManagementTahlilAbout','Management\TahlilSystemController@TahlilAbo
 Route::get('/ManagementTahlilProductNew','Management\TahlilSystemController@TahlilProductNew')->name('ManagementTahlilProductNew');
 
 Route::get('/ManagementTahlilBlog','Management\TahlilSystemController@TahlilBlog')->name('ManagementTahlilBlog');
-=======
+
 Route::get('/delete/place/{massages_id}', 'Management\MassagesController@deleteMassages')->name('delete.massage');
->>>>>>> 9080d4710bbee797f0c0abd61a4428b55e8e22c0
 /////////////////end :: Management//////////////////
