@@ -153,12 +153,7 @@
                         <span class="menu-title ml-1" data-i18n="">تحلیل سیستم</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#">
-                        <i class="far fa-newspaper "></i>
-                        <span class="menu-title ml-1" data-i18n="">مدیریت اخبار</span>
-                    </a>
-                </li>
+            
             </ul>
         </div>
     </div>

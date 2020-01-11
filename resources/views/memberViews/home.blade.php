@@ -7,7 +7,11 @@
 <section class="slide1">
     <div class="wrap-slick1">
         <div class="slick1 ltr-dir">
-            <div class="item-slick1 item1-slick1" style="background-image: url(images/master-slide-02.jpg);">
+		@if($sliders && count($sliders)>0)
+
+        @foreach($sliders as $slider)
+
+            <div class="item-slick1 item1-slick1" style="background-image: url({{$slider->image}});">
                 <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15"
                               data-appear="fadeInDown">
@@ -15,44 +19,16 @@
 						</span>
                     <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37"
                         data-appear="fadeInUp">
-                        فروشگاه مبل اصیل
+                      {{$slider->title}}
                     </h2>
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
 
                     </div>
                 </div>
             </div>
-            <div class="item-slick1 item2-slick1" style="background-image: url(images/master-slide-03.jpg);">
-                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15"
-                              data-appear="rollIn">
-
-						</span>
-                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37"
-                        data-appear="lightSpeedIn">
-                        تازه رسیده ها
-                    </h2>
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
-
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="item-slick1 item3-slick1" style="background-image: url(images/master-slide-04.jpg);">
-                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15"
-                              data-appear="rotateInDownLeft">
-
-						</span>
-                    <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37"
-                        data-appear="rotateInUpRight">
-                        تازه رسیده ها
-                    </h2>
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
-
-                    </div>
-                </div>
-            </div>
+           
+			@endforeach
+            @endif
         </div>
     </div>
 </section>
@@ -149,7 +125,7 @@
                             <div class="item-slick2 p-l-15 p-r-15">
 
                                 <div class="block2">
-                                    <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+                                    <div class="block2-img wrap-pic-w of-hidden pos-relative">
                                         <img src="{{$newProduct->image}}" alt="IMG-PRODUCT">
                                         <div class="block2-overlay trans-0-4">
 
@@ -198,6 +174,9 @@
 							<p class="s-text8 p-t-16">
 							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
 							</p>
+							<a href="" class="more-details">
+							<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -212,6 +191,9 @@
 							<p class="s-text8 p-t-16">
 							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
 							</p>
+							<a href="" class="more-details">
+							<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -226,6 +208,9 @@
 							<p class="s-text8 p-t-16">
 							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
 							</p>
+							<a href="" class="more-details">
+								<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>
+							</a>
 						</div>
 					</div>
 				</div>

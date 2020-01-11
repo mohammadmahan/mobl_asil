@@ -23,8 +23,8 @@ body{
 }
 .background-blog{
     background-color: #fff;
-    padding: 20px;
-    height: 210px;
+    padding: 17px;
+    height: 185px;
 }
 .item-slick3{
     position: sticky !important;
@@ -41,4 +41,10 @@ body{
 }
 .bb img{
     height: 510px !important;
+}
+.more-details span{
+    float: left;
+    color: blue;
+    font-size: 12px;
+    margin-top:15px;
 }
