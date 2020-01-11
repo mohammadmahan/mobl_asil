@@ -38,6 +38,7 @@ Route::get('/ManagementEditProduct{allProductMember_id}', 'Management\ProductsCo
 Route::post('/ManagementEditProduct{allProductMember_id}', 'Management\ProductsController@updateProduct')->name('ManagementUpdateProduct');
 
 Route::get('/ManagementAddProduct','Management\AddProductController@AddProduct')->name('ManagementAddProduct');
+
 Route::post('/ManagementAddProduct','Management\AddProductController@createProduct')->name('ManagementAddProduct.post');
 
 Route::get('/ManagementTahlilSystem','Management\TahlilSystemController@TahlilSystem')->name('ManagementTahlilSystem');

@@ -45,14 +45,9 @@
                                         <th scope="col">توضیحات</th>
                                         <th scope="col">عملیات</th>
                                     </tr>
-<<<<<<< HEAD
                                 </thead>
                                 <tbody>
 
-=======
-                                    </thead>
-                                    <tbody>
->>>>>>> 9080d4710bbee797f0c0abd61a4428b55e8e22c0
                                     @if($allProductMembers && count($allProductMembers)>0)
                                     @foreach($allProductMembers as $allProductMember)
                                     <tr>
