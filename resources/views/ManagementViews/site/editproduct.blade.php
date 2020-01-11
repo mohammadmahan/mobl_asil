@@ -15,7 +15,7 @@
                 <div class="card">
                     <div class="card-content collapse show pad-box">
                     <form class="form" action="#" method="post">
-                        {{csrf_field()}}
+                       
 							<div class="form-body">
 								<div class="row">
 									<div class="form-group col-md-6 mb-2">

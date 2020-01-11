@@ -34,10 +34,20 @@ Route::get('/ManagementProducts', 'Management\ProductsController@AllProducts')->
 Route::get('/ManagementMassages', 'Management\MassagesController@AllMassages')->name('massagesManagement');
 
 Route::get('/ManagementEditProduct{allProductMember_id}', 'Management\ProductsController@editProduct')->name('ManagementEditProduct');
+
 Route::post('/ManagementEditProduct{allProductMember_id}', 'Management\ProductsController@updateProduct')->name('ManagementUpdateProduct');
 
 Route::get('/ManagementAddProduct','Management\AddProductController@AddProduct')->name('ManagementAddProduct');
 
 Route::get('/ManagementTahlilSystem','Management\TahlilSystemController@TahlilSystem')->name('ManagementTahlilSystem');
 
+Route::get('/ManagementTahlilSlider','Management\TahlilSystemController@TahlilSlider')->name('ManagementTahlilSlider');
+
+Route::get('/ManagementTahlilProduct','Management\TahlilSystemController@TahlilProduct')->name('ManagementTahlilProduct');
+
+Route::get('/ManagementTahlilAbout','Management\TahlilSystemController@TahlilAboout')->name('ManagementTahlilAbout');
+
+Route::get('/ManagementTahlilProductNew','Management\TahlilSystemController@TahlilProductNew')->name('ManagementTahlilProductNew');
+
+Route::get('/ManagementTahlilBlog','Management\TahlilSystemController@TahlilBlog')->name('ManagementTahlilBlog');
 /////////////////end :: Management//////////////////

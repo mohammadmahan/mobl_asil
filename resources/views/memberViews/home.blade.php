@@ -117,21 +117,15 @@
 					</div>
 
 					<div class="block2 wrap-pic-w pos-relative m-b-30">
-						<img src="images/icons/bg-01.jpg" alt="IMG">
-						<div class="block2-content sizefull ab-t-l flex-col-c-m">
-							<h4 class="m-text4 t-center w-size3 p-b-8">
-								Sign up & get 20% off
-							</h4>
-							<p class="t-center w-size4">
-								Be the frist to know about the latest fashion news and get exclu-sive offers
-							</p>
-							<div class="w-size2 p-t-25">
+					<div class="block1 hov-img-zoom pos-relative m-b-30">
+						<img src="images/banner-05.jpg" alt="IMG-BENNER">
+						<div class="block1-wrapbtn w-size2">
 
-								<a href="#" class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
-									Sign Up
-								</a>
-							</div>
+							<a href="" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							مشاهده محصول
+							</a>
 						</div>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -142,7 +136,7 @@
 		<div class="container">
 			<div class="sec-title p-b-60">
 				<h3 class="m-text5 t-center">
-					ویژگی محصولات
+					محصولات جدید
 				</h3>
 			</div>
 
@@ -156,7 +150,7 @@
 								<div class="block2-overlay trans-0-4">
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
-
+										
 										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											مشاهده محصول
 										</button>
@@ -167,8 +161,8 @@
 								<a href="" class="block2-name dis-block s-text3 p-b-5">
 									مبل درجه یک راحتی در مبلمان اصیل
 								</a>
-								<span class="block2-price m-text6 p-r-5">
-									$75.00
+								<span class="block2-newprice m-text8 p-r-5">
+									$15.90
 								</span>
 							</div>
 						</div>
@@ -191,8 +185,8 @@
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
 								مبل درجه یک راحتی در مبلمان اصیل
 								</a>
-								<span class="block2-price m-text6 p-r-5">
-									$92.50
+								<span class="block2-newprice m-text8 p-r-5">
+									$15.90
 								</span>
 							</div>
 						</div>
@@ -215,8 +209,8 @@
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
 								مبل درجه یک راحتی در مبلمان اصیل
 								</a>
-								<span class="block2-price m-text6 p-r-5">
-									$165.90
+								<span class="block2-newprice m-text8 p-r-5">
+									$15.90
 								</span>
 							</div>
 						</div>
@@ -239,9 +233,7 @@
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
 								مبل درجه یک راحتی در مبلمان اصیل
 								</a>
-								<span class="block2-oldprice m-text7 p-r-5">
-									$29.50
-								</span>
+								
 								<span class="block2-newprice m-text8 p-r-5">
 									$15.90
 								</span>
@@ -266,8 +258,8 @@
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
 								مبل درجه یک راحتی در مبلمان اصیل
 								</a>
-								<span class="block2-price m-text6 p-r-5">
-									$75.00
+								<span class="block2-newprice m-text8 p-r-5">
+									$15.90
 								</span>
 							</div>
 						</div>
@@ -290,8 +282,8 @@
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
 								مبل درجه یک راحتی در مبلمان اصیل
 								</a>
-								<span class="block2-price m-text6 p-r-5">
-									$92.50
+								<span class="block2-newprice m-text8 p-r-5">
+									$15.90
 								</span>
 							</div>
 						</div>
@@ -314,8 +306,8 @@
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
 								مبل درجه یک راحتی در مبلمان اصیل
 								</a>
-								<span class="block2-price m-text6 p-r-5">
-									$165.90
+								<span class="block2-newprice m-text8 p-r-5">
+									$15.90
 								</span>
 							</div>
 						</div>
@@ -338,9 +330,7 @@
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
 									مبل درجه یک راحتی در مبلمان اصیل
 								</a>
-								<span class="block2-oldprice m-text7 p-r-5">
-									$29.50
-								</span>
+								
 								<span class="block2-newprice m-text8 p-r-5">
 									$15.90
 								</span>
@@ -368,16 +358,9 @@
 							<img src="images/blog-01.jpg" alt="IMG-BLOG">
 						</a>
 						<div class="block3-txt background-blog p-t-14">
-							<h4 class="p-b-7">
-								<a href="blog-detail.html" class="m-text11">
-									Black Friday Guide: Best Sales & Discount Codes
-								</a>
-							</h4>
-							<span class="s-text6">By</span> <span class="s-text7">Nancy Ward</span>
-							<span class="s-text6">on</span> <span class="s-text7">July 22, 2017</span>
+						<h4 class="card-title">مبل سلطنتی</h4>
 							<p class="s-text8 p-t-16">
-								Duis ut velit gravida nibh bibendum commodo. Sus-pendisse pellentesque mattis augue id
-								euismod. Inter-dum et malesuada fames
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
 							</p>
 						</div>
 					</div>
@@ -389,16 +372,9 @@
 							<img src="images/blog-02.jpg" alt="IMG-BLOG">
 						</a>
 						<div class="block3-txt background-blog p-t-14">
-							<h4 class="p-b-7">
-								<a href="blog-detail.html" class="m-text11">
-									The White Sneakers Nearly Every Fashion Girls Own
-								</a>
-							</h4>
-							<span class="s-text6">By</span> <span class="s-text7">Nancy Ward</span>
-							<span class="s-text6">on</span> <span class="s-text7">July 18, 2017</span>
+						<h4 class="card-title">مبل کلاسیک</h4>
 							<p class="s-text8 p-t-16">
-								Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex
-								nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit ame
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
 							</p>
 						</div>
 					</div>
@@ -410,16 +386,9 @@
 							<img src="images/blog-03.jpg" alt="IMG-BLOG">
 						</a>
 						<div class="block3-txt background-blog p-t-14">
-							<h4 class="p-b-7">
-								<a href="blog-detail.html" class="m-text11">
-									New York SS 2018 Street Style: Annina Mislin
-								</a>
-							</h4>
-							<span class="s-text6">By</span> <span class="s-text7">Nancy Ward</span>
-							<span class="s-text6">on</span> <span class="s-text7">July 2, 2017</span>
+						<h4 class="card-title">مبل راحتی</h4>
 							<p class="s-text8 p-t-16">
-								Proin nec vehicula lorem, a efficitur ex. Nam vehicula nulla vel erat tincidunt, sed
-								hendrerit ligula porttitor. Fusce sit amet maximus nunc
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
 							</p>
 						</div>
 					</div>
