@@ -1,226 +1,52 @@
 @extends('ManagementViews.layout.main')
 
 @section('content')
-
 <div class="content-wrapper">
-    <div class="content-header row mb-1">
-        <div class="content-header-left col-md-6 col-12 mb-2">
-            <h4 class="content-header-title">ویرایش محصولات صفحه اصلی  </h4>
+    <div class="content-header row mb-1 mt-3">
+        <div class="content-header-left col-md-6 col-12">
+            <h4 class="content-header-title">محصولات صفحه اصلی</h4>
         </div>
+
     </div>
     <div class="content-body">
         <!-- Table head options start -->
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                    <div class="card-content collapse show pad-box">
-                        <form class="form" action="#" method="post">
-                            <div class="form-body">
-                                <div class="row mb-1">
-                                    <div class="col-md-6">
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <input type="text" id="projectinput1" class="form-control" placeholder="عنوان محصول" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <input type="text" id="projectinput1" class="form-control" placeholder="کد محصول" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-8 mb-2">
-                                            <textarea class="form-control" name="massage" placeholder="توضیحات"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <label>تصویر محصول جدید</label>
-                                                <label id="projectinput8" class="file center-block">
-                                                    <input type="file" id="file">
-                                                    <span class="file-custom"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-md-6 tahlil-img">
-                                        <img src="images/sofa/mobl.jpg" alt="مبل اصیل"/>
-                                    </div>
-                                </div>
-                            <hr>
-                                <div class="row mb-1">
-                                    <div class="col-md-6">
-                                    <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <input type="text" id="projectinput1" class="form-control" placeholder="عنوان محصول" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <input type="text" id="projectinput1" class="form-control" placeholder="کد محصول" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-8 mb-2">
-                                            <textarea class="form-control" name="massage" placeholder="توضیحات"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <label>تصویر محصول جدید</label>
-                                                <label id="projectinput8" class="file center-block">
-                                                    <input type="file" id="file">
-                                                    <span class="file-custom"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-md-6 tahlil-img">
-                                        <img src="images/sofa/mobl.jpg" alt="مبل اصیل"/>
-                                    </div>
-                                </div>
-                            <hr>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                    <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <input type="text" id="projectinput1" class="form-control" placeholder="عنوان محصول" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <input type="text" id="projectinput1" class="form-control" placeholder="کد محصول" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-8 mb-2">
-                                            <textarea class="form-control" name="massage" placeholder="توضیحات"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <label>تصویر محصول جدید</label>
-                                                <label id="projectinput8" class="file center-block">
-                                                    <input type="file" id="file">
-                                                    <span class="file-custom"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-md-6 tahlil-img">
-                                        <img src="images/sofa/mobl.jpg" alt="مبل اصیل"/>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row mb-1">
-                                    <div class="col-md-6">
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <input type="text" id="projectinput1" class="form-control" placeholder="عنوان محصول" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <input type="text" id="projectinput1" class="form-control" placeholder="کد محصول" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-8 mb-2">
-                                            <textarea class="form-control" name="massage" placeholder="توضیحات"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <label>تصویر محصول جدید</label>
-                                                <label id="projectinput8" class="file center-block">
-                                                    <input type="file" id="file">
-                                                    <span class="file-custom"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-md-6 tahlil-img">
-                                        <img src="images/sofa/mobl.jpg" alt="مبل اصیل"/>
-                                    </div>
-                                </div>
-                            <hr>
-                                <div class="row mb-1">
-                                    <div class="col-md-6">
-                                    <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <input type="text" id="projectinput1" class="form-control" placeholder="عنوان محصول" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <input type="text" id="projectinput1" class="form-control" placeholder="کد محصول" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-8 mb-2">
-                                            <textarea class="form-control" name="massage" placeholder="توضیحات"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <label>تصویر محصول جدید</label>
-                                                <label id="projectinput8" class="file center-block">
-                                                    <input type="file" id="file">
-                                                    <span class="file-custom"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-md-6 tahlil-img">
-                                        <img src="images/sofa/mobl.jpg" alt="مبل اصیل"/>
-                                    </div>
-                                </div>
-                            <hr>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                    <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <input type="text" id="projectinput1" class="form-control" placeholder="عنوان محصول" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <input type="text" id="projectinput1" class="form-control" placeholder="کد محصول" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-8 mb-2">
-                                            <textarea class="form-control" name="massage" placeholder="توضیحات"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 mb-2">
-                                                <label>تصویر محصول جدید</label>
-                                                <label id="projectinput8" class="file center-block">
-                                                    <input type="file" id="file">
-                                                    <span class="file-custom"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-md-6 tahlil-img">
-                                        <img src="images/sofa/mobl.jpg" alt="مبل اصیل"/>
-                                    </div>
-                                </div>
-                            </div> 
-                        </form>
+                    <div class="card-content collapse show">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">ردیف</th>
+                                        <th scope="col">تصویر</th>
+                                        <th scope="col">عنوان</th>
+                                        <th scope="col">قیمت</th>
+                                        <th scope="col">توضیحات</th>
+                                        <th scope="col">عملیات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                @if($productindexs && count($productindexs)>0)
+                                    
+                                    @foreach($productindexs as $productindex)   
+                                        <tr>
+                                            <th scope="row">{{$productindex->id}}</th>
+                                            <td><img src="{{$productindex->image}}" width="200px" height="100px" /></td>
+                                            <td>{{$productindex->title}}</td>
+                                            <td>{{$productindex->price}}</td>
+                                            <td>{{$productindex->Description}}</td>
+                                            <td>
+                                                <a href="" class="link-edit-product">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                @endif
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -228,5 +54,4 @@
         <!-- Table head options end -->
     </div>
 </div>
-
 @stop
