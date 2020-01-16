@@ -42,6 +42,7 @@ class TahlilSystemController extends Controller
         $result = request()->file('imageU')->move(public_path('images\sliders'),$new_image_name);
 
 
+
         if ($result instanceof File){
            $slider_data['image'] ="/images/sliders/". request()->file('imageU')->getClientOriginalName();
             $slider = TopSlider::find($topslider_id);

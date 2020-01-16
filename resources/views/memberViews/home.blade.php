@@ -175,7 +175,7 @@
 						<div class="block3-txt background-blog p-t-14">
 						<h4 class="card-title">{{$informationblog->title}}</h4>
 							<p class="s-text8 p-t-16">
-							{{$informationblog->Description}}	
+							{{$informationblog->Description}}
 						    </p>
 							<a href="" class="more-details">
 							<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>

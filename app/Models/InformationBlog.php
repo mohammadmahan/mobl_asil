@@ -8,5 +8,5 @@ class InformationBlog extends Model
 {
     protected $primaryKey = 'id';
     protected $guarded = ['id'];
-    protected $table = 'InformationBlog';
+    protected $table = 'informationblog';
 }

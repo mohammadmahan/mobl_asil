@@ -57,7 +57,7 @@
                                         <td>{{$allProductMember->number_product}}</td>
                                         <td>{{$allProductMember->Description}}</td>
                                         <td>
-                                            <a href="{{route('ManagementEditProduct')}}" class="link-edit-product">
+                                            <a href="{{route('ManagementEditProduct',$allProductMember->id)}}" class="link-edit-product">
                                                 <i class="fa fa-edit"></i>
                                             </a>
                                             <a data-toggle="modal" data-target="#modaldetails">
