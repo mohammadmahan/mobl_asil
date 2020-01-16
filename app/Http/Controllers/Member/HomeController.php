@@ -13,6 +13,9 @@ class HomeController extends Controller
     {
         return view('layout/main');
     }
+    public function blogMember(){
+        return view('memberViews/blog');
+    }
     public function homeMember(){
         $newProducts = NewProduct::all();
         $sliders = TopSlider::all();

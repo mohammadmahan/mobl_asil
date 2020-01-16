@@ -1,6 +1,6 @@
 @extends('ManagementViews.layout.main')
 @section('title')
-    پیام های دریافتی
+پیام های دریافتی
 @stop
 @section('content')
 
@@ -31,19 +31,21 @@
                                 <tbody>
                                     @if($massages && count($massages)>0)
 
-                                        @foreach($massages as $massage)
-                                        <tr>
-                                            <th scope="row">{{$massage->id}}</th>
-                                            <td>{{$massage->fullname}}</td>
-                                            <td>{{$massage->number}}</td>
-                                            <td>{{$massage->email}}</td>
-                                            <td>{{$massage->massage}}</td>
-                                            <td>
-                                                <a href="{{route('delete.massage',$massage->id)}}" class="link-edit-product"><i class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i></a>
-                                            </td>
-                                        </tr>
-                                    
-                                        @endforeach
+                                    @foreach($massages as $massage)
+                                    <tr>
+                                        <th scope="row">{{$massage->id}}</th>
+                                        <td>{{$massage->fullname}}</td>
+                                        <td>{{$massage->number}}</td>
+                                        <td>{{$massage->email}}</td>
+                                        <td>{{$massage->massage}}</td>
+                                        <td>
+                                            <a href="{{route('delete.massage',$massage->id)}}"
+                                                class="link-edit-product"><i class="fa fa-minus-square"
+                                                    aria-hidden="true" style="color: red;"></i></a>
+                                        </td>
+                                    </tr>
+
+                                    @endforeach
                                     @endif
 
 
@@ -55,6 +57,29 @@
             </div>
         </div>
         <!-- Table head options end -->
+
+        <!------------------start modal delete----------------------------->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">حذف پیام</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       ایا میخواهید حذف کنید؟
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                        <button   href="" type="suubmit" class="btn btn-primary">حذف</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------end modal delete----------------------------->
     </div>
 </div>
 

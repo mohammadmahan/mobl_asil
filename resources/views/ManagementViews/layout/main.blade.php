@@ -4,37 +4,37 @@
 
 <head>
     <title>@yield('title')</title>
-    <link rel="apple-touch-icon" href="Management/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="">
-    <link href="css/css.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="/Management/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="/image/x-icon" href="">
+    <link href="/css/css.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="Management/css/fonts-googleapis.css" rel="stylesheet">
+    <link href="/Management/css/fonts-googleapis.css" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="Management/css/vendors-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="/Management/css/vendors-rtl.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="Management/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="Management/css/bootstrap-extended.min.css">
-    <link rel="stylesheet" type="text/css" href="Management/css/colors.min.css">
-    <link rel="stylesheet" type="text/css" href="Management/css/components.css">
-    <link rel="stylesheet" type="text/css" href="Management/css/custom-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="/Management/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/Management/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="/Management/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="/Management/css/components.css">
+    <link rel="stylesheet" type="text/css" href="/Management/css/custom-rtl.min.css">
     <!-- END: Theme CSS-->
 
     <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="Management/css/core/menu/menu-types/vertical-menu.min.css">
-    <link rel="stylesheet" type="text/css" href="Management/css/core/colors/palette-gradient.min.css">
-    <link rel="stylesheet" type="text/css" href="Management/css/cryptocoins/cryptocoins.css">
+    <link rel="stylesheet" type="text/css" href="/Management/css/core/menu/menu-types/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="/Management/css/core/colors/palette-gradient.min.css">
+    <link rel="stylesheet" type="text/css" href="/Management/css/cryptocoins/cryptocoins.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Font-->
-    <link rel="stylesheet" href=" css/all.min.css">
+    <link rel="stylesheet" href=" /css/all.min.css">
     <!-- END: Font-->
 
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="Management/css/style-rtl.css">
+    <link rel="stylesheet" type="text/css" href="/Management/css/style-rtl.css">
     <!-- END: Custom CSS-->
 
     @yield('stylesheet')
@@ -56,7 +56,7 @@
                             class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
                                 class="ft-menu font-large-1"></i></a></li>
                     <li class="nav-item"><a class="navbar-brand" href="#"><img class="brand-logo"
-                                alt="modern admin logo" src="Management/images/logo/logo.png">
+                                alt="modern admin logo" src="/Management/images/logo/logo.png">
                             <h3 class="brand-text">اسم سایت</h3>
                         </a></li>
                     <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse"
@@ -180,27 +180,27 @@
     <!-- END: Footer-->
 
     <!-- BEGIN: Vendor JS-->
-    <script src="Management/js/vendors.min.js"></script>
+    <script src="/Management/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Font-->
-    <script src="Management/Fonts/js/all.js"></script>
+    <script src="/Management/Fonts/js/all.js"></script>
     <!-- END: Font-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="Management/js/charts/chart.min.js"></script>
-    <script src="Management/js/charts/echarts/echarts.js"></script>
+    <script src="/Management/js/charts/chart.min.js"></script>
+    <script src="/Management/js/charts/echarts/echarts.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
-    <script src="Management/js/app-menu.min.js"></script>
-    <script src="Management/js/app.min.js"></script>
-    <script src="Management/js/scripts/customizer.min.js"></script>
-    <script src="Management/js/scripts/footer.min.js"></script>
+    <script src="/Management/js/app-menu.min.js"></script>
+    <script src="/Management/js/app.min.js"></script>
+    <script src="/Management/js/scripts/customizer.min.js"></script>
+    <script src="/Management/js/scripts/footer.min.js"></script>
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="Management/js/scripts/pages/dashboard-crypto.min.js"></script>
+    <script src="/Management/js/scripts/pages/dashboard-crypto.min.js"></script>
     <!-- END: Page JS-->
 
     @yield('script')

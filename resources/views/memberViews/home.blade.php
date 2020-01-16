@@ -174,7 +174,7 @@
 							<p class="s-text8 p-t-16">
 							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
 							</p>
-							<a href="" class="more-details">
+							<a href="{{route('BlogMember')}}" class="more-details">
 							<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>
 							</a>
 						</div>
@@ -191,7 +191,7 @@
 							<p class="s-text8 p-t-16">
 							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
 							</p>
-							<a href="" class="more-details">
+							<a href="{{route('BlogMember')}}" class="more-details">
 							<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>
 							</a>
 						</div>
@@ -208,7 +208,7 @@
 							<p class="s-text8 p-t-16">
 							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
 							</p>
-							<a href="" class="more-details">
+							<a href="{{route('BlogMember')}}" class="more-details">
 								<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>
 							</a>
 						</div>
