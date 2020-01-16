@@ -44,8 +44,6 @@ Route::post('/ManagementAddProduct','Management\AddProductController@createProdu
 
 Route::get('/ManagementTahlilSystem','Management\TahlilSystemController@TahlilSystem')->name('ManagementTahlilSystem');
 
-Route::get('/ManagementTahlilProductNew','Management\TahlilSystemController@TahlilProductNew')->name('ManagementTahlilProductNew');
-
 Route::get('/ManagementTahlilBlog','Management\TahlilSystemController@TahlilBlog')->name('ManagementTahlilBlog');
 
 Route::get('/delete/place/{massages_id}', 'Management\MassagesController@deleteMassages')->name('delete.massage');
@@ -62,5 +60,9 @@ Route::post('/ManagementTahlilAbout', 'Management\TahlilSystemController@updateA
 Route::get('/ManagementTahlilProductIndex','Management\TahlilSystemController@ManagementTahlilProductIndex')->name('ManagementTahlilProductIndex');
 Route::get('/ManagementEditProduct/{productindex_id}', 'Management\TahlilSystemController@productindexedit')->name('ManagementProductIndexEdit');
 Route::post('/ManagementEditProduct/{productindex_id}', 'Management\TahlilSystemController@productindexupdate')->name('ManagementProductIndexUpdate');
+
+Route::get('/ManagementTahlilProductNew','Management\TahlilSystemController@TahlilProductNew')->name('ManagementTahlilProductNew');
+Route::get('/ManagementEditProductNew/{productNew_id}', 'Management\TahlilSystemController@productNewedit')->name('ManagementProductNewEdit');
+Route::post('/ManagementEditProductNew/{productNew_id}', 'Management\TahlilSystemController@productNewupdate')->name('ManagementProductNewUpdate');
 
 /////////////////end :: Management//////////////////

@@ -1,7 +1,8 @@
 @extends('ManagementViews.layout.main')
-
+@section('title')
+ویرایش اسلایدر
+@stop
 @section('content')
-
 <div class="content-wrapper">
     <div class="content-header row mb-1">
         <div class="content-header-left col-md-6 col-12 mb-2">
@@ -22,6 +23,7 @@
                                         <th scope="col">تصویر</th>
                                         <th scope="col">عنوان</th>
                                         <th scope="col">قیمت</th>
+                                        <th scope="col">کد محصول</th>
                                         <th scope="col">توضیحات</th>
                                         <th scope="col">عملیات</th>
                                     </tr>
@@ -34,9 +36,10 @@
                                         <td><img src="{{$newproduct->image}}" width="200px" height="100px" /></td>
                                         <td>{{$newproduct->title}}</td>
                                         <td>{{$newproduct->cost}}</td>
+                                        <td>{{$newproduct->number_product}}</td>
                                         <td>{{$newproduct->Description}}</td>
                                         <td>
-                                            <a href="" class="link-edit-product">
+                                            <a href="{{route('ManagementProductNewEdit',$newproduct->id)}}" class="link-edit-product">
                                                 <i class="fa fa-edit"></i>
                                             </a>
                                         </td>

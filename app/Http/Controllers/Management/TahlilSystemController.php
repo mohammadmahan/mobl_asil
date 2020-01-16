@@ -18,7 +18,7 @@ class TahlilSystemController extends Controller
         return view('ManagementViews/site/tahlilsystem');
     }
 
-/*************TAHLIL TOP SLIDER***************/
+/*************START TAHLIL TOP SLIDER***************/
     public function TahlilSlider(){
         $topsliders=TopSlider::all();
         return view('ManagementViews/site/tahlilslider',compact('topsliders'));
@@ -39,18 +39,19 @@ class TahlilSystemController extends Controller
         $slider = TopSlider::find($topslider_id);
         $slider->update($slider_data);
         if ($slider) {
-            return redirect()->route('editSlider');
+            return redirect()->route('ManagementTahlilSlider');
         }
     }
 
-/*************TAHLIL TOP SLIDER***************/
+/*************END TAHLIL TOP SLIDER***************/
 
-/*************TAHLIL PRODUCT INDEX*************/
+
+/************START TAHLIL PRODUCT INDEX**********/
     public function ManagementTahlilProductIndex(){
         $productindexs = productIndex::all();
         return view('ManagementViews/site/tahlilProduct',compact('productindexs'));
     }
-    public function productindexedit($productindex_id){
+     public function productindexedit($productindex_id){
         
         if($productindex_id && ctype_digit($productindex_id)){
            $productItem = productIndex::find($productindex_id);
@@ -60,23 +61,24 @@ class TahlilSystemController extends Controller
         }
     }
     public function productindexupdate($productindex_id){
-        $slider_data = [
+        $productIndex_data = [
             'title' => request()->input('title'),
             'number_product' => request()->input('number_product'),
             'price' => request()->input('price'),
             'Description' => request()->input('Description'),
         ];
         $productindex = productIndex::find($productindex_id);
-        $productindex->update($productindex_id);
+        $productindex->update($productIndex_data);
         if ($productindex) {
-            return redirect()->route('ManagementProductIndexEdit');
+            return redirect()->route('ManagementTahlilProductIndex');
         }
     }
 
 
-/*************TAHLIL PRODUCT INDEX*************/
+/*************END TAHLIL PRODUCT INDEX*************/
 
-/*************TAHLIL PAGE ABOUT***************/
+
+/*************START TAHLIL PAGE ABOUT***************/
     public function TahlilAboout(){
         $aboutsystems = AboutMember::all();
         return view('ManagementViews/site/tahlilAbout', compact('aboutsystems'));
@@ -102,19 +104,49 @@ class TahlilSystemController extends Controller
             return redirect()->route('ManagementTahlilAbout');
         }
     }
-/*************TAHLIL PAGE ABOUT***************/
+/*************END TAHLIL PAGE ABOUT***************/
 
 
+/*************START TAHLIL PRODUCT NEW***************/
     public function TahlilProductNew(){
         $newproducts = NewProduct::all();
         return view('ManagementViews/site/tahlilProductNew',compact('newproducts'));
     }
+    public function productNewedit($productNew_id){
+        
+        if($productNew_id && ctype_digit($productNew_id)){
+           $productNewItem = NewProduct::find($productNew_id);
+           if($productNewItem && $productNewItem instanceof NewProduct){
+            return view('ManagementViews/site/editProductNew',compact('productNewItem')); 
+           } 
+        }
+    }
+    public function productNewupdate($productNew_id){
+        $productNew_data = [
+            'title' => request()->input('title'),
+            'number_product' => request()->input('number_product'),
+            'cost' => request()->input('cost'),
+            'Description' => request()->input('Description'),
+        ];
+        $productNew = NewProduct::find($productNew_id);
+        $productNew->update($productNew_data);
+        if ($productNew) {
+            return redirect()->route('ManagementTahlilProductNew');
+        }
+    }
 
 
+/*************END TAHLIL PRODUCT NEW***************/
+
+
+/*************START TAHLIL PAGE BLOG****************/
     public function TahlilBlog(){
         $informationblogs = InformationBlog::all();
         return view('ManagementViews/site/tahlilBlog',compact('informationblogs'));
     }
     
-   
+ 
+    
+
+/*************END TAHLIL PAGE BLOG****************/
 }

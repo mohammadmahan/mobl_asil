@@ -22,6 +22,7 @@
                                         <th scope="col">تصویر</th>
                                         <th scope="col">عنوان</th>
                                         <th scope="col">قیمت</th>
+                                        <th scope="col">کدمحصول</th>
                                         <th scope="col">توضیحات</th>
                                         <th scope="col">عملیات</th>
                                     </tr>
@@ -35,9 +36,10 @@
                                             <td><img src="{{$productindex->image}}" width="200px" height="100px" /></td>
                                             <td>{{$productindex->title}}</td>
                                             <td>{{$productindex->price}}</td>
+                                            <td>{{$productindex->number_product}}</td>
                                             <td>{{$productindex->Description}}</td>
                                             <td>
-                                                <a href="" class="link-edit-product">
+                                                <a href="{{route('ManagementProductIndexEdit',$productindex->id)}}" class="link-edit-product">
                                                     <i class="fa fa-edit"></i>
                                                 </a>
                                             </td>
