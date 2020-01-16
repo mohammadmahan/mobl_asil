@@ -144,7 +144,26 @@ class TahlilSystemController extends Controller
         $informationblogs = InformationBlog::all();
         return view('ManagementViews/site/tahlilBlog',compact('informationblogs'));
     }
-    
+    public function BlogEdit($Blog_id){
+        
+        if($Blog_id && ctype_digit($Blog_id)){
+           $informationblogItem = InformationBlog::find($Blog_id);
+           if($informationblogItem && $informationblogItem instanceof InformationBlog){
+            return view('ManagementViews/site/editInformationBlog',compact('informationblogItem')); 
+           } 
+        }
+    }
+    public function BlogUpdate($Blog_id){
+        $informationblog_data = [
+            'title' => request()->input('title'),
+            'Description' => request()->input('Description'),
+        ];
+        $informationblog = InformationBlog::find($Blog_id);
+        $informationblog->update($informationblog_data);
+        if ($informationblog) {
+            return redirect()->route('ManagementTahlilBlog');
+        }
+    }
  
     
 

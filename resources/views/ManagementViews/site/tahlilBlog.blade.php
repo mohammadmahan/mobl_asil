@@ -34,7 +34,7 @@
                                         <td>{{$informationblog->title}}</td>
                                         <td>{{$informationblog->Description}}</td>
                                         <td>
-                                            <a href="" class="link-edit-product">
+                                            <a href="{{route('ManagementBlogEdit',$informationblog->id)}}" class="link-edit-product">
                                                 <i class="fa fa-edit"></i>
                                             </a>
                                         </td>
