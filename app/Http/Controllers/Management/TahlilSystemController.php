@@ -10,6 +10,8 @@ use App\Models\NewProduct;
 use App\Models\TopSlider;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Symfony\Component\HttpFoundation\File\File;
 
 class TahlilSystemController extends Controller
 {
@@ -36,11 +38,19 @@ class TahlilSystemController extends Controller
         $slider_data = [
             'title' => request()->input('title'),
         ];
-        $slider = TopSlider::find($topslider_id);
-        $slider->update($slider_data);
-        if ($slider) {
-            return redirect()->route('ManagementTahlilSlider');
+        $new_image_name = request()->file('imageU')->getClientOriginalName();
+        $result = request()->file('imageU')->move(public_path('images\sliders'),$new_image_name);
+
+
+        if ($result instanceof File){
+           $slider_data['image'] ="/images/sliders/". request()->file('imageU')->getClientOriginalName();
+            $slider = TopSlider::find($topslider_id);
+            $slider->update($slider_data);
+            if ($slider) {
+                return redirect()->route('ManagementTahlilSlider');
+            }
         }
+
     }
 
 /*************END TAHLIL TOP SLIDER***************/
