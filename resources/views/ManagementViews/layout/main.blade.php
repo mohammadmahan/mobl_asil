@@ -92,12 +92,12 @@
                         <li class="dropdown dropdown-user nav-item">
                             <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                                 <span class="avatar avatar-online"><img
-                                        src="Management/images/portrait/small/avatar-s-9.png" alt="avatar"></span>
+                                        src="/Management/images/portrait/small/avatar-s-9.png" alt="avatar"></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" style="width: 230px;">
                                 <span class="dropdown-item center" style="display: flex;">
                                     <span class="avatar avatar-online"><img
-                                            src="Management/images/portrait/small/avatar-s-9.png" alt="avatar"></span>
+                                            src="/Management/images/portrait/small/avatar-s-9.png" alt="avatar"></span>
                                     <span class="mr-1 user-name text-bold-700">محمد شاددل
                                         <br>
                                         <a href="#">افزودن عکس</a>
