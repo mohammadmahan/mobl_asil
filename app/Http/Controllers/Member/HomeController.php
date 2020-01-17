@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Member;
 use App\Models\NewProduct;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\InformationBlog;
 use App\Models\TopSlider;
 
 class HomeController extends Controller
@@ -19,7 +20,8 @@ class HomeController extends Controller
     public function homeMember(){
         $newProducts = NewProduct::all();
         $sliders = TopSlider::all();
-        return view('memberViews/home',compact('newProducts'),compact('sliders'));
+        $informationblogs = InformationBlog::all();
+        return view('memberViews/home',compact('newProducts'),compact('sliders'),compact('informationblogs'));
     }
 
 

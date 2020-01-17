@@ -7,7 +7,7 @@
 <div class="content-wrapper">
     <div class="content-header row mb-1 mt-3">
         <div class="content-header-left col-md-6 col-12">
-            <h4 class="content-header-title">ویرایش محصولات جدید</h4>
+            <h4 class="content-header-title">ویرایش اسلایدر محصولات جدید</h4>
         </div>
 
     </div>

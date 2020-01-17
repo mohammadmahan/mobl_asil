@@ -163,57 +163,29 @@
 				</h3>
 			</div>
 			<div class="row">
+			@if($informationblogs ?? '' && count($informationblogs ?? '')>0)
+
+            @foreach($informationblogs ?? '' as $informationblog)
 				<div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
 
 					<div class="block3">
 						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
-							<img src="images/blog-01.jpg" alt="IMG-BLOG">
+							<img src="{{$informationblog->image}}" alt="IMG-BLOG">
 						</a>
 						<div class="block3-txt background-blog p-t-14">
-						<h4 class="card-title">مبل سلطنتی</h4>
+						<h4 class="card-title">{{$informationblog->title}}</h4>
 							<p class="s-text8 p-t-16">
-							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-							</p>
-							<a href="{{route('BlogMember')}}" class="more-details">
+							{{$informationblog->Description}}	
+						    </p>
+							<a href="" class="more-details">
 							<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>
 							</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
-
-					<div class="block3">
-						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
-							<img src="images/blog-02.jpg" alt="IMG-BLOG">
-						</a>
-						<div class="block3-txt background-blog p-t-14">
-						<h4 class="card-title">مبل کلاسیک</h4>
-							<p class="s-text8 p-t-16">
-							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-							</p>
-							<a href="{{route('BlogMember')}}" class="more-details">
-							<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
-
-					<div class="block3">
-						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
-							<img src="images/blog-03.jpg" alt="IMG-BLOG">
-						</a>
-						<div class="block3-txt background-blog p-t-14">
-						<h4 class="card-title">مبل راحتی</h4>
-							<p class="s-text8 p-t-16">
-							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-							</p>
-							<a href="{{route('BlogMember')}}" class="more-details">
-								<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>
-							</a>
-						</div>
-					</div>
-				</div>
+				@endforeach
+				@endif
+				
 			</div>
 		</div>
 	</section>
