@@ -68,7 +68,6 @@
                                     </tr>
                                     @endforeach
                                     @endif
-
                                 </tbody>
                             </table>
                         </div>
@@ -77,7 +76,7 @@
             </div>
             <!-- Table head options end -->
         </div>
-
+        </div>
     <!------------------------start modal details-------------------------------->
     <div class="modal fade" id="modaldetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -119,5 +118,5 @@
         <!------------------------end modal details-------------------------------->
 
     </div>
-
+    </div>
 @stop
