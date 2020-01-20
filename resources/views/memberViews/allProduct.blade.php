@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section("title")
+    @section("title")
 مبلمان اصیل|همه محصولات
 @stop
 @section("content")

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Member;
 
+use App\Models\AboutMember;
 use App\Models\NewProduct;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -12,7 +13,8 @@ class HomeController extends Controller
 {
     public function main()
     {
-        return view('layout/main');
+        $Abouts = AboutMember::all();
+        return view('layout/main',compact('Abouts'));
     }
     public function blogMember(){
         return view('memberViews/blog');
@@ -20,8 +22,9 @@ class HomeController extends Controller
     public function homeMember(){
         $newProducts = NewProduct::all();
         $sliders = TopSlider::all();
-        $informationBlogs = InformationBlog::all();
-        return view('memberViews/home',compact('newProducts'),compact('sliders'),compact('informationBlogs'));
+        $informationBlog = InformationBlog::all();
+
+        return view('memberViews/home',compact('newProducts'),compact('sliders'),compact('informationBlog'));
     }
 
 

@@ -278,13 +278,18 @@
 <footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
     <div class="flex-w p-b-90">
         <div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
+            @if($Abouts && count($Abouts)>0)
+                @foreach($Abouts as $About)
             <h4 class="s-text12 p-b-30">
-                در تماس باشید
+                در تماس باشید<span>{{$About->phone}}</span>
             </h4>
             <div>
                 <p class="s-text7 w-size27">
-                    ادرس فروشگاه: <span>تهران-ونک-خیابان 124جنوبی</span>
+                    ادرس فروشگاه: <span>{{$About->address}}</span>
                 </p>
+
+            @endforeach
+            @endif
                 <div class="flex-m p-t-30">
                     <!-- <a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
                     <a href="#" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
