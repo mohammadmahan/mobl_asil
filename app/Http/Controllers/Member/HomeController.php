@@ -20,10 +20,11 @@ class HomeController extends Controller
         return view('memberViews/blog');
     }
     public function homeMember(){
+        $Abouts = AboutMember::all();
         $newProducts = NewProduct::all();
         $sliders = TopSlider::all();
         $InformationBlogs = InformationBlog::all();
-        return view('memberViews/home',compact('newProducts'),compact('sliders'),compact('InformationBlogs'));
+        return view('memberViews/home',compact('Abouts','newProducts','sliders','InformationBlogs'));
     }
 
 
