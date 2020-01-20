@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Management;
 use App\allProductMember;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\File\File;
 
 class ProductsController extends Controller
 {
@@ -23,20 +24,45 @@ class ProductsController extends Controller
         }
     }
 
-    public function updateProduct($allProductMember_id)
-    {
-        $products_data = [
+    public function updateProduct($allProductMember_id){
+        $product_data = [
             'name' => request()->input('name'),
             'number_product' => request()->input('number_product'),
             'lastcost' => request()->input('lastcost'),
             'pastcost' => request()->input('pastcost'),
             'Description' => request()->input('Description'),
         ];
-        $product = allProductMember::find($allProductMember_id);
-        $product->update($products_data);
-        if ($product) {
-            return redirect()->route('ProductManagement');
+        $imageinput = request()->file('imageU');
+        if ($imageinput!="") {
+            $new_image_product_blog_name = request()->file('imageU')->getClientOriginalName();
+            $result = request()->file('imageU')->move(public_path('images\allproduct'),$new_image_product_blog_name);    
+        }
+        if ($imageinput!="" && $result instanceof File){
+            $product_data['image'] ="/images/allproduct/".request()->file('imageU')->getClientOriginalName();
+            $products = allProductMember::find($allProductMember_id);
+            $products->update($product_data);
+            if ($products) {
+                return redirect()->route('ProductManagement');
+            }
+         }
+         else{
+            $products = allProductMember::find($allProductMember_id);
+            $products->update($product_data);
+            if ($products) {
+                return redirect()->route('ProductManagement');
+            }
+         }
+        
+    }
+
+    public function details(){
+        if (\Illuminate\Support\Facades\Request::ajax()) {
+
+            $userId = $_GET["userId"];
+            $userItem = allProductMember::find($userId);
+            return $userItem;
         }
     }
+
 
 }

@@ -26,7 +26,6 @@
                                 </thead>
                                 <tbody>
                                     @if($topsliders && count($topsliders)>0)
-
                                     @foreach($topsliders as $topslider)
                                     <tr>
                                         <th scope="row">{{$topslider->id}}</th>

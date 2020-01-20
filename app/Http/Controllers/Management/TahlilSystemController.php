@@ -38,12 +38,14 @@ class TahlilSystemController extends Controller
         $slider_data = [
             'title' => request()->input('title'),
         ];
+        $imageinput = request()->file('imageU');
+        if ($imageinput!="") {
         $new_image_name = request()->file('imageU')->getClientOriginalName();
         $result = request()->file('imageU')->move(public_path('images\sliders'),$new_image_name);
+         }
 
 
-
-        if ($result instanceof File){
+        if ($imageinput!="" && $result instanceof File){
            $slider_data['image'] ="/images/sliders/". request()->file('imageU')->getClientOriginalName();
             $slider = TopSlider::find($topslider_id);
             $slider->update($slider_data);
@@ -51,9 +53,14 @@ class TahlilSystemController extends Controller
                 return redirect()->route('ManagementTahlilSlider');
             }
         }
-
+        else{
+            $slider = productIndex::find($topslider_id);
+            $slider->update($slider_data);
+            if ($slider) {
+                return redirect()->route('ManagementTahlilSlider');
+            }
+        }  
     }
-
 /*************END TAHLIL TOP SLIDER***************/
 
 
@@ -78,14 +85,28 @@ class TahlilSystemController extends Controller
             'price' => request()->input('price'),
             'Description' => request()->input('Description'),
         ];
-        $productindex = productIndex::find($productindex_id);
-        $productindex->update($productIndex_data);
-        if ($productindex) {
-            return redirect()->route('ManagementTahlilProductIndex');
+        $imageinput = request()->file('imageU');
+        if ($imageinput!="") {
+        $new_image_product_name = request()->file('imageU')->getClientOriginalName();
+        $result = request()->file('imageU')->move(public_path('images\productindex'),$new_image_product_name); 
         }
+        if ($imageinput!="" && $result instanceof File){
+            $productIndex_data['image'] ="/images/productindex/". request()->file('imageU')->getClientOriginalName();
+            $productindex = productIndex::find($productindex_id);
+            $productindex->update($productIndex_data);
+            if ($productindex) {
+                return redirect()->route('ManagementTahlilProductIndex');
+            }
+         }
+         else{
+            $productindex = productIndex::find($productindex_id);
+            $productindex->update($productIndex_data);
+            if ($productindex) {
+                return redirect()->route('ManagementTahlilProductIndex');
+            }
+        }   
+
     }
-
-
 /*************END TAHLIL PRODUCT INDEX*************/
 
 
@@ -109,11 +130,27 @@ class TahlilSystemController extends Controller
             'address' => request()->input('address'),
             'Description' => request()->input('Description'),
         ];
-        $about = AboutMember::find(1);
-        $about->update($About_data);
-        if ($about) {
-            return redirect()->route('ManagementTahlilAbout');
+        $imageinput = request()->file('imageU');
+        if ($imageinput!="") {
+            $new_image_about_name = request()->file('imageU')->getClientOriginalName();
+            $result = request()->file('imageU')->move(public_path('images\about'),$new_image_about_name); 
         }
+        if ($imageinput!="" && $result instanceof File){
+            $About_data['profile'] ="/images/about/".request()->file('imageU')->getClientOriginalName();
+            $about = AboutMember::find(1);
+            $about->update($About_data);
+            if ($about) {
+                return redirect()->route('ManagementTahlilAbout');
+            }
+         }
+         else{
+            $about = AboutMember::find(1);
+            $about->update($About_data);
+            if ($about) {
+                return redirect()->route('ManagementTahlilAbout');
+            }
+        }
+       
     }
 /*************END TAHLIL PAGE ABOUT***************/
 
@@ -132,6 +169,7 @@ class TahlilSystemController extends Controller
            } 
         }
     }
+
     public function productNewupdate($productNew_id){
         $productNew_data = [
             'title' => request()->input('title'),
@@ -139,16 +177,28 @@ class TahlilSystemController extends Controller
             'cost' => request()->input('cost'),
             'Description' => request()->input('Description'),
         ];
-        $productNew = NewProduct::find($productNew_id);
-        $productNew->update($productNew_data);
-        if ($productNew) {
-            return redirect()->route('ManagementTahlilProductNew');
+        $imageinput = request()->file('imageU');
+        if ($imageinput!="") {
+            $new_image_product_new_name = request()->file('imageU')->getClientOriginalName();
+            $result = request()->file('imageU')->move(public_path('images\blog'),$new_image_product_new_name);    
         }
-    }
-
-
+        if ($imageinput!="" && $result instanceof File){
+            $productNew_data['image'] ="/images/newproduct/".request()->file('imageU')->getClientOriginalName();
+            $productNew = NewProduct::find($productNew_id);
+            $productNew->update($productNew_data);
+            if ($productNew) {
+                return redirect()->route('ManagementTahlilProductNew');
+            }
+         }
+         else{
+                $productNew = NewProduct::find($productNew_id);
+                $productNew->update($productNew_data);
+                if ($productNew) {
+                    return redirect()->route('ManagementTahlilProductNew');
+                }
+            }
+        }
 /*************END TAHLIL PRODUCT NEW***************/
-
 
 /*************START TAHLIL PAGE BLOG****************/
     public function TahlilBlog(){
@@ -169,11 +219,27 @@ class TahlilSystemController extends Controller
             'title' => request()->input('title'),
             'Description' => request()->input('Description'),
         ];
-        $informationblog = InformationBlog::find($Blog_id);
-        $informationblog->update($informationblog_data);
-        if ($informationblog) {
-            return redirect()->route('ManagementTahlilBlog');
+        $imageinput = request()->file('imageU');
+        if ($imageinput!="") {
+            $new_image_product_blog_name = request()->file('imageU')->getClientOriginalName();
+            $result = request()->file('imageU')->move(public_path('images\blog'),$new_image_product_blog_name);    
         }
+        if ($imageinput!="" && $result instanceof File){
+            $informationblog_data['image'] ="/images/blog/". request()->file('imageU')->getClientOriginalName();
+            $informationblog = InformationBlog::find($Blog_id);
+            $informationblog->update($informationblog_data);
+            if ($informationblog) {
+                return redirect()->route('ManagementTahlilBlog');
+            }
+         }
+         else{
+            $informationblog = InformationBlog::find($Blog_id);
+            $informationblog->update($informationblog_data);
+            if ($informationblog) {
+                return redirect()->route('ManagementTahlilBlog');
+            }
+         }
+        
     }
  
     

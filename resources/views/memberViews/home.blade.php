@@ -126,7 +126,7 @@
 
                                 <div class="block2">
                                     <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                                        <img src="{{$newProduct->image}}" alt="IMG-PRODUCT">
+                                        <img src="{{$newProduct->image}}" alt="تصویر محصول جدید">
                                         <div class="block2-overlay trans-0-4">
 
                                             <div class="block2-btn-addcart w-size1 trans-0-4">
@@ -163,27 +163,26 @@
 				</h3>
 			</div>
 			<div class="row">
-{{--			@if($informationblogs && count($informationblogs)>0)--}}
-{{--            @foreach($informationblogs as $informationblog)--}}
-{{--				<div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">--}}
-
-{{--					<div class="block3">--}}
-{{--						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">--}}
-{{--							<img src="{{$informationblog->image}}" alt="IMG-BLOG">--}}
-{{--						</a>--}}
-{{--						<div class="block3-txt background-blog p-t-14">--}}
-{{--						<h4 class="card-title">{{$informationblog->title}}</h4>--}}
-{{--							<p class="s-text8 p-t-16">--}}
-{{--							{{$informationblog->Description}}--}}
-{{--						    </p>--}}
-{{--							<a href="" class="more-details">--}}
-{{--							<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>--}}
-{{--							</a>--}}
-{{--						</div>--}}
-{{--					</div>--}}
-{{--				</div>--}}
-{{--				@endforeach--}}
-{{--				@endif--}}
+			@if($InformationBlogs ?? '' && count($InformationBlogs ?? '')>0)
+           @foreach($InformationBlogs ?? '' as $InformationBlog)
+				<div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
+					<div class="block3">
+						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+							<img src="{{$InformationBlog->image}}" alt="IMG-BLOG">
+						</a>
+						<div class="block3-txt background-blog p-t-14">
+						<h4 class="card-title">{{$InformationBlog->title}}</h4>
+							<p class="s-text8 p-t-16">
+							{{$InformationBlog->Description}}
+						    </p>
+							<a href="" class="more-details">
+							<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				@endforeach
+				@endif
 				
 			</div>
 		</div>

@@ -14,7 +14,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-content collapse show pad-box">
-                        <form class="form" action="" method="post">
+                        <form class="form" action="" method="post" enctype="multipart/form-data">
                         {{csrf_field()}}
                             <div class="form-body">
                                 <div class="row">
@@ -54,7 +54,7 @@
                                                 <div class="form-group col-md-6 mb-2">
                                                     <label>تصویر صفحه درباره ما</label>
                                                     <label id="projectinput8" class="file center-block">
-                                                        <input type="file" id="file" name="image">
+                                                        <input type="file" id="file"  name="imageU">
                                                         <span class="file-custom"></span>
                                                     </label>
                                                 </div>
