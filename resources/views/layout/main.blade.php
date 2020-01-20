@@ -278,8 +278,8 @@
 <footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
     <div class="flex-w p-b-90">
         <div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
-            @if($newProducts && count($newProducts)>0)
-                @foreach($newProducts as $About)
+            @if($Abouts && count($Abouts)>0)
+                @foreach($Abouts as $About)
             <h4 class="s-text12 p-b-30">
                 در تماس باشید<span>{{$About->phone}}</span>
             </h4>
