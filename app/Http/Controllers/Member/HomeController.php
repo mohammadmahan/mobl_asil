@@ -7,6 +7,7 @@ use App\Models\NewProduct;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\InformationBlog;
+use App\Models\ProductIndex;
 use App\Models\TopSlider;
 
 class HomeController extends Controller
@@ -24,7 +25,13 @@ class HomeController extends Controller
         $newProducts = NewProduct::all();
         $sliders = TopSlider::all();
         $InformationBlogs = InformationBlog::all();
+<<<<<<< HEAD
+        $Abouts = AboutMember::all();
+        $Productindexs = ProductIndex::all();
+        return view('memberViews/home',compact('newProducts','sliders','InformationBlogs','Abouts','Productindexs'));
+=======
         return view('memberViews/home',compact('Abouts','newProducts','sliders','InformationBlogs'));
+>>>>>>> 3dfec9d2ccfc89c2b85480a2304a59453ed04dce
     }
 
 

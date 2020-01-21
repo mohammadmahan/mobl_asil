@@ -89,11 +89,8 @@
                                             <a data-original-title="حذف محصول">
                                                 <i class="fa fa-close" aria-hidden="true"></i>
                                             </a>
-
                                         </td>
-                                    
                                     </tr>
-
                                     @endforeach
                                     @endif
                                 </tbody>
