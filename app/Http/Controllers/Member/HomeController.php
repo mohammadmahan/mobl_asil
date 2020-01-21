@@ -22,9 +22,8 @@ class HomeController extends Controller
     public function homeMember(){
         $newProducts = NewProduct::all();
         $sliders = TopSlider::all();
-        $informationBlog = InformationBlog::all();
-
-        return view('memberViews/home',compact('newProducts'),compact('sliders'),compact('informationBlog'));
+        $InformationBlogs = InformationBlog::all();
+        return view('memberViews/home',compact('newProducts'),compact('sliders'),compact('InformationBlogs'));
     }
 
 
