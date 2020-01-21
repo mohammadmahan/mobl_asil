@@ -14,8 +14,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-content collapse show pad-box">
-                    <form class="form" action="#" method="post">
-                       
+                    <form class="form" action="" method="post" enctype="multipart/form-data">
 							<div class="form-body">
 								<div class="row">
 									<div class="form-group col-md-6 mb-2">
@@ -43,7 +42,7 @@
 									<div class="form-group col-12 mb-2">
 										<label>تصویر محصول</label>
 										<label id="projectinput8" class="file center-block">
-											<input type="file" id="file">
+											<input type="file" id="file" name="imageU">
 											<span class="file-custom"></span>
 										</label>
 									</div>
@@ -54,15 +53,15 @@
 										<textarea id="projectinput9" rows="5" class="form-control" name="Description">{{old('name',isset($ProductItem) ? $ProductItem->Description : '')}}</textarea>
 									</div>
                                 </div>
-                                <div class="form-actions top btn-form-update">
-                                <button type="submit" class="btn btn-primary">
-									 ذخیره
-								</button>
-								<button type="button" class="btn btn-warning mr-1">
-									لغو
-								</button>
+                                <div class="">
+										<button type="submit" class="btn btn-primary">
+											ذخیره
+										</button>
+										<button type="button" class="btn btn-warning mr-1">
+											لغو
+										</button>
 								
-							</div>
+							   </div>
 							</div>
 						</form>
                     </div>

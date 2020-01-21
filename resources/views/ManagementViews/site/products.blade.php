@@ -3,7 +3,29 @@
     محصولات ثبت شده
 @stop
 @section('content')
+    <script src="/js/myjq.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".details").click(function () {
+                var userId = $(this).attr("id");
+                var count = $(this).attr("count");
+                $.get('/details/product', {
+                    userId: userId
+                }, function (data) {
 
+                    //Getting informations from server
+                    var name = data["name"];
+                    var number_product = data["number_product"];
+                    var Description = data["Description"];
+
+                    //set values in modal
+                    $("#name").text(name);
+                    $("#number_product").text(number_product);
+                    $("#Description").text(Description);
+                });
+            });
+        });
+    </script>
     <div class="content-wrapper">
         <div class="row">
             <div class="col-md-6 col-12 mt-3">
@@ -42,30 +64,36 @@
                                         <th scope="col">نام محصول</th>
                                         <th scope="col">قیمت</th>
                                         <th scope="col">کد محصول</th>
-                                        <th scope="col">توضیحات</th>
+                                        <th scope="col">تصویر محصول</th>
                                         <th scope="col">عملیات</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-
                                     @if($allProductMembers && count($allProductMembers)>0)
+                                    
                                     @foreach($allProductMembers as $allProductMember)
                                     <tr>
                                         <th scope="row">{{$allProductMember->id}}</th>
                                         <td>{{$allProductMember->name}}</td>
                                         <td>{{$allProductMember->lastcost}}</td>
                                         <td>{{$allProductMember->number_product}}</td>
-                                        <td>{{$allProductMember->Description}}</td>
+                                        <td><img src="{{$allProductMember->image}}" width="200px" height="150px"/></td>
+                                        
                                         <td>
-                                            <a href="{{route('ManagementEditProduct',$allProductMember->id)}}" class="link-edit-product">
+                                            <a href="{{route('ManagementEditProduct',$allProductMember->id)}}" class="link-edit-product" data-original-title="ویرایش محصول">
                                                 <i class="fa fa-edit"></i>
                                             </a>
-                                            <a data-toggle="modal" data-target="#modaldetails">
-                                                <i class="fa fa-arrows-v" aria-hidden="true"></i>
+                                            <a id="{{$allProductMember->id}}" class="details" data-toggle="tooltip" data-original-title="جزئیات محصول">
+                                                <i class="fa fa-arrows-v" data-toggle="modal" data-target="#modaldetails" aria-hidden="true"></i>
+                                            </a>
+                                            <a data-original-title="حذف محصول">
+                                                <i class="fa fa-close" aria-hidden="true"></i>
                                             </a>
 
                                         </td>
+                                    
                                     </tr>
+
                                     @endforeach
                                     @endif
                                 </tbody>
@@ -93,19 +121,15 @@
                         <table class="table-striped tbl-modal">
                             <tr>
                                 <th>نام محصول</th>
-                                <td>لبزی</td>
+                                <td id="name"></td>
                             </tr>
                             <tr>
                                 <th>کد محصول</th>
-                                <td>32234</td>
-                            </tr>
-                            <tr>
-                                <th>تصویر محصول</th>
-                                <td>البیسظ</td>
+                                <td id="number_product"></td>
                             </tr>
                             <tr>
                                 <th>مشخصات محصول</th>
-                                <td>بزیطسظ</td>
+                                <td id="Description"></td>
                             </tr>
                         </table>
                     </div>
