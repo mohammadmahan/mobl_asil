@@ -13,24 +13,24 @@
 
     <section class="bgwhite p-t-66 p-b-38">
         <div class="container">
-            @if($aboutmembers && count($aboutmembers)>0)
-            @foreach($aboutmembers as $aboutmember)
+            @if($Abouts && count($Abouts)>0)
+            @foreach($Abouts as $About)
                 <div class="row">
                     <div class="col-md-4 p-b-30">
                         <div class="hov-img-zoom">
-                            <img src="{{$aboutmember->profile}}" alt="IMG-ABOUT">
+                            <img src="{{$About->profile}}" alt="IMG-ABOUT">
                         </div>
                     </div>
                     <div class="col-md-8 p-b-30" style="direction: rtl;">
                         <h3 class="m-text26 p-t-15 p-b-16">
-                            {{$aboutmember->title}}
+                            {{$About->title}}
                         </h3>
                         <p class="p-b-28">
-                            {{$aboutmember->details}}
+                            {{$About->details}}
                         </p>
                         <div class="bo13 p-l-29 m-l-9 p-b-10">
                             <span class="s-text7">
-                                {{$aboutmember->management}}
+                                {{$About->management}}
                             </span>
                         </div>
                     </div>

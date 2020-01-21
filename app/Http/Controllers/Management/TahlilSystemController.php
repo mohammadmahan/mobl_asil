@@ -46,7 +46,7 @@ class TahlilSystemController extends Controller
 
 
         if ($imageinput!="" && $result instanceof File){
-           $slider_data['image'] ="/images/sliders/". request()->file('imageU')->getClientOriginalName();
+            $slider_data['image'] ="/images/sliders/". request()->file('imageU')->getClientOriginalName();
             $slider = TopSlider::find($topslider_id);
             $slider->update($slider_data);
             if ($slider) {

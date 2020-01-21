@@ -10,7 +10,8 @@ use App\Http\Controllers\Controller;
 class ContactMemberController extends Controller
 {
     public function ContactMember(){
-        return view('memberViews/contact');
+        $Abouts = AboutMember::all();
+        return view('memberViews/contact', compact('Abouts'));
     }
 
     public function createContactMember(Request $request)

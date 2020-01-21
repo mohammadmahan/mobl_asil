@@ -10,7 +10,7 @@ class AboutMemberController extends Controller
 {
     public function aboutMember()
     {
-        $aboutmembers = AboutMember::all();
-        return view('memberViews/about', compact('aboutmembers'));
+        $Abouts = AboutMember::all();
+        return view('memberViews/about', compact('Abouts'));
     }
 }
