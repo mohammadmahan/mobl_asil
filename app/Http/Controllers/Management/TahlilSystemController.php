@@ -107,10 +107,10 @@ class TahlilSystemController extends Controller
         }   
 
     }
-    public function details_blog(){
+    public function details_productindex(){
         if (\Illuminate\Support\Facades\Request::ajax()) {
             $userId = $_GET["userId"];
-            $userItem = InformationBlog::find($userId);
+            $userItem = productIndex::find($userId);
             return $userItem;
         }
     }
@@ -188,7 +188,7 @@ class TahlilSystemController extends Controller
         $imageinput = request()->file('imageU');
         if ($imageinput!="") {
             $new_image_product_new_name = request()->file('imageU')->getClientOriginalName();
-            $result = request()->file('imageU')->move(public_path('images\blog'),$new_image_product_new_name);    
+            $result = request()->file('imageU')->move(public_path('images\newproduct'),$new_image_product_new_name);
         }
         if ($imageinput!="" && $result instanceof File){
             $productNew_data['image'] ="/images/newproduct/".request()->file('imageU')->getClientOriginalName();
