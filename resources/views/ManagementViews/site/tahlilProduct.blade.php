@@ -7,7 +7,7 @@
             $(".details").click(function () {
                 var userId = $(this).attr("id");
                 var count = $(this).attr("count");
-                $.get('/details/product', {
+                $.get('details/productindex', {
                     userId: userId
                 }, function (data) {
 
