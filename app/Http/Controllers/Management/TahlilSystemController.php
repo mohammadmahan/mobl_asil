@@ -107,6 +107,13 @@ class TahlilSystemController extends Controller
         }   
 
     }
+    public function details_blog(){
+        if (\Illuminate\Support\Facades\Request::ajax()) {
+            $userId = $_GET["userId"];
+            $userItem = InformationBlog::find($userId);
+            return $userItem;
+        }
+    }
 /*************END TAHLIL PRODUCT INDEX*************/
 
 
@@ -152,6 +159,7 @@ class TahlilSystemController extends Controller
         }
        
     }
+    
 /*************END TAHLIL PAGE ABOUT***************/
 
 

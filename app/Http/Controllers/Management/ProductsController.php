@@ -57,12 +57,11 @@ class ProductsController extends Controller
 
     public function details(){
         if (\Illuminate\Support\Facades\Request::ajax()) {
-
             $userId = $_GET["userId"];
             $userItem = allProductMember::find($userId);
             return $userItem;
         }
     }
-
-
+   
+  
 }

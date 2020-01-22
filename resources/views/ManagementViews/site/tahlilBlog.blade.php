@@ -1,7 +1,25 @@
 @extends('ManagementViews.layout.main')
 
 @section('content')
+<script src="/js/myjq.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".details").click(function () {
+                var userId = $(this).attr("id");
+                var count = $(this).attr("count");
+                $.get('/details/product', {
+                    userId: userId
+                }, function (data) {
 
+                    //Getting informations from server
+                    var Description = data["Description"];
+
+                    //set values in modal
+                    $("#Description").text(Description);
+                });
+            });
+        });
+    </script>
 <div class="content-wrapper">
     <div class="content-header row mb-1">
         <div class="content-header-left col-md-6 col-12 mb-2">
@@ -21,21 +39,22 @@
                                         <th scope="col">ردیف</th>
                                         <th scope="col">تصویر</th>
                                         <th scope="col">عنوان</th>
-                                        <th scope="col">توضیحات</th>
                                         <th scope="col">عملیات</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                @if($informationblogs ?? '' && count($informationblogs ?? '')>0)
-                                @foreach($informationblogs ?? '' as $informationblog)
+                                @if($informationblogs && count($informationblogs)>0)
+                                @foreach($informationblogs as $informationblog)
                                     <tr>
                                         <td scope="row">{{$informationblog->id}}</td>
                                         <td><img src="{{$informationblog->image}}" width="200px" height="100px" /></td>
                                         <td>{{$informationblog->title}}</td>
-                                        <td>{{$informationblog->Description}}</td>
                                         <td>
                                             <a href="{{route('ManagementBlogEdit',$informationblog->id)}}" class="link-edit-product">
                                                 <i class="fa fa-edit"></i>
+                                            </a>
+                                            <a id="{{$informationblog->id}}" class="details" data-toggle="tooltip" data-original-title="جزئیات محصول">
+                                                <i class="fa fa-arrows-v" data-toggle="modal" data-target="#modaldetails" aria-hidden="true"></i>
                                             </a>
                                         </td>
                                     </tr>
@@ -50,6 +69,37 @@
             </div>
         </div>
         <!-- Table head options end -->
+    </div>
+
+    <!------------------------start modal details-------------------------------->
+    <div class="modal fade" id="modaldetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">جزئیات محصول</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive responsive">
+                        <table class="table-striped tbl-modal">
+                            
+                            <tr>
+                                <th>مشخصات محصول</th>
+                                <td id="Description"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------end modal details-------------------------------->
+
     </div>
 </div>
 
