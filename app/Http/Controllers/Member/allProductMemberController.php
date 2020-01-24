@@ -18,10 +18,11 @@ class allProductMemberController extends Controller
 
      public function singleProductMember($allProductMember_id)
      {
+        $Abouts = AboutMember::all();
          if ($allProductMember_id && ctype_digit($allProductMember_id)) {
              $productItem = allProductMember::find($allProductMember_id);
              if ($productItem && $productItem instanceof allProductMember) {
-                 return view('memberViews/singleProduct', compact('productItem'));
+                 return view('memberViews/singleProduct', compact('productItem','Abouts'));
              }
          }
      }

@@ -17,8 +17,14 @@ class HomeController extends Controller
         $Abouts = AboutMember::all();
         return view('layout/main',compact('Abouts'));
     }
-    public function blogMember(){
-        return view('memberViews/blog');
+    public function blogMember($blog_id){
+        $Abouts = AboutMember::all();
+        if ($blog_id && ctype_digit($blog_id)) {
+            $productItem = InformationBlog::find($blog_id);
+            if ($productItem && $productItem instanceof InformationBlog) {
+        return view('memberViews/blog',compact('Abouts'));
+            }
+        }
     }
     public function homeMember(){
         $Abouts = AboutMember::all();
@@ -28,7 +34,4 @@ class HomeController extends Controller
         $Productindexs = ProductIndex::all();
         return view('memberViews/home',compact('newProducts','sliders','InformationBlogs','Abouts','Productindexs'));
     }
-
-
-
 }

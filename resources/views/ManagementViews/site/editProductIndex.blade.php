@@ -1,6 +1,6 @@
 @extends('ManagementViews.layout.main')
 @section('title')
-ویرایش اسلایدر
+میل اصیل|ویرایش محصولات صفحه اصلی
 @stop
 @section('content')
 

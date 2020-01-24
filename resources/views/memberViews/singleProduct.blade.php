@@ -36,34 +36,34 @@
                 </p>
 
 
-{{--                <h6>مشخصات محصول</h6>--}}
+         <h6>مشخصات محصول</h6>
 
-{{--                <ul class="mb-5 mt-3 list-details">--}}
-{{--                    <li>--}}
-{{--                    <span>--}}
-{{--                        <i class="fa fa-check"></i>--}}
-{{--                    </span>--}}
-{{--                        <span> مبلمان کلاسیک</span>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                    <span>--}}
-{{--                        <i class="fa fa-check"></i>--}}
-{{--                    </span>--}}
-{{--                        <span>در رنگ بندی های: طوسی سبز سفید قهوه ای</span>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                    <span>--}}
-{{--                        <i class="fa fa-check"></i>--}}
-{{--                    </span>--}}
-{{--                        <span>در تعداد 7 و 13 نفره</span>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                    <span>--}}
-{{--                        <i class="fa fa-check"></i>--}}
-{{--                    </span>--}}
-{{--                        <span>دارای ست ناهار خوری</span>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
+            <ul class="mb-5 mt-3 list-details">
+                   <li>
+                    <span>
+                        <i class="fa fa-check"></i>
+                   </span>
+                       <span> مبلمان کلاسیک</span>
+                   </li>
+                    <li>
+                    <span>
+                        <i class="fa fa-check"></i>
+                   </span>
+                        <span>در رنگ بندی های: طوسی سبز سفید قهوه ای</span>
+                    </li>
+                    <li>
+                    <span>
+                        <i class="fa fa-check"></i>
+                    </span>
+                        <span>در تعداد 7 و 13 نفره</span>
+                    </li>
+                    <li>
+                    <span>
+                        <i class="fa fa-check"></i>
+                    </span>
+                        <span>دارای ست ناهار خوری</span>
+                    </li>
+                </ul>
 
                 <span> قیمت : </span><span>{{old('name',isset($productItem) ? $productItem->lastcost : '')}} تومان  </span>
             </div>

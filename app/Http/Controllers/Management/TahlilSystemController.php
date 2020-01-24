@@ -95,14 +95,14 @@ class TahlilSystemController extends Controller
             $productindex = productIndex::find($productindex_id);
             $productindex->update($productIndex_data);
             if ($productindex) {
-                return redirect()->route('ManagementTahlilProductIndex');
+                return redirect()->route('ManagementProductIndexEdit');
             }
          }
          else{
             $productindex = productIndex::find($productindex_id);
             $productindex->update($productIndex_data);
             if ($productindex) {
-                return redirect()->route('ManagementTahlilProductIndex');
+                return redirect()->route('ManagementProductIndexEdit');
             }
         }   
 
@@ -206,6 +206,13 @@ class TahlilSystemController extends Controller
                 }
             }
         }
+        public function detailsNewProduct(){
+            if (\Illuminate\Support\Facades\Request::ajax()) {
+                $userId = $_GET["userId"];
+                $userItem = NewProduct::find($userId);
+                return $userItem;
+            }
+        }
 /*************END TAHLIL PRODUCT NEW***************/
 
 /*************START TAHLIL PAGE BLOG****************/
@@ -250,7 +257,13 @@ class TahlilSystemController extends Controller
         
     }
  
-    
+    public function detailsblog(){
+        if (\Illuminate\Support\Facades\Request::ajax()) {
+            $userId = $_GET["userId"];
+            $userItem = InformationBlog::find($userId);
+            return $userItem;
+        }
+    }
 
 /*************END TAHLIL PAGE BLOG****************/
 }

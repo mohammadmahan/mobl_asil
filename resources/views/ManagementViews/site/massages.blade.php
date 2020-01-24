@@ -39,9 +39,9 @@
                                         <td>{{$massage->email}}</td>
                                         <td>{{$massage->massage}}</td>
                                         <td>
-                                            <a href="{{route('delete.massage',$massage->id)}}"
-                                                class="link-edit-product"><i class="fa fa-minus-square"
-                                                    aria-hidden="true" style="color: red;"></i></a>
+                                            <a  class="link-edit-product" data-toggle="tooltip" data-original-title="حذف پیام">
+                                                <i data-toggle="modal" data-target="#exampleModal" class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i>
+                                            </a>
                                         </td>
                                     </tr>
 
@@ -74,7 +74,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
-                        <button   href="" type="suubmit" class="btn btn-primary">حذف</button>
+                        <button href="{{route('delete.massage',$massage->id)}}" type="submit" class="btn btn-primary">حذف</button>
                     </div>
                 </div>
             </div>
