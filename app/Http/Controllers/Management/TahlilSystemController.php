@@ -171,9 +171,9 @@ class TahlilSystemController extends Controller
     public function productNewedit($productNew_id){
         
         if($productNew_id && ctype_digit($productNew_id)){
-           $productNewItem = NewProduct::find($productNew_id);
-           if($productNewItem && $productNewItem instanceof NewProduct){
-            return view('ManagementViews/site/editProductNew',compact('productNewItem')); 
+           $productNewItems = NewProduct::find($productNew_id);
+           if($productNewItems && $productNewItems instanceof NewProduct){
+            return view('ManagementViews/site/editProductNew',compact('productNewItems')); 
            } 
         }
     }

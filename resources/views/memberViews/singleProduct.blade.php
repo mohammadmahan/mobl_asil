@@ -14,13 +14,13 @@
                     <div class="slick3">
                         <div class="item-slick3" data-thumb="images/thumb-item-01.jpg" style="position: sticky !important;">
                             <div class="wrap-pic-w bb">
-                                <img src="{{old('name',isset($productItem) ? $productItem->image : '')}}" alt="IMG-PRODUCT">
+                                <img src="{{old('name',isset($productNewItems) ? $productNewItems->image : '')}}" alt="IMG-PRODUCT">
                             </div>
                         </div>
 
                         <div class="item-slick3" data-thumb="images/thumb-item-03.jpg" style="position: sticky !important;">
                             <div class="wrap-pic-w bb">
-                                <img src="{{old('name',isset($productItem) ? $productItem->image : '')}}" alt="IMG-PRODUCT">
+                                <img src="{{old('name',isset($productNewItems) ? $productNewItems->image : '')}}" alt="IMG-PRODUCT">
                             </div>
                         </div>
                     </div>
@@ -29,10 +29,13 @@
 
             <div class="w-size14 p-t-30 respon5">
                 <h4 class="product-detail-name m-text16 p-b-13 mt-4">
-                    {{old('name',isset($productItem) ? $productItem->name : '')}}
+                    {{old('name',isset($productNewItems) ? $productNewItems->title : '')}}
                 </h4>
                 <p class="mb-5">
-                    {{old('name',isset($productItem) ? $productItem->Description : '')}}
+                    {{old('name',isset($productNewItems) ? $productNewItems->number_product : '')}}
+                </p>
+                <p class="mb-5">
+                    {{old('name',isset($productNewItems) ? $productNewItems->Description : '')}}
                 </p>
 
 
@@ -65,7 +68,7 @@
                     </li>
                 </ul>
 
-                <span> قیمت : </span><span>{{old('name',isset($productItem) ? $productItem->lastcost : '')}} تومان  </span>
+                <span> قیمت : </span><span>{{old('name',isset($productNewItems) ? $productNewItems->cost : '')}} تومان  </span>
             </div>
         </div>
 
