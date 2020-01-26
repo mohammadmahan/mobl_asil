@@ -1,6 +1,6 @@
 @extends('ManagementViews.layout.main')
 @section('title')
-ویرایش اسلایدر
+ویرایش وبلاگ
 @stop
 @section('content')
 
@@ -28,7 +28,7 @@
                                                     <div class="col-md-6 mt-2">
                                                         <div class="row">
                                                             <div class="form-group col-md-6 mb-2">
-                                                                <label>عنوان محصول</label>
+                                                                <label>عنوان </label>
                                                                 <input type="text" class="form-control" name="title"
                                                                     value="{{old('name',isset($informationblogItem) ? $informationblogItem -> title: '')}}">
                                                             </div>
@@ -43,7 +43,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="form-group col-md-6 mb-2">
-                                                                <label>تصویر اسلایدر</label>
+                                                                <label>تصویر</label>
                                                                 <label id="projectinput8" class="file center-block">
                                                                     <input type="file" id="file" name="imageU">
                                                                     <span class="file-custom"></span>
