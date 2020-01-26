@@ -33,8 +33,8 @@ Route::get('/details/product','Management\ProductsController@details')->name('de
 Route::get('/ManagementMassages', 'Management\MassagesController@AllMassages')->name('massagesManagement');
 
 Route::get('/ManagementProducts', 'Management\ProductsController@AllProducts')->name('ProductManagement');
-Route::get('/ManagementEditProduct/{allProductMember_id}', 'Management\ProductsController@editProduct')->name('ManagementEditProduct');
-Route::post('/ManagementEditProduct/{allProductMember_id}', 'Management\ProductsController@updateProduct')->name('ManagementUpdateProduct');
+Route::get('/ManagementEditProduct/{allProductMember_id}','Management\ProductsController@editProduct')->name('ManagementEditProduct');
+Route::post('/ManagementEditProduct/{allProductMember_id}','Management\ProductsController@updateProduct')->name('ManagementUpdateProduct');
 
 Route::get('/ManagementAddProduct','Management\AddProductController@AddProduct')->name('ManagementAddProduct');
 Route::post('/ManagementAddProduct','Management\AddProductController@createProduct')->name('ManagementAddProduct.post');

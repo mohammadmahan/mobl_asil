@@ -32,24 +32,24 @@ class ProductsController extends Controller
             'pastcost' => request()->input('pastcost'),
             'Description' => request()->input('Description'),
         ];
-        $imageinput = request()->file('imageU');
+        $imageinput = request()->file('imageUZ');
         if ($imageinput!="") {
-            $new_image_product_blog_name = request()->file('imageU')->getClientOriginalName();
-            $result = request()->file('imageU')->move(public_path('images\allproduct'),$new_image_product_blog_name);    
+            $new_image_product_blog_name = request()->file('imageUZ')->getClientOriginalName();
+            $resultUZ = request()->file('imageUZ')->move(public_path('images\allproduct'),$new_image_product_blog_name);
         }
-        if ($imageinput!="" && $result instanceof File){
-            $product_data['image'] ="/images/allproduct/".request()->file('imageU')->getClientOriginalName();
-            $products = allProductMember::find($allProductMember_id);
-            $products->update($product_data);
-            if ($products) {
-                return redirect()->route('ProductManagement');
+        if ($imageinput!="" && $resultUZ instanceof File){
+            $product_data['image'] ="/images/allproduct/".request()->file('imageUZ')->getClientOriginalName();
+            $product = allProductMember::find($allProductMember_id);
+            $product->update($product_data);
+            if ($product) {
+                return "drtyutrst";
             }
          }
          else{
-            $products = allProductMember::find($allProductMember_id);
-            $products->update($product_data);
-            if ($products) {
-                return redirect()->route('ProductManagement');
+            $product = allProductMember::find($allProductMember_id);
+            $product->update($product_data);
+            if ($product) {
+                return "afaefef";
             }
          }
         

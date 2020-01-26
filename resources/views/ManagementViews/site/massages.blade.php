@@ -20,7 +20,7 @@
                             <table class="table">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col">ردیف</th>
+                                        <th scope="col">شناسه</th>
                                         <th scope="col">نام و نام خانوادگی</th>
                                         <th scope="col">شماره تماس</th>
                                         <th scope="col">ایمیل</th>
@@ -30,7 +30,6 @@
                                 </thead>
                                 <tbody>
                                     @if($massages && count($massages)>0)
-
                                     @foreach($massages as $massage)
                                     <tr>
                                         <th scope="row">{{$massage->id}}</th>
@@ -47,8 +46,6 @@
 
                                     @endforeach
                                     @endif
-
-
                                 </tbody>
                             </table>
                         </div>
