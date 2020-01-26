@@ -1576,11 +1576,11 @@ li.sale-noti > a {
   background-color: #e65540;
   content: 'Sale';
 }
-
+/* 
 .block2-labelnew::before {
   background-color: #66a8a6;
   content: 'New';
-}
+} */
 
 /* ------------------------------------ */
 .block2-overlay {
@@ -2236,5 +2236,7 @@ input.num-product::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; 
 }
-
+.height-costum{
+  height: 45px !important;
+}
 
