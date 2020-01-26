@@ -23,13 +23,14 @@ Route::get('/allProduct-member', 'Member\allProductMemberController@allProductMe
 
 Route::get('/singleProduct-member/{allProductMember_id}', 'Member\allProductMemberController@singleProductMember')->name('singleProduct');
 
-Route::get('/blog', 'Member\HomeController@blogMember')->name('BlogMember');
+Route::get('/blog/{blog_id}', 'Member\HomeController@blogMember')->name('BlogMember');
 //////////////////start :: Management//////////////////
 
 Route::get('/ManagementDashboard', 'Management\DashboardController@dashboard');
 
 Route::get('/details/product','Management\ProductsController@details')->name('details.product');
 
+Route::get('/delete/massage{massages_id}', 'Management\MassagesController@deleteMassages')->name('delete.massage');
 Route::get('/ManagementMassages', 'Management\MassagesController@AllMassages')->name('massagesManagement');
 
 Route::get('/ManagementProducts', 'Management\ProductsController@AllProducts')->name('ProductManagement');
@@ -38,6 +39,9 @@ Route::post('/ManagementEditProduct/{allProductMember_id}','Management\ProductsC
 
 Route::get('/ManagementAddProduct','Management\AddProductController@AddProduct')->name('ManagementAddProduct');
 Route::post('/ManagementAddProduct','Management\AddProductController@createProduct')->name('ManagementAddProduct.post');
+
+Route::get('/ManagementEditProduct/{allProductMember_id}', 'Management\ProductsController@editProduct')->name('ManagementEditProduct');
+Route::post('/ManagementEditProduct/{allProductMember_id}', 'Management\ProductsController@updateProduct')->name('ManagementUpdateProduct');
 
 Route::get('/ManagementTahlilSystem','Management\TahlilSystemController@TahlilSystem')->name('ManagementTahlilSystem');
 
@@ -61,9 +65,10 @@ Route::get('/details/productindex','Management\TahlilSystemController@details_pr
 Route::get('/ManagementTahlilProductNew','Management\TahlilSystemController@TahlilProductNew')->name('ManagementTahlilProductNew');
 Route::get('/ManagementEditProductNew/{productNew_id}', 'Management\TahlilSystemController@productNewedit')->name('ManagementProductNewEdit');
 Route::post('/ManagementEditProductNew/{productNew_id}', 'Management\TahlilSystemController@productNewupdate')->name('ManagementProductNewUpdate');
+Route::get('/details/productNew','Management\TahlilSystemController@detailsNewProduct')->name('details.productNew');
 
 Route::get('/ManagementTahlilBlog','Management\TahlilSystemController@TahlilBlog')->name('ManagementTahlilBlog');
 Route::get('/ManagementEditBlog/{Blog_id}', 'Management\TahlilSystemController@BlogEdit')->name('ManagementBlogEdit');
 Route::post('/ManagementEditBlog/{Blog_id}', 'Management\TahlilSystemController@BlogUpdate')->name('ManagementBlogUpdate');
-
+Route::get('/details/blog','Management\TahlilSystemController@detailsblog')->name('details.blog');
 /////////////////end :: Management//////////////////

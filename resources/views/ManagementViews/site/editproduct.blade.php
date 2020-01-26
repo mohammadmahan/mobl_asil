@@ -1,5 +1,7 @@
 @extends('ManagementViews.layout.main')
-
+@section('title')
+    مبل اصیل|ویرایش محصولات
+@stop
 @section('content')
 
 <div class="content-wrapper">

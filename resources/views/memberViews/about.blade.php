@@ -26,11 +26,18 @@
                             {{$About->title}}
                         </h3>
                         <p class="p-b-28">
-                            {{$About->details}}
+                            {{$About->Description}}
                         </p>
                         <div class="bo13 p-l-29 m-l-9 p-b-10">
+                            <span>شماره تماس فروشگاه:</span>
                             <span class="s-text7">
-                                {{$About->management}}
+                                {{$About->phone}}
+                            </span>
+                        </div>
+                        <div class="bo13 p-l-29 m-l-9 p-b-10">
+                            <span> ادرس فروشگاه:</span>
+                            <span class="s-text7">
+                                {{$About->address}}
                             </span>
                         </div>
                     </div>

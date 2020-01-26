@@ -281,11 +281,13 @@
             @if($Abouts && count($Abouts)>0)
                 @foreach($Abouts as $About)
             <h4 class="s-text12 p-b-30">
-                در تماس باشید<span>{{$About->phone}}</span>
+               <span> در تماس باشید:</span><br>
+               <span class="s-text7 w-size27 mr-3">{{$About->phone}}</span>
             </h4>
             <div>
                 <p class="s-text7 w-size27">
-                    ادرس فروشگاه: <span>{{$About->address}}</span>
+                  <span>ادرس فروشگاه:</span> <br>
+                    <span class="s-text7 w-size27 mr-3">{{$About->address}}</span>
                 </p>
 
             @endforeach
@@ -401,19 +403,19 @@
     </div>
     <div class="t-center p-l-15 p-r-15">
         <a href="#">
-            <img class="h-size2" src="/images/icons/paypal.png" alt="IMG-PAYPAL">
+            <img class="h-size2" src="/images/icons/iconfinder_instagram_1107220 (1).png" title="اینستاگرام" alt="ایکن اینستاگرام">
         </a>
         <a href="#">
-            <img class="h-size2" src="/images/icons/visa.png" alt="IMG-VISA">
+            <img class="h-size2" src="/images/icons/iconfinder_social-07_3146784.png" title="تلگرام" alt="ایکن تلگرام">
         </a>
         <a href="#">
-            <img class="h-size2" src="/images/icons/mastercard.png" alt="IMG-MASTERCARD">
+            <img class="h-size2" src="/images/icons/iconfinder_whatsapp_287520.png" title="واتساپ" alt="ایکن واتساپ">
         </a>
         <a href="#">
-            <img class="h-size2" src="/images/icons/express.png" alt="IMG-EXPRESS">
+            <img class="h-size2" src="/images/icons/iconfinder_facebook_circle_color_107175.png" title="فیس بوک" alt="ایکن فیس بوک">
         </a>
         <a href="#">
-            <img class="h-size2" src="/images/icons/discover.png" alt="IMG-DISCOVER">
+            <img class="h-size2" src="/images/icons/iconfinder_twitter_circle_color_107170.png" title="توئیتر" alt="ایکن توئیتر">
         </a>
         <div class="t-center s-text8 p-t-20">
             حق کپی و رایت محفوظ مبلمان اصیل است ©

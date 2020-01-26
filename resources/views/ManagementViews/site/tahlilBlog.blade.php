@@ -7,14 +7,16 @@
             $(".details").click(function () {
                 var userId = $(this).attr("id");
                 var count = $(this).attr("count");
-                $.get('/details/product', {
+                $.get('/details/blog', {
                     userId: userId
                 }, function (data) {
 
                     //Getting informations from server
+                    var title = data["title"];
                     var Description = data["Description"];
 
                     //set values in modal
+                    $("#title").text(title);
                     $("#Description").text(Description);
                 });
             });
@@ -85,7 +87,10 @@
                 <div class="modal-body">
                     <div class="table-responsive responsive">
                         <table class="table-striped tbl-modal">
-                            
+                        <tr>
+                                <th> عنوان</th>
+                                <td id="title"></td>
+                            </tr>
                             <tr>
                                 <th>مشخصات محصول</th>
                                 <td id="Description"></td>

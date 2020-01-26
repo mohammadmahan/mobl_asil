@@ -1,5 +1,7 @@
 @extends('ManagementViews.layout.main')
-
+@section('title')
+    مبل اصیل|محصولات صفحه اصلی
+@stop
 @section('content')
 <script src="/js/myjq.js"></script>
     <script>
@@ -7,17 +9,17 @@
             $(".details").click(function () {
                 var userId = $(this).attr("id");
                 var count = $(this).attr("count");
-                $.get('details/productindex', {
+                $.get('/details/productindex', {
                     userId: userId
                 }, function (data) {
 
                     //Getting informations from server
-                    var name = data["name"];
+                    var title = data["title"];
                     var number_product = data["number_product"];
                     var Description = data["Description"];
 
                     //set values in modal
-                    $("#name").text(name);
+                    $("#title").text(title);
                     $("#number_product").text(number_product);
                     $("#Description").text(Description);
                 });
@@ -64,7 +66,7 @@
                                                 </a>
                                                 <a id="{{$productindex->id}}" class="details" data-toggle="tooltip" data-original-title="جزئیات محصول">
                                                 <i class="fa fa-arrows-v" data-toggle="modal" data-target="#modaldetails" aria-hidden="true"></i>
-                                            </a>
+                                                </a>
                                             </td>
                                         </tr>
                                     @endforeach
@@ -94,7 +96,7 @@
                         <table class="table-striped tbl-modal">
                             <tr>
                                 <th>نام محصول</th>
-                                <td id="name"></td>
+                                <td id="title"></td>
                             </tr>
                             <tr>
                                 <th>کد محصول</th>

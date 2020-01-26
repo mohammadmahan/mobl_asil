@@ -130,14 +130,16 @@
 
                                 <div class="block2">
                                     <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                                        <img src="{{$newProduct->image}}" alt="تصویر محصول جدید">
+                                        <img src="{{$newProduct->image}}" alt="تصویر محصول جدید" height="150px">
                                         <div class="block2-overlay trans-0-4">
 
                                             <div class="block2-btn-addcart w-size1 trans-0-4">
-
-                                                <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                 <a href="{{route('singleProduct',$newProduct->id)}}">
+												 <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
                                                     مشاهده محصول
                                                 </button>
+												 </a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -172,14 +174,14 @@
 				<div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
 					<div class="block3">
 						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
-							<img src="{{$InformationBlog->image}}" alt="IMG-BLOG">
+							<img src="{{$InformationBlog->image}}" alt="IMG-BLOG" height="220px">
 						</a>
 						<div class="block3-txt background-blog p-t-14">
 						<h4 class="card-title">{{$InformationBlog->title}}</h4>
 							<p class="s-text8 p-t-16">
 							{{$InformationBlog->Description}}
 						    </p>
-							<a href="" class="more-details">
+							<a href="{{route('BlogMember',$InformationBlog->id)}}" class="more-details">
 							<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>
 							</a>
 						</div>

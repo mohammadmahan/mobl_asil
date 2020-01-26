@@ -36,34 +36,34 @@
                 </p>
 
 
-{{--                <h6>مشخصات محصول</h6>--}}
+         <h6>مشخصات محصول</h6>
 
-{{--                <ul class="mb-5 mt-3 list-details">--}}
-{{--                    <li>--}}
-{{--                    <span>--}}
-{{--                        <i class="fa fa-check"></i>--}}
-{{--                    </span>--}}
-{{--                        <span> مبلمان کلاسیک</span>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                    <span>--}}
-{{--                        <i class="fa fa-check"></i>--}}
-{{--                    </span>--}}
-{{--                        <span>در رنگ بندی های: طوسی سبز سفید قهوه ای</span>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                    <span>--}}
-{{--                        <i class="fa fa-check"></i>--}}
-{{--                    </span>--}}
-{{--                        <span>در تعداد 7 و 13 نفره</span>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                    <span>--}}
-{{--                        <i class="fa fa-check"></i>--}}
-{{--                    </span>--}}
-{{--                        <span>دارای ست ناهار خوری</span>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
+            <ul class="mb-5 mt-3 list-details">
+                   <li>
+                    <span>
+                        <i class="fa fa-check"></i>
+                   </span>
+                       <span> مبلمان کلاسیک</span>
+                   </li>
+                    <li>
+                    <span>
+                        <i class="fa fa-check"></i>
+                   </span>
+                        <span>در رنگ بندی های: طوسی سبز سفید قهوه ای</span>
+                    </li>
+                    <li>
+                    <span>
+                        <i class="fa fa-check"></i>
+                    </span>
+                        <span>در تعداد 7 و 13 نفره</span>
+                    </li>
+                    <li>
+                    <span>
+                        <i class="fa fa-check"></i>
+                    </span>
+                        <span>دارای ست ناهار خوری</span>
+                    </li>
+                </ul>
 
                 <span> قیمت : </span><span>{{old('name',isset($productItem) ? $productItem->lastcost : '')}} تومان  </span>
             </div>
@@ -82,239 +82,41 @@
             </div>
 
             <div class="wrap-slick2">
-                <div class="slick2">
-                    <div class="item-slick2 p-l-15 p-r-15">
+				<div class="slick2">
+                    @if($newproducts && count($newproducts)>0)
 
-                        <div class="block2">
-                            <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-                                <img src="images/item-02.jpg" alt="IMG-PRODUCT">
-                                <div class="block2-overlay trans-0-4">
-                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="block2-btn-addcart w-size1 trans-0-4">
+                        @foreach($newproducts as $newproduct)
+                            <div class="item-slick2 p-l-15 p-r-15">
 
-                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                            مشاهده محصول
-                                        </button>
+                                <div class="block2">
+                                    <div class="block2-img wrap-pic-w of-hidden pos-relative">
+                                        <img src="{{$newproduct->image}}" alt="تصویر محصول جدید" height="150px">
+                                        <div class="block2-overlay trans-0-4">
+
+                                            <div class="block2-btn-addcart w-size1 trans-0-4">
+                                                 <a href="{{route('singleProduct',$newproduct->id)}}">
+												 <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                    مشاهده محصول
+                                                </button>
+												 </a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block2-txt direction-rtl p-t-20">
+                                        <a href="" class="block2-name dis-block s-text3 p-b-5">
+                                            {{$newproduct->title}}
+                                        </a>
+                                        <span class="block2-newprice m-text8 p-r-5">
+                                            {{$newproduct->cost}}
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="block2-txt direction-rtl p-t-20">
-                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    مبل درجه یک راحتی در مبلمان اصیل
-                                </a>
-                                <span class="block2-price m-text6 p-r-5">
-                                $75.00
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-slick2 p-l-15 p-r-15">
-
-                        <div class="block2">
-                            <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                                <img src="images/item-03.jpg" alt="IMG-PRODUCT">
-                                <div class="block2-overlay trans-0-4">
-                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="block2-btn-addcart w-size1 trans-0-4">
-
-                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                            مشاهده محصول
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block2-txt direction-rtl p-t-20">
-                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    مبل درجه یک راحتی در مبلمان اصیل
-                                </a>
-                                <span class="block2-price m-text6 p-r-5">
-                                $92.50
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-slick2 p-l-15 p-r-15">
-
-                        <div class="block2">
-                            <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                                <img src="images/item-05.jpg" alt="IMG-PRODUCT">
-                                <div class="block2-overlay trans-0-4">
-                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="block2-btn-addcart w-size1 trans-0-4">
-
-                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                            مشاهده محصول
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block2-txt direction-rtl p-t-20">
-                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    مبل درجه یک راحتی در مبلمان اصیل
-                                </a>
-                                <span class="block2-price m-text6 p-r-5">
-                                $165.90
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-slick2 p-l-15 p-r-15">
-
-                        <div class="block2">
-                            <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-                                <img src="images/item-07.jpg" alt="IMG-PRODUCT">
-                                <div class="block2-overlay trans-0-4">
-                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="block2-btn-addcart w-size1 trans-0-4">
-
-                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                            مشاهده محصول
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block2-txt direction-rtl p-t-20">
-                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    مبل درجه یک راحتی در مبلمان اصیل
-                                </a>
-                                <span class="block2-oldprice m-text7 p-r-5">
-                                $29.50
-                            </span>
-                                <span class="block2-newprice m-text8 p-r-5">
-                                $15.90
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-slick2 p-l-15 p-r-15">
-
-                        <div class="block2">
-                            <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-                                <img src="images/item-02.jpg" alt="IMG-PRODUCT">
-                                <div class="block2-overlay trans-0-4">
-                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="block2-btn-addcart w-size1 trans-0-4">
-
-                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                            مشاهده محصول
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block2-txt direction-rtl p-t-20">
-                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    مبل درجه یک راحتی در مبلمان اصیل
-                                </a>
-                                <span class="block2-price m-text6 p-r-5">
-                                $75.00
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-slick2 p-l-15 p-r-15">
-
-                        <div class="block2">
-                            <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                                <img src="images/item-03.jpg" alt="IMG-PRODUCT">
-                                <div class="block2-overlay trans-0-4">
-                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="block2-btn-addcart w-size1 trans-0-4">
-
-                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                            مشاهده محصول
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block2-txt direction-rtl p-t-20">
-                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    مبل درجه یک راحتی در مبلمان اصیل
-                                </a>
-                                <span class="block2-price m-text6 p-r-5">
-                                $92.50
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-slick2 p-l-15 p-r-15">
-
-                        <div class="block2">
-                            <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                                <img src="images/item-05.jpg" alt="IMG-PRODUCT">
-                                <div class="block2-overlay trans-0-4">
-                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="block2-btn-addcart w-size1 trans-0-4">
-
-                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                            مشاهده محصول
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block2-txt direction-rtl p-t-20">
-                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    مبل درجه یک راحتی در مبلمان اصیل
-                                </a>
-                                <span class="block2-price m-text6 p-r-5">
-                                $165.90
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-slick2 p-l-15 p-r-15">
-
-                        <div class="block2">
-                            <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-                                <img src="images/item-07.jpg" alt="IMG-PRODUCT">
-                                <div class="block2-overlay trans-0-4">
-                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="block2-btn-addcart w-size1 trans-0-4">
-
-                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                            مشاهده محصول
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block2-txt direction-rtl p-t-20">
-                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    مبل درجه یک راحتی در مبلمان اصیل
-                                </a>
-                                <span class="block2-oldprice m-text7 p-r-5">
-                                $29.50
-                            </span>
-                                <span class="block2-newprice m-text8 p-r-5">
-                                $15.90
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        @endforeach
+                    @endif
+				</div>
+			</div>
         </div>
     </section>
 

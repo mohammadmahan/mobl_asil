@@ -4,34 +4,24 @@
 @stop
 @section("content")
 
-<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/heading-pages-05.jpg);">
-    <h2 class="l-text2 t-center">
-        دانستنی ها
-    </h2>
-</section>
-
-<section class="bgwhite p-t-60">
+<section class="bgwhite mt-5">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-lg-9 p-b-75">
                 <div class="p-r-50 p-r-0-lg">
 
                     <div class="item-blog p-b-80">
-                        <a href="blog-detail.html" class="item-blog-img pos-relative dis-block hov-img-zoom">
-                            <img src="images/blog-04.jpg" alt="IMG-BLOG">
-                            <span class="item-blog-date dis-block flex-c-m pos1 size17 bg4 s-text1">
-                                28 Dec, 2018
-                            </span>
+                        <a class="item-blog-img pos-relative dis-block hov-img-zoom">
+                            <img src="{{old('name',isset($InformationBlogs) ? $InformationBlogs->image : '')}}" alt="IMG-BLOG">
                         </a>
                         <div class="item-blog-txt p-t-33">
                             <h4 class="p-b-11">
                                 <a href="blog-detail.html" class="m-text24">
-                                    Black Friday Guide: Best Sales & Discount Codes
+                                {{old('name',isset($InformationBlogs) ? $InformationBlogs->title : '')}}
                                 </a>
                             </h4>
                             <p class="p-b-12">
-                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                                himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius
+                            {{old('name',isset($InformationBlogs) ? $InformationBlogs->Description : '')}}
                             </p>
                         </div>
                     </div>
