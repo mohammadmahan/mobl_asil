@@ -126,7 +126,6 @@ class TahlilSystemController extends Controller
     {
             $Abouts = AboutMember::all();
             return view('ManagementViews/site/tahlilAbout', compact('Abouts'));
-            
     }
 
     public function updateAbout()

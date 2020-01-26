@@ -34,6 +34,9 @@ Route::get('/delete/massage{massages_id}', 'Management\MassagesController@delete
 Route::get('/ManagementMassages', 'Management\MassagesController@AllMassages')->name('massagesManagement');
 
 Route::get('/ManagementProducts', 'Management\ProductsController@AllProducts')->name('ProductManagement');
+Route::get('/ManagementEditProduct/{allProductMember_id}','Management\ProductsController@editProduct')->name('ManagementEditProduct');
+Route::post('/ManagementEditProduct/{allProductMember_id}','Management\ProductsController@updateProduct')->name('ManagementUpdateProduct');
+
 Route::get('/ManagementAddProduct','Management\AddProductController@AddProduct')->name('ManagementAddProduct');
 Route::post('/ManagementAddProduct','Management\AddProductController@createProduct')->name('ManagementAddProduct.post');
 
@@ -42,6 +45,7 @@ Route::post('/ManagementEditProduct/{allProductMember_id}', 'Management\Products
 
 Route::get('/ManagementTahlilSystem','Management\TahlilSystemController@TahlilSystem')->name('ManagementTahlilSystem');
 
+Route::get('/delete/place/{massages_id}', 'Management\MassagesController@deleteMassages')->name('delete.massage');
 
 
 Route::get('/ManagementTahlilSlider','Management\TahlilSystemController@TahlilSlider')->name('ManagementTahlilSlider');

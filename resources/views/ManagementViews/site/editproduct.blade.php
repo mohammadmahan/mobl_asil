@@ -16,7 +16,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-content collapse show pad-box">
-                    <form class="form" action="" method="post" enctype="multipart/form-data">
+                    <form class="form" action="" method="post">
 							<div class="form-body">
 								<div class="row">
 									<div class="form-group col-md-6 mb-2">
@@ -44,7 +44,7 @@
 									<div class="form-group col-12 mb-2">
 										<label>تصویر محصول</label>
 										<label id="projectinput8" class="file center-block">
-											<input type="file" id="file" name="imageU">
+											<input type="file" id="file" name="imageUZ">
 											<span class="file-custom"></span>
 										</label>
 									</div>
