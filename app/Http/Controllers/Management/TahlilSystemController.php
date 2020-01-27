@@ -133,6 +133,7 @@ class TahlilSystemController extends Controller
         $About_data = [
             'title' => request()->input('title'),
             'phone' => request()->input('phone'),
+            'email' => request()->input('email'),
             'address' => request()->input('address'),
             'Description' => request()->input('Description'),
         ];

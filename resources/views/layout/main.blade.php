@@ -58,7 +58,13 @@
             </div>
             <div class="topbar-child2">
 					<span class="topbar-email">
-						<a href="#" class="__cf_email__ font-13">mobl_asil@example.com</a>
+                    @if($Abouts && count($Abouts)>0)
+                       @foreach($Abouts as $About) 
+						<a href="#" class="__cf_email__ font-13">
+                       {{$About->email}}
+                       </a>
+                       @endforeach
+                       @endif
 					</span>
             </div>
         </div>
@@ -85,78 +91,7 @@
                 </nav>
             </div>
 
-            <div class="header-icons">
-                <a href="#" class="header-wrapicon1 dis-block">
-                    <img src="/images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
-                </a>
-                <span class="linedivide1"></span>
-                <div class="header-wrapicon2">
-                    <img src="/images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown"
-                         alt="ICON">
-                    <span class="header-icons-noti">0</span>
-
-                    <div class="header-cart header-dropdown">
-                        <ul class="header-cart-wrapitem">
-                            <li class="header-cart-item">
-                                <div class="header-cart-item-img">
-                                    <img src="/images/item-cart-01.jpg" alt="IMG">
-                                </div>
-                                <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                        مبل سلطنتی شماره 1
-                                    </a>
-                                    <span class="header-cart-item-info">
-											30 میلیون تومان
-										</span>
-                                </div>
-                            </li>
-                            <li class="header-cart-item">
-                                <div class="header-cart-item-img">
-                                    <img src="/images/item-cart-02.jpg" alt="IMG">
-                                </div>
-                                <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                        مبل راحتی 2
-                                    </a>
-                                    <span class="header-cart-item-info">
-											11 میلیون تومان
-										</span>
-                                </div>
-                            </li>
-                            <li class="header-cart-item">
-                                <div class="header-cart-item-img">
-                                    <img src="/images/item-cart-03.jpg" alt="IMG">
-                                </div>
-                                <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                        صندلی راحتی برای نشیمنگاه شما
-                                    </a>
-                                    <span class="header-cart-item-info">
-											2 میلیون تومان
-										</span>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="header-cart-total">
-                            جمع: 26 میلیون تومان
-                        </div>
-                        <div class="header-cart-buttons">
-                            <div class="header-cart-wrapbtn">
-
-                                <a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-                                    مشاهده سبد خرید
-                                </a>
-                            </div>
-                            <div class="header-cart-wrapbtn">
-
-                                <a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-                                    Check Out
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 
