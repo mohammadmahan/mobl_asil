@@ -3,6 +3,13 @@
 @section("title")
 مبلمان اصیل|درباره ما
 @stop
+@section("style")
+    <style>
+        li.about-us-menu > a {
+            color: #e65540;
+        }
+    </style>
+@stop
 @section("content")
 
     <section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/heading-pages-06.jpg);">

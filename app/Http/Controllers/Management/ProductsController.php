@@ -35,21 +35,21 @@ class ProductsController extends Controller
         $imageinput = request()->file('imageUZ');
         if ($imageinput!="") {
             $new_image_product_blog_name = request()->file('imageUZ')->getClientOriginalName();
-            $resultUZ = request()->file('imageUZ')->move(public_path('images\allproduct'),$new_image_product_blog_name);
+            $resultUZ = request()->file('imageUZ')->move(public_path('Management\images\allproduct'),$new_image_product_blog_name);
         }
         if ($imageinput!="" && $resultUZ instanceof File){
-            $product_data['image'] ="/images/allproduct/".request()->file('imageUZ')->getClientOriginalName();
+            $product_data['image'] ="/Management/images/allproduct/".request()->file('imageUZ')->getClientOriginalName();
             $product = allProductMember::find($allProductMember_id);
             $product->update($product_data);
             if ($product) {
-                return "drtyutrst";
+                return redirect()->route('ProductManagement');
             }
          }
          else{
             $product = allProductMember::find($allProductMember_id);
             $product->update($product_data);
             if ($product) {
-                return "afaefef";
+                return redirect()->route('ProductManagement');
             }
          }
         
