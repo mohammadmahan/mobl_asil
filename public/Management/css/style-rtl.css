@@ -97,3 +97,12 @@ html,body,div,header,span,h1,h2,h3,h4,h5,h6,a,p,table,button,input{
     background-color:#f3f3f3;
     width: 95%;
   }
+  .delete-button{
+    background-color: rgb(221, 49, 49) !important;
+    border: 1px solid rgb(221, 49, 49) !important;
+  }
+  .delete-button:hover{
+    background-color: rgb(221, 86, 86) !important;
+    border: 1px solid rgb(221, 86, 86) !important; 
+  }
+ 
