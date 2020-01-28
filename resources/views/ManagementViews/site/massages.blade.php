@@ -60,7 +60,7 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
-                                                    <a href="{{route('delete.massage',$massage->id)}}" type="submit" class="btn btn-primary">حذف</a>
+                                                    <a href="{{route('delete.massage',$massage->id)}}" type="submit" class="btn btn-primary delete-button">حذف</a>
                                                 </div>
                                             </div>
                                         </div>
