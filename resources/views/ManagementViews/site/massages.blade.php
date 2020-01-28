@@ -66,7 +66,6 @@
                                         </div>
                                     </div>
                                     <!------------------end modal delete----------------------------->
-
                                     @endforeach
                                     @endif
                                 </tbody>
