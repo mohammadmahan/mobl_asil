@@ -43,6 +43,13 @@
                                                 </div>
                                             </div>
                                             <div class="row">
+                                                <div class="form-group col-md-6 mb-2">
+                                                <label>ایمیل</label>
+                                                    <input type="text" id="projectinput1" class="form-control" name="email"
+                                                        value="{{$About->email}}">
+                                                </div>
+                                            </div>
+                                            <div class="row">
                                                 <div class="form-group col-md-8 mb-2">
                                                 <label>توضیحات</label>
                                                     <textarea class="form-control" row="5" name="Description"
