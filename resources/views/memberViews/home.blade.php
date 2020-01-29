@@ -2,6 +2,13 @@
 @section("title")
 مبلمان اصیل | صفحه اصلی
 @stop
+@section("style")
+    <style>
+        li.home-asli-menu > a {
+            color: #e65540;
+        }
+    </style>
+@stop
 @section("content")
 
 <section class="slide1">

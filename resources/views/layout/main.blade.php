@@ -75,16 +75,16 @@
             <div class="wrap_menu">
                 <nav class="menu">
                     <ul class="main_menu">
-                        <li>
+                        <li class="home-asli-menu">
                             <a href="{{route('homeMember')}}">صفحه اصلی</a>
                         </li>
                         <li class="sale-noti">
                             <a href="{{route('allProductMember')}}">محصولات ما</a>
                         </li>
-                        <li>
+                        <li class="about-us-menu">
                             <a href="{{route('aboutMember')}}">درباره ما</a>
                         </li>
-                        <li>
+                        <li class="contact-us-menu">
                             <a href="{{route('contactMember')}}">تماس با ما</a>
                         </li>
                     </ul>
