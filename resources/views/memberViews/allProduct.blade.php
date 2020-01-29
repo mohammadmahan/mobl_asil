@@ -4,7 +4,7 @@
 @stop
 @section("content")
 
-<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(images/heading-pages-02.jpg);">
+<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(/images/heading-pages-02.jpg);">
     <h2 class="l-text2 t-center">
         محصولات
     </h2>
@@ -29,10 +29,16 @@
                         دسته بندی
                     </h4>
                     <ul class="p-b-54">
+                    <li class="p-t-6 p-b-8 bo6">
+                            <a href="{{route('allProductMember')}}" class="s-text13 active1">
+                            همه
+                            </a>
+                        </li>
                     @if($dastebandis && count($dastebandis)>0)
                         @foreach($dastebandis as $dastebandi)
-                        <li class="p-t-4">
-                            <a href="#" class="s-text13 active1">
+                        
+                        <li class="p-t-6 p-b-8 bo6">
+                            <a href="{{route('category-products',$dastebandi->id)}}" class="s-text13 active1">
                             {{$dastebandi->dastebandi}}
                             </a>
                         </li>
@@ -40,35 +46,32 @@
                        @endif
                     </ul>
 
+
+                    <h4 class="m-text14 p-b-7 mt-2">
+                       فیلترها
+                    </h4>
+                    <ul class="p-b-54">
+                    @if($priceproducts && count($priceproducts)>0)
+                        @foreach($priceproducts as $priceproduct)
+                        <li class="p-t-6 p-b-8 bo6">
+                            <a href="{{route('price-products',$priceproduct->id)}}" class="s-text13 active1">
+                            {{$priceproduct->price}}
+                            </a>
+                        </li>
+                        @endforeach
+                       @endif
+                    </ul>
                     
                 </div>
             </div>
             <div class="col-sm-6 col-md-8 col-lg-9 p-b-50">
-
-                <div class="flex-sb-m flex-w p-b-35">
-                    <div class="flex-w">
-                        <div class="w-size12 m-t-5 m-b-5 m-r-10">
-                            <select class="form-control height-costum" name="sorting">
-                                <option>قیمت</option>
-                                @if($priceproducts && count($priceproducts)>0)
-                                 @foreach($priceproducts as $priceproduct)
-                                <option>{{$priceproduct->price}}</option>
-                                @endforeach
-                               @endif
-                            </select>
-                        </div>
-                    </div>
-
-                </div>
-
                 <div class="row">
                     @if($allProductMembers && count($allProductMembers)>0)
                         @foreach($allProductMembers as $allProductMember)
                             <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-
                                 <div class="block2">
                                     <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-                                        <img src="{{$allProductMember->image}}" alt="IMG-PRODUCT">
+                                        <img src="/{{$allProductMember->image}}" alt="IMG-PRODUCT">
                                         <div class="block2-overlay trans-0-4">
                                             <div class="block2-btn-addcart w-size1 trans-0-4">
                                                 <a href="">

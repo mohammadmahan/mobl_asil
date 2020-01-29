@@ -10,7 +10,7 @@ use App\Models\InformationBlog;
 use App\Models\ProductIndex;
 use App\Models\TopSlider;
 use App\Models\price;
-
+use App\price as AppPrice;
 
 class HomeController extends Controller
 {
@@ -27,8 +27,8 @@ class HomeController extends Controller
         $sliders = TopSlider::all();
         $InformationBlogs = InformationBlog::all();
         $Productindexs = ProductIndex::all();
-        $priceproduct = price::all();
-        return view('memberViews/home',compact('newProducts','sliders','InformationBlogs','Abouts','Productindexs','price'));
+        $priceproduct = AppPrice::all();
+        return view('memberViews/home',compact('newProducts','sliders','InformationBlogs','Abouts','Productindexs','priceproduct'));
     }
 
     public function blogMember($blog_id){
