@@ -17,11 +17,15 @@
                     var name = data["name"];
                     var number_product = data["number_product"];
                     var Description = data["Description"];
+                    var price_id = data["price_id"];
+                    var categories_id = data["categories_id"];
 
                     //set values in modal
                     $("#name").text(name);
                     $("#number_product").text(number_product);
                     $("#Description").text(Description);
+                    $("#price_id").text(price_id);
+                    $("#categories_id").text(categories_id);
                 });
             });
         });
@@ -123,6 +127,14 @@
                             <tr>
                                 <th>کد محصول</th>
                                 <td id="number_product"></td>
+                            </tr>
+                            <tr>
+                                <th>دسته بندی</th>
+                                <td id="categories_id"></td>
+                            </tr>
+                            <tr>
+                                <th>فیلترینگ</th>
+                                <td id="price_id"></td>
                             </tr>
                             <tr>
                                 <th>مشخصات محصول</th>

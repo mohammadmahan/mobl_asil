@@ -102,13 +102,13 @@
                         </div>
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="card">
-                                <a href="">
+                                <a href="{{route('filtering')}}">
                                     <div class="card-content single-card">
                                         <div class="card-body">
                                             <div class="media d-flex">
                                                 <div class="media-body text-left">
-                                                    <h3 class="success">156</h3>
-                                                    <span>New Clients</span>
+                                                    <h5>دسته بندی و فیلتر محصولات</h5>
+                                                    <span> فیلتر و دسته بندی محصولات</span>
                                                 </div>
                                                 <div class="align-self-center">
                                                     <i class="icon-user success font-large-2 float-right"></i>

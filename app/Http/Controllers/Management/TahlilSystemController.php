@@ -5,9 +5,11 @@ namespace App\Http\Controllers\Management;
 use App\Http\Controllers\Controller;
 use App\Models\productIndex;
 use App\Models\AboutMember;
+use App\Models\categories;
 use App\Models\InformationBlog;
 use App\Models\NewProduct;
 use App\Models\TopSlider;
+use App\price;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -266,4 +268,28 @@ class TahlilSystemController extends Controller
     }
 
 /*************END TAHLIL PAGE BLOG****************/
+public function filtering(){
+    $priceproducts = price::all();
+    $dastebandis = categories::all();
+    return view('ManagementViews/site/filtering', compact('priceproducts','dastebandis'));
+}
+public function FilteringEdit(){
+    $priceproducts = price::all();
+    $dastebandis = categories::all();
+      return view('ManagementViews/site/filtering', compact('priceproducts','dastebandis'));
+}
+public function FilteringUpdate(){
+    $About_data = [
+        'title' => request()->input('title'),
+        'phone' => request()->input('phone'),
+        'email' => request()->input('email'),
+        'address' => request()->input('address'),
+        'Description' => request()->input('Description'),
+    ];
+    $about = AboutMember::find(1);
+            $about->update($About_data);
+            if ($about) {
+                return redirect()->route('ManagementTahlilAbout');
+            }
+}
 }

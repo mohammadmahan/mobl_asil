@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Management;
 
 use App\allProductMember;
 use App\Http\Controllers\Controller;
+use App\Models\categories;
+use App\price;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\File\File;
 
@@ -11,15 +13,20 @@ class ProductsController extends Controller
 {
     public function AllProducts()
     {
+        $priceproducts =price::all();
+        $dastebandis = categories::all();
         $allProductMembers = allProductMember::all();
-        return view('ManagementViews/site/products',compact('allProductMembers'));
+        return view('ManagementViews/site/products',compact('allProductMembers','priceproducts','dastebandis'));
     }
     public function editProduct($allProductMember_id)
     {
+        
+        $priceproducts =price::all();
+        $dastebandis = categories::all();
         if ($allProductMember_id && ctype_digit($allProductMember_id)) {
             $ProductItem = allProductMember::find($allProductMember_id);
             if ($ProductItem && $ProductItem instanceof allProductMember) {
-                return view('ManagementViews/site/editproduct', compact('ProductItem'));
+                return view('ManagementViews/site/editproduct', compact('ProductItem','priceproducts','dastebandis'));
             }
         }
     }
