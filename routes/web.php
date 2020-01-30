@@ -71,6 +71,15 @@ Route::get('/ManagementTahlilBlog','Management\TahlilSystemController@TahlilBlog
 Route::get('/ManagementEditBlog/{Blog_id}', 'Management\TahlilSystemController@BlogEdit')->name('ManagementBlogEdit');
 Route::post('/ManagementEditBlog/{Blog_id}', 'Management\TahlilSystemController@BlogUpdate')->name('ManagementBlogUpdate');
 Route::get('/details/blog','Management\TahlilSystemController@detailsblog')->name('details.blog');
+
+
+Route::get('/ManagementFiltering','Management\TahlilSystemController@filtering')->name('filtering');
+Route::get('/ManagementEditFiltering/{Filtering_id}', 'Management\TahlilSystemController@FilteringEdit')->name('ManagementFilteringEdit');
+Route::post('/ManagementEditFiltering/{Filtering_id}', 'Management\TahlilSystemController@FilteringUpdate')->name('ManagementFilteringUpdate');
+
+
+Route::get('/ManagementFiltering','Management\TahlilSystemController@filtering')->name('filtering');
+
 /////////////////end :: Management//////////////////
 
 

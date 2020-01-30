@@ -18,8 +18,8 @@
                 <div class="card">
                     <div class="card-content collapse show pad-box">
                     <form class="form" action="" method="post" enctype="multipart/form-data">
-							<div class="form-body">
-							{{csrf_field()}}
+                        {{csrf_field()}}
+                        <div class="form-body">
 								<div class="row">
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput1">اسم محصول</label>

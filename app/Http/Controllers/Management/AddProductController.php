@@ -5,13 +5,17 @@ namespace App\Http\Controllers\Management;
 use App\AddProduct;
 use App\allProductMember;
 use App\Http\Controllers\Controller;
+use App\Models\categories;
+use App\price;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\File\File;
 
 class AddProductController extends Controller
 {
    public function AddProduct(){
-    return view('ManagementViews/site/addproduct');
+      $priceproducts = price::all();
+      $dastebandis = categories::all();
+    return view('ManagementViews/site/addproduct',compact('priceproducts','dastebandis'));
    }
    public function createProduct(Request $request)
    {
@@ -21,6 +25,8 @@ class AddProductController extends Controller
          'lastcost' => request()->input('lastcost'),
          'pastcost' => request()->input('pastcost'),
          'Description' => request()->input('Description'),
+         'categories_id' => request()->input('categories'),
+         'price_id' => request()->input('price'),
      ];
 
        $imageinput = request()->file('imageproduct');

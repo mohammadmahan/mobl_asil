@@ -5,9 +5,11 @@ namespace App\Http\Controllers\Management;
 use App\Http\Controllers\Controller;
 use App\Models\productIndex;
 use App\Models\AboutMember;
+use App\Models\categories;
 use App\Models\InformationBlog;
 use App\Models\NewProduct;
 use App\Models\TopSlider;
+use App\price;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -265,4 +267,30 @@ class TahlilSystemController extends Controller
     }
 
 /*************END TAHLIL PAGE BLOG****************/
+
+
+
+public function filtering(){
+    $priceproducts = price::all();
+    $dastebandis = categories::all();
+    return view('ManagementViews/site/filtering', compact('priceproducts','dastebandis'));
+}
+public function FilteringEdit($Filtering_id){
+    if($Filtering_id && ctype_digit($Filtering_id)){
+        $price = price::find($Filtering_id);
+        if($price && $price instanceof price){
+         return view('ManagementViews/site/editFiltering',compact('price')); 
+        } 
+     }
+}
+public function FilteringUpdate($Filtering_id){
+    $filter_data = [
+        'price' => request()->input('price'),
+    ];
+    $price = price::find($Filtering_id);
+    $price->update($filter_data);
+    if ($price) {
+        return redirect()->route('ManagementEditFiltering');
+    }
+}
 }
