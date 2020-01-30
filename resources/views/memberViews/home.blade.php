@@ -11,6 +11,9 @@
 @stop
 @section("content")
 
+
+
+
 <section class="slide1">
     <div class="wrap-slick1">
         <div class="slick1 ltr-dir">
@@ -130,37 +133,36 @@
 			<div class="wrap-slick2">
 				<div class="slick2">
 
-                    @if($newProducts && count($newProducts)>0)
+                    @if($allProductMembers && count($allProductMembers)>0)
+                            @foreach($allProductMembers as $allProductMember)
+                                <div class="item-slick2 p-l-15 p-r-15">
 
-                        @foreach($newProducts as $newProduct)
-                            <div class="item-slick2 p-l-15 p-r-15">
+                                    <div class="block2">
+                                        <div class="block2-img wrap-pic-w of-hidden pos-relative">
+                                            <img src="{{$allProductMember->image}}" alt="تصویر محصول جدید" height="150px">
+                                            <div class="block2-overlay trans-0-4">
 
-                                <div class="block2">
-                                    <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                                        <img src="{{$newProduct->image}}" alt="تصویر محصول جدید" height="150px">
-                                        <div class="block2-overlay trans-0-4">
+                                                <div class="block2-btn-addcart w-size1 trans-0-4">
+                                                     <a href="{{route('singleProduct',$allProductMember->id)}}">
+                                                     <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                        مشاهده محصول
+                                                    </button>
+                                                     </a>
 
-                                            <div class="block2-btn-addcart w-size1 trans-0-4">
-                                                 <a href="{{route('singleProduct',$newProduct->id)}}">
-												 <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                                    مشاهده محصول
-                                                </button>
-												 </a>
-                                                
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="block2-txt direction-rtl p-t-20">
-                                        <a href="" class="block2-name dis-block s-text3 p-b-5">
-                                            {{$newProduct->title}}
-                                        </a>
-                                        <span class="block2-newprice m-text8 p-r-5">
-                                            {{$newProduct->cost}}
-                                        </span>
+                                        <div class="block2-txt direction-rtl p-t-20">
+                                            <a href="" class="block2-name dis-block s-text3 p-b-5">
+                                                {{$allProductMember->name}}
+                                            </a>
+                                            <span class="block2-newprice m-text8 p-r-5">
+                                                {{$allProductMember->lastcost}}
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        @endforeach
+                            @endforeach
                     @endif
 				</div>
 			</div>

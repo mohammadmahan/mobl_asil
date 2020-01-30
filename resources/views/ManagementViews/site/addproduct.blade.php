@@ -17,7 +17,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-content collapse show pad-box">
-                    <form class="form" action="" method="post" >
+                    <form class="form" action="" method="post" enctype="multipart/form-data">
 							<div class="form-body">
 							{{csrf_field()}}
 								<div class="row">

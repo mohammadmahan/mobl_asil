@@ -11,6 +11,77 @@
 @stop
 @section("content")
 
+    <script src="/js/myJq.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".search-product-btn").click(function () {
+
+                var searchInput = $(".search-product-input").val();
+                var count;
+                $.get('/search/allProducts', {
+                    searchInput: searchInput
+                }, function (data) {
+                    console.log(data);
+
+
+                    var id = data[0]["id"];
+                    var image = data[0]["image"];
+                    var name = data[0]["name"];
+                    var pastcost = data[0]["pastcost"];
+                    var lastcost = data[0]["lastcost"];
+
+
+
+                    let myinformaion='<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">\n' +
+                        '                                <div class="block2">\n' +
+                        '                                    <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">\n' +
+                        '                                        <img src="'+image+'" alt="IMG-PRODUCT">\n' +
+                        '                                        <div class="block2-overlay trans-0-4">\n' +
+                        '                                            <div class="block2-btn-addcart w-size1 trans-0-4">\n' +
+                        '                                                <a href="">\n' +
+                        '                                                    <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">\n' +
+                        '                                                        مشاهده محصول\n' +
+                        '                                                    </button>\n' +
+                        '                                                </a>\n' +
+                        '                                            </div>\n' +
+                        '                                        </div>\n' +
+                        '                                    </div>\n' +
+                        '                                    <div class="block2-txt p-t-20 text-center">\n' +
+                        '                                        <a href="/singleProduct-member/'+id+'" class="block2-name dis-block s-text3 p-b-5">\n' +
+                        '                                           '+name+'\n' +
+                        '                                        </a>\n' +
+                        '                                        <span class="block2-price m-text6 p-r-5">\n' +
+                        '                                  <span class="custom-style-cost"><s>'+pastcost+'</s></span> <br>'+lastcost+'<span>تومان</span>\n' +
+                        '                                </span>\n' +
+                        '                                    </div>\n' +
+                        '                                </div>\n' +
+                        '                            </div>';
+
+
+                        $("#products_object").html(myinformaion);
+
+
+
+
+
+                    //set values in modal
+                    // $("#table").text(" ");
+                    // $("#radifCount").text(count);
+                    // $("#namvafamily").text(name + " " + family);
+                    // $("#daneshjoo_code").text(student_code);
+                    // $("#code_melli").text(National_Code);
+                    // $("#mobile").text("09921558293");
+                    // $("#reshte").text("مهندسی کامپیوتر");
+                    // $("#student_term").text(term);
+
+
+                });
+
+            });
+        })
+    </script>
 <section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(/images/heading-pages-02.jpg);">
     <h2 class="l-text2 t-center">
         محصولات
@@ -26,9 +97,9 @@
             <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
                 <div class="leftbar p-r-20 p-r-0-sm">
                 <div class="search-product pos-relative bo4 of-hidden">
-                        <input class="s-text7 size6 p-l-23 p-r-50" type="text" name="search-product"
+                        <input class="s-text7 size6 p-l-23 p-r-50 search-product-input" type="text" name="search-product"
                             placeholder="جستجو محصولات ..">
-                        <button class="flex-c-m size5 ab-r-m color2 color0-hov trans-0-4">
+                        <button class="flex-c-m size5 ab-r-m color2 color0-hov trans-0-4 search-product-btn">
                             <i class="fs-12 fa fa-search" aria-hidden="true"></i>
                         </button>
                     </div>
@@ -72,7 +143,7 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-8 col-lg-9 p-b-50">
-                <div class="row">
+                <div class="row" id="products_object">
                     @if($allProductMembers && count($allProductMembers)>0)
                         @foreach($allProductMembers as $allProductMember)
                             <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">

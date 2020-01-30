@@ -77,3 +77,7 @@ Route::get('/details/blog','Management\TahlilSystemController@detailsblog')->nam
 Route::get('/allProduct-member/category/{category_id}', 'Member\allProductMemberController@withcategory')->name('category-products');
 Route::get('/allProduct-member/price/{price_id}', 'Member\allProductMemberController@withprice')->name('price-products');
 Route::get('/allProduct-member/{category_id}/{price_id}', 'Member\allProductMemberController@categoryprice')->name('categoryprice');
+
+
+
+Route::get('/search/allProducts','Member\allProductMemberController@searchAllProducts');

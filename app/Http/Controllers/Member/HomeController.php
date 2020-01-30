@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Member;
 
+use App\allProductMember;
 use App\Models\AboutMember;
 use App\Models\NewProduct;
 use Illuminate\Http\Request;
@@ -28,7 +29,8 @@ class HomeController extends Controller
         $InformationBlogs = InformationBlog::all();
         $Productindexs = ProductIndex::all();
         $priceproduct = AppPrice::all();
-        return view('memberViews/home',compact('newProducts','sliders','InformationBlogs','Abouts','Productindexs','priceproduct'));
+        $allProductMembers = allProductMember::latest()->take(2)->get();
+        return view('memberViews/home',compact('newProducts','sliders','InformationBlogs','Abouts','Productindexs','priceproduct','allProductMembers'));
     }
 
     public function blogMember($blog_id){

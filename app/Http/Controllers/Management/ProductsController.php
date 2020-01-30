@@ -14,6 +14,10 @@ class ProductsController extends Controller
         $allProductMembers = allProductMember::all();
         return view('ManagementViews/site/products',compact('allProductMembers'));
     }
+
+
+    /*************START EDIT ALL PRODUCT***************/
+
     public function editProduct($allProductMember_id)
     {
         if ($allProductMember_id && ctype_digit($allProductMember_id)) {
@@ -54,6 +58,9 @@ class ProductsController extends Controller
          }
         
     }
+
+    /*************END EDIT ALL PRODUCT***************/
+
 
     public function details(){
         if (\Illuminate\Support\Facades\Request::ajax()) {

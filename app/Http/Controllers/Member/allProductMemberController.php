@@ -10,6 +10,7 @@ use App\Models\categories;
 use App\Models\NewProduct;
 use App\Models\price;
 use App\price as AppPrice;
+use Illuminate\Support\Facades\DB;
 
 class allProductMemberController extends Controller
 {
@@ -58,4 +59,12 @@ class allProductMemberController extends Controller
              }
          }
      }
+    public function searchAllProducts()
+    {
+        if (\Illuminate\Support\Facades\Request::ajax()) {
+            $searchValue = $_GET["searchInput"];
+            $currentValue = allProductMember::where('name', $searchValue)->get();
+            return $currentValue;
+        }
+    }
 }
