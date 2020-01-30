@@ -78,6 +78,8 @@ Route::get('/ManagementEditFiltering/{Filtering_id}', 'Management\TahlilSystemCo
 Route::post('/ManagementEditFiltering/{Filtering_id}', 'Management\TahlilSystemController@FilteringUpdate')->name('ManagementFilteringUpdate');
 
 
+Route::get('/ManagementFiltering','Management\TahlilSystemController@filtering')->name('filtering');
+
 /////////////////end :: Management//////////////////
 
 
