@@ -269,10 +269,19 @@ class TahlilSystemController extends Controller
 /*************END TAHLIL PAGE BLOG****************/
 
 
-public function FilteringEdit($Filtering_id){
+
+public function filtering(){
     $priceproducts = price::all();
     $dastebandis = categories::all();
-      return view('ManagementViews/site/filtering', compact('priceproducts','dastebandis'));
+    return view('ManagementViews/site/filtering', compact('priceproducts','dastebandis'));
+}
+public function FilteringEdit($Filtering_id){
+    if($Filtering_id && ctype_digit($Filtering_id)){
+        $price = price::find($Filtering_id);
+        if($price && $price instanceof price){
+         return view('ManagementViews/site/editFiltering',compact('price')); 
+        } 
+     }
 }
 public function FilteringUpdate($Filtering_id){
     $filter_data = [

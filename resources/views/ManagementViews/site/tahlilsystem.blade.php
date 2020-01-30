@@ -122,7 +122,7 @@
 
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="card">
-                                <a href="{{route('ManagementFilteringEdit')}}">
+                                <a href="{{route('filtering')}}">
                                     <div class="card-content single-card">
                                         <div class="card-body">
                                             <div class="media d-flex">
