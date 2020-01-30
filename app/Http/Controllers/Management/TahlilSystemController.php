@@ -267,28 +267,21 @@ class TahlilSystemController extends Controller
     }
 
 /*************END TAHLIL PAGE BLOG****************/
-public function filtering(){
-    $priceproducts = price::all();
-    $dastebandis = categories::all();
-    return view('ManagementViews/site/filtering', compact('priceproducts','dastebandis'));
-}
-public function FilteringEdit(){
+
+
+public function FilteringEdit($Filtering_id){
     $priceproducts = price::all();
     $dastebandis = categories::all();
       return view('ManagementViews/site/filtering', compact('priceproducts','dastebandis'));
 }
-public function FilteringUpdate(){
-    $About_data = [
-        'title' => request()->input('title'),
-        'phone' => request()->input('phone'),
-        'email' => request()->input('email'),
-        'address' => request()->input('address'),
-        'Description' => request()->input('Description'),
+public function FilteringUpdate($Filtering_id){
+    $filter_data = [
+        'price' => request()->input('price'),
     ];
-    $about = AboutMember::find(1);
-            $about->update($About_data);
-            if ($about) {
-                return redirect()->route('ManagementTahlilAbout');
-            }
+    $price = price::find($Filtering_id);
+    $price->update($filter_data);
+    if ($price) {
+        return redirect()->route('ManagementEditFiltering');
+    }
 }
 }

@@ -102,13 +102,13 @@
                         </div>
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="card">
-                                <a href="{{route('filtering')}}">
+                                <a href="">
                                     <div class="card-content single-card">
                                         <div class="card-body">
                                             <div class="media d-flex">
                                                 <div class="media-body text-left">
-                                                    <h5>دسته بندی و فیلتر محصولات</h5>
-                                                    <span> فیلتر و دسته بندی محصولات</span>
+                                                    <h5>دسته بندی محصولات</h5>
+                                                    <span> دسته بندی محصولات</span>
                                                 </div>
                                                 <div class="align-self-center">
                                                     <i class="icon-user success font-large-2 float-right"></i>
@@ -122,13 +122,13 @@
 
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="card">
-                                <a href="">
+                                <a href="{{route('ManagementFilteringEdit')}}">
                                     <div class="card-content single-card">
                                         <div class="card-body">
                                             <div class="media d-flex">
                                                 <div class="media-body text-left">
-                                                    <h3 class="warning">64.89 %</h3>
-                                                    <span>Conversion Rate</span>
+                                                <h5>فیلتر قیمت محصولات</h5>
+                                                <span> فیلتر محصولات</span>
                                                 </div>
                                                 <div class="align-self-center">
                                                     <i class="icon-pie-chart warning font-large-2 float-right"></i>
