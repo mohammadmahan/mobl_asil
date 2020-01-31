@@ -29,6 +29,7 @@ Route::get('/blog/{blog_id}', 'Member\HomeController@blogMember')->name('BlogMem
 Route::get('/ManagementDashboard', 'Management\DashboardController@dashboard');
 
 Route::get('/details/product','Management\ProductsController@details')->name('details.product');
+Route::get('/delete/product{allProductMember_id}', 'Management\ProductsController@deleteMassages')->name('delete.product.management');
 
 Route::get('/delete/massage{massages_id}', 'Management\MassagesController@deleteMassages')->name('delete.massage');
 Route::get('/ManagementMassages', 'Management\MassagesController@AllMassages')->name('massagesManagement');
@@ -90,3 +91,5 @@ Route::get('/allProduct-member/{category_id}/{price_id}', 'Member\allProductMemb
 
 
 Route::get('/search/allProducts','Member\allProductMemberController@searchAllProducts');
+
+Route::get('/search/allProducts/management','Management\ProductsController@searchAllProductsManagement');

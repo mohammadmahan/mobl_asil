@@ -5,11 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Member/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Member/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Member/allProductMemberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Member/allProductMemberController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/addproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/addproduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/editproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/editproduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/memberViews/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/memberViews/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/massages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/massages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/products.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,71 +26,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+            <state relative-caret-position="168">
+              <caret line="31" column="47" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Member/allProductMemberController.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/MassagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="53" />
+            <state relative-caret-position="108">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
               <folding>
-                <element signature="e#47#72#0#PHP" expanded="true" />
+                <element signature="e#51#87#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Member/HomeController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/massages.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
+            <state relative-caret-position="540">
+              <caret line="62" column="94" selection-start-line="62" selection-start-column="94" selection-end-line="62" selection-end-column="94" />
               <folding>
-                <element signature="e#47#72#0#PHP" expanded="true" />
+                <element signature="e#3189#3196#1#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/AddProductController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="48" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="48" />
-              <folding>
-                <element signature="e#51#70#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/addproduct.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="19" column="92" selection-start-line="19" selection-start-column="92" selection-end-line="19" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/memberViews/home.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="164" column="39" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="151" column="50" selection-start-line="151" selection-start-column="50" selection-end-line="151" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -101,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state relative-caret-position="384">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#51#76#0#PHP" expanded="true" />
               </folding>
@@ -111,19 +69,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/editproduct.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/products.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="18" column="92" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
+            <state relative-caret-position="324">
+              <caret line="143" column="46" lean-forward="true" selection-start-line="143" selection-start-column="46" selection-end-line="143" selection-end-column="46" />
+              <folding>
+                <element signature="e#7713#7732#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/editslider.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Member/allProductMemberController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="23" column="112" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="112" />
+            <state relative-caret-position="142">
+              <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="67" selection-end-column="5" />
+              <folding>
+                <element signature="e#47#72#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="48" column="76" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -151,8 +124,8 @@
       <find>editProduct</find>
       <find>editSingleSlider</find>
       <find>$imageinput</find>
-      <find>ManagementProducts</find>
       <find>add</find>
+      <find>ManagementProducts</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -180,12 +153,10 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Management/MassagesController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_01_10_154838_newproduct_table.php" />
         <option value="$PROJECT_DIR$/app/Models/NewProduct.php" />
-        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/products.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/editslider.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/InformationBlog.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Member/AboutMemberController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Member/ContactMemberController.php" />
-        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/massages.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/layout/main.blade.php" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
@@ -194,13 +165,15 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Management/AddProductController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Member/allProductMemberController.php" />
         <option value="$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/editproduct.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php" />
-        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/addproduct.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/memberViews/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/addproduct.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Member/HomeController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/products.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/massages.blade.php" />
       </list>
     </option>
   </component>
@@ -493,7 +466,7 @@
       <workItem from="1579792556340" duration="3515000" />
       <workItem from="1580029464915" duration="12874000" />
       <workItem from="1580158742909" duration="20014000" />
-      <workItem from="1580378844693" duration="8365000" />
+      <workItem from="1580378844693" duration="16265000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/mohammadmahan/mobl_asil&#10;&#10;# Conflicts:&#10;#&#9;public/css/style.css&#10;#&#9;resources/views/layout/main.blade.php">
       <created>1578220045821</created>
@@ -646,7 +619,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168366000" />
+    <option name="totallyTimeSpent" value="176266000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -711,6 +684,22 @@
     <MESSAGE value="یکسری تغییرات که یادم نمیاد" />
     <MESSAGE value="مدال حذف پیام ها درست شد" />
     <option name="LAST_COMMIT_MESSAGE" value="مدال حذف پیام ها درست شد" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/routes/web.php</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/routes/web.php</url>
+          <line>43</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/resources/views/partials/success.blade.php">
@@ -834,17 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/massages.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-122">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-          <folding>
-            <element signature="e#2166#2185#0#HTML" expanded="true" />
-            <element signature="e#2969#2976#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/editProductIndex.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -881,16 +859,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/memberViews/blog.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/MassagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding>
-            <element signature="e#51#87#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Member/AboutMemberController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -947,13 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/products.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="59" column="53" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -971,54 +932,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-          <folding>
-            <element signature="e#51#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/AddProductController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="48" />
+        <state relative-caret-position="282">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding>
             <element signature="e#51#70#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/editslider.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Member/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="23" column="112" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Member/allProductMemberController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="53" />
+        <state relative-caret-position="382">
+          <caret line="31" column="77" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
           <folding>
             <element signature="e#47#72#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="151" column="50" selection-start-line="151" selection-start-column="50" selection-end-line="151" selection-end-column="79" />
         </state>
       </provider>
     </entry>
@@ -1029,19 +959,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/addproduct.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/editslider.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="19" column="92" selection-start-line="19" selection-start-column="92" selection-end-line="19" selection-end-column="92" />
+        <state relative-caret-position="216">
+          <caret line="23" column="112" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="112" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Member/HomeController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/addproduct.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
+        <state relative-caret-position="264">
+          <caret line="19" column="93" selection-start-line="19" selection-start-column="93" selection-end-line="19" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Member/allProductMemberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="67" selection-end-column="5" />
           <folding>
             <element signature="e#47#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="48" column="76" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/MassagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#51#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#51#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/products.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="143" column="46" lean-forward="true" selection-start-line="143" selection-start-column="46" selection-end-line="143" selection-end-column="46" />
+          <folding>
+            <element signature="e#7713#7732#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/massages.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="62" column="94" selection-start-line="62" selection-start-column="94" selection-end-line="62" selection-end-column="94" />
+          <folding>
+            <element signature="e#3189#3196#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -38,7 +38,7 @@
                                         <td>{{$massage->email}}</td>
                                         <td>{{$massage->massage}}</td>
                                         <td>
-                                            <a  class="link-edit-product" data-toggle="tooltip" data-original-title="حذف پیام">
+                                            <a class="link-edit-product" data-toggle="tooltip" data-original-title="حذف پیام">
                                                 <i data-toggle="modal" data-target="#exampleModal" class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i>
                                             </a>
                                         </td>

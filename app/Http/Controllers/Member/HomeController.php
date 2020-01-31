@@ -29,7 +29,7 @@ class HomeController extends Controller
         $InformationBlogs = InformationBlog::all();
         $Productindexs = ProductIndex::all();
         $priceproduct = AppPrice::all();
-        $allProductMembers = allProductMember::latest()->take(2)->get();
+        $allProductMembers = allProductMember::orderBy('id','desc') ->take(10)->get();
         return view('memberViews/home',compact('newProducts','sliders','InformationBlogs','Abouts','Productindexs','priceproduct','allProductMembers'));
     }
 

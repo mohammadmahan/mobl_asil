@@ -19,12 +19,20 @@ class ProductsController extends Controller
         return view('ManagementViews/site/products',compact('allProductMembers','priceproducts','dastebandis'));
     }
 
+    public function deleteMassages($allProductMember_id)
+    {
+        if ($allProductMember_id && ctype_digit($allProductMember_id)) {
+            $product = allProductMember::find($allProductMember_id);
+            if ($product && $product instanceof allProductMember) {
+                dd($product);
+            }
+        }
+    }
 
     /*************START EDIT ALL PRODUCT***************/
 
     public function editProduct($allProductMember_id)
     {
-        
         $priceproducts =price::all();
         $dastebandis = categories::all();
         if ($allProductMember_id && ctype_digit($allProductMember_id)) {
@@ -76,6 +84,14 @@ class ProductsController extends Controller
             return $userItem;
         }
     }
-   
+
+    public function searchAllProductsManagement()
+    {
+        if (\Illuminate\Support\Facades\Request::ajax()) {
+            $searchValue = $_GET["searchInputManagement"];
+            $currentValue = allProductMember::where('number_product', $searchValue)->get();
+            return $currentValue;
+        }
+    }
   
 }
