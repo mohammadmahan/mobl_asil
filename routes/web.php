@@ -93,3 +93,7 @@ Route::get('/allProduct-member/{category_id}/{price_id}', 'Member\allProductMemb
 Route::get('/search/allProducts','Member\allProductMemberController@searchAllProducts');
 
 Route::get('/search/allProducts/management','Management\ProductsController@searchAllProductsManagement');
+
+/////////////////start :: login//////////////////
+
+Route::get('/management/login','Management\AdministratorController@login');

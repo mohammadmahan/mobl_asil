@@ -1,5 +1,7 @@
 @extends('ManagementViews.layout.main')
-
+@section("title")
+    تحلیل سیستم
+@stop
 @section('content')
 
 <div class="content-wrapper">
