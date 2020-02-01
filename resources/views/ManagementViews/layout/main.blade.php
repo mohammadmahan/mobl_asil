@@ -95,26 +95,24 @@
                                         src="/Management/images/portrait/small/avatar-s-9.png" alt="avatar"></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" style="width: 230px;">
-                                <span class="dropdown-item center" style="display: flex;">
-                                    <span class="avatar avatar-online"><img
-                                            src="/Management/images/portrait/small/avatar-s-9.png" alt="avatar"></span>
-                                    <span class="mr-1 user-name text-bold-700">محمد شاددل
-                                        <br>
-                                        <a href="#">افزودن عکس</a>
+                                @if(\Illuminate\Support\Facades\Auth::check())
+                                    <span class="dropdown-item center" style="display: flex;">
+                                        مدیریت : شما وارد شدید
                                     </span>
-                                </span>
-                                <hr>
                                 <a class="dropdown-item" href="#">
                                     <i class="fa fa-edit mr-1"></i>ویرایش پروفایل
                                 </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fa fa-inbox mr-1"></i> صندوق ورودی من
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fa fa-tasks mr-1"></i> وظیفه
-                                </a>
+
                                 <div class="dropdown-divider"></div><a class="dropdown-item"
-                                    href="login-with-bg-image.html"><i class="fa fa-close mr-1"></i> خروج</a>
+                                    href="{{route('logout')}}"><i class="fa fa-close mr-1"></i> خروج</a>
+
+                                @else
+                                    <span class="dropdown-item center" style="display: flex;">
+                                        مدیریت : شما وارد نشدید
+                                    </span>
+                                    <a class="dropdown-item"
+                                       href="{{route('login')}}"><i class="fa fa-close mr-1"></i> ورود</a>
+                                @endif
                             </div>
                         </li>
                     </ul>

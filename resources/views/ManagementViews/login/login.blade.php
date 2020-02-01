@@ -59,15 +59,23 @@
                             </div>
                             <div class="card-content">
                                 <div class="card-body">
-                                    <form class="form-horizontal form-simple" action="https://pixinvent.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/rtl/vertical-menu-template/index.html" novalidate>
+                                    @if(session('loginError'))
+                                        <div class="alert alert-danger">
+                                            <p>
+                                                {{session('loginError')}}
+                                            </p>
+                                        </div>
+                                    @endif()
+                                    <form class="form-horizontal form-simple" method="post" action="{{route('post.login')}}">
+                                        {{csrf_field()}}
                                         <fieldset class="form-group position-relative has-icon-left mb-0">
-                                            <input type="text" class="form-control" id="user-name" placeholder="نام کاربری" required>
+                                            <input type="text" class="form-control" id="user-name" name="user-name" placeholder="نام کاربری" required>
                                             <div class="form-control-position">
                                                 <i class="fa fa-user-circle"></i>
                                             </div>
                                         </fieldset>
                                         <fieldset class="form-group position-relative has-icon-left mt-2">
-                                            <input type="password" class="form-control" id="user-password" placeholder="پسورد" required>
+                                            <input type="password" class="form-control" id="user-password" name="user-password" placeholder="پسورد" required>
                                             <div class="form-control-position">
                                                 <i class="fa fa-unlock-alt"></i>
                                             </div>
@@ -75,13 +83,13 @@
                                         <div class="form-group row">
                                             <div class="col-sm-6 col-12 text-center text-sm-left">
                                                 <fieldset>
-                                                    <input type="checkbox" id="remember-me" class="chk-remember">
+                                                    <input type="checkbox" id="remember-me" name="remember-me" class="chk-remember">
                                                     <label for="remember-me">بخاطر بسپار</label>
                                                 </fieldset>
                                             </div>
                                             <div class="col-sm-6 col-12 text-center text-sm-right"><a href="recover-password.html" class="card-link">فراموش کرده اید؟</a></div>
                                         </div>
-                                        <button type="submit" class="btn btn-info btn-block"><i class="ft-unlock"></i>ورود</button>
+                                        <button type="submit" class="btn btn-info btn-block">ورود</button>
                                     </form>
                                 </div>
                             </div>

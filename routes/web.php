@@ -96,4 +96,7 @@ Route::get('/search/allProducts/management','Management\ProductsController@searc
 
 /////////////////start :: login//////////////////
 
-Route::get('/management/login','Management\AdministratorController@login');
+Route::get('/management/login','Management\UsersController@login')->name('login');
+Route::post('/management/login','Management\UsersController@doLogin')->name('post.login');
+
+Route::get('/management/logout','Management\UsersController@logout')->name('logout');

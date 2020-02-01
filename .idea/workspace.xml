@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef73566a-e60a-4287-ae57-7391a92f6de5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/ManagementViews/login/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Management/UsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/tahlilsystem.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/tahlilsystem.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Management/AdministratorController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/login/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/login/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,41 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="98" column="66" selection-start-line="98" selection-start-column="66" selection-end-line="98" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/login/login.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="276">
+              <caret line="96" column="22" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/AdministratorController.php">
+        <entry file="file://$PROJECT_DIR$/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="58" column="93" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="93" />
+            <state relative-caret-position="144">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -86,6 +67,7 @@
       <find>add</find>
       <find>ManagementProducts</find>
       <find>ManagementTahlilSystem</find>
+      <find>form</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,7 +88,6 @@
         <option value="$PROJECT_DIR$/app/Models/allProductMember.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Management/DashboardController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/allProductMemberController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_01_06_162803_allproductmember_table.php" />
         <option value="$PROJECT_DIR$/resources/views/memberViews/singleProduct.blade.php" />
@@ -136,7 +117,9 @@
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/tahlilsystem.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Management/AdministratorController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/UsersController.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/login/login.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php" />
       </list>
     </option>
   </component>
@@ -278,26 +261,7 @@
               <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
               <item name="mobl_asil" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Member" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobl_asil" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobl_asil" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobl_asil" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
@@ -333,13 +297,6 @@
               <item name="mobl_asil" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobl_asil" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="ManagementViews" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -349,6 +306,14 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="ManagementViews" type="462c0819:PsiDirectoryNode" />
               <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobl_asil" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="ManagementViews" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
@@ -385,6 +350,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -437,7 +403,7 @@
       <workItem from="1579792556340" duration="3515000" />
       <workItem from="1580029464915" duration="12874000" />
       <workItem from="1580158742909" duration="20014000" />
-      <workItem from="1580378844693" duration="19367000" />
+      <workItem from="1580378844693" duration="26549000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/mohammadmahan/mobl_asil&#10;&#10;# Conflicts:&#10;#&#9;public/css/style.css&#10;#&#9;resources/views/layout/main.blade.php">
       <created>1578220045821</created>
@@ -593,11 +559,18 @@
       <option name="project" value="LOCAL" />
       <updated>1580455282309</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="قالب لاگین زده شد">
+      <created>1580462033009</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1580462033009</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179368000" />
+    <option name="totallyTimeSpent" value="186550000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -627,7 +600,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32978722" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50242716" side_tool="true" weight="0.320922" />
-      <window_info anchor="bottom" content_ui="combo" id="Terminal" order="11" sideWeight="0.4975728" weight="0.36702126" />
+      <window_info anchor="bottom" content_ui="combo" id="Terminal" order="11" sideWeight="0.4975728" weight="0.36524823" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.32978722" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -662,7 +635,8 @@
     <MESSAGE value="یکسری تغییرات که یادم نمیاد" />
     <MESSAGE value="مدال حذف پیام ها درست شد" />
     <MESSAGE value="مدال حذف پیام ها برای همه محصولات هم گذاشته شد" />
-    <option name="LAST_COMMIT_MESSAGE" value="مدال حذف پیام ها برای همه محصولات هم گذاشته شد" />
+    <MESSAGE value="قالب لاگین زده شد" />
+    <option name="LAST_COMMIT_MESSAGE" value="قالب لاگین زده شد" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -681,22 +655,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Models/AddProduct.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_11_033926_newproduct_table.php.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_10_154838_newproduct_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_06_162803_allproductmember_table.php" />
     <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/File/UploadedFile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -1008,34 +966,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/AdministratorController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="144">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="98" column="66" selection-start-line="98" selection-start-column="66" selection-end-line="98" selection-end-column="66" />
+        <state relative-caret-position="-96">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="58" column="93" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="93" />
+        <state relative-caret-position="2278">
+          <caret line="113" column="59" selection-start-line="113" selection-start-column="59" selection-end-line="113" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/login/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
+        <state relative-caret-position="264">
+          <caret line="91" column="93" selection-start-line="91" selection-start-column="93" selection-end-line="91" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="e#51#87#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="96" column="22" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="23" />
         </state>
       </provider>
     </entry>
