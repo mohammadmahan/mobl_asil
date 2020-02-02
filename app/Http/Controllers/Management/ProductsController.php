@@ -24,7 +24,8 @@ class ProductsController extends Controller
         if ($allProductMember_id && ctype_digit($allProductMember_id)) {
             $product = allProductMember::find($allProductMember_id);
             if ($product && $product instanceof allProductMember) {
-                dd($product);
+                $product->delete();
+                return redirect()->route('ProductManagement');
             }
         }
     }

@@ -51,6 +51,11 @@ Route::get('/delete/place/{massages_id}', 'Management\MassagesController@deleteM
 
 Route::get('/ManagementTahlilSlider','Management\TahlilSystemController@TahlilSlider')->name('ManagementTahlilSlider');
 
+Route::get('/ManagementAddSlider','Management\TahlilSystemController@AddSingleSlider')->name('ManagementAddSlider');
+Route::post('/ManagementAddSlider','Management\TahlilSystemController@createSingeSlider')->name('ManagementAddSlider.post');
+
+Route::get('/delete/slider{Slider_id}','Management\TahlilSystemController@deleteSlider')->name('delete.slider.management');
+
 Route::get('/ManagementEditSingleSlider/{topslider_id}', 'Management\TahlilSystemController@editSingleSlider')->name('editSlider');
 Route::post('/ManagementEditSingleSlider/{topslider_id}', 'Management\TahlilSystemController@updateSingleSlider')->name('updateSlider');
 

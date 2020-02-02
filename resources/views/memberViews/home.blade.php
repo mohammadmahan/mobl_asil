@@ -36,91 +36,13 @@
                     </div>
                 </div>
             </div>
-           
+
 			@endforeach
             @endif
         </div>
     </div>
 </section>
 
-<section class="banner bgwhite p-t-40 p-b-40">
-		<div class="container">
-			<div class="row">
-			@if($Productindexs && count($Productindexs)>0)
-            @foreach($Productindexs as $Productindex)
-				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="{{$Productindex->image}}" alt="IMG-BENNER">
-						<div class="block1-wrapbtn w-size2">
-
-							<a href="" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-							مشاهده محصول
-							</a>
-						</div>
-					</div>
-
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="{{$Productindex->image}}" alt="IMG-BENNER">
-						<div class="block1-wrapbtn w-size2">
-
-							<a href="" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-							مشاهده محصول
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="{{$Productindex->image}}" alt="IMG-BENNER">
-						<div class="block1-wrapbtn w-size2">
-
-							<a href="" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								مشاهده محصول
-							</a>
-						</div>
-					</div>
-
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="{{$Productindex->image}}" alt="IMG-BENNER">
-						<div class="block1-wrapbtn w-size2">
-
-							<a href="" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-							مشاهده محصول
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="{{$Productindex->image}}" alt="IMG-BENNER">
-						<div class="block1-wrapbtn w-size2">
-
-							<a href="" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-							مشاهده محصول
-							</a>
-						</div>
-					</div>
-
-					<div class="block2 wrap-pic-w pos-relative m-b-30">
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="images/banner-05.jpg" alt="IMG-BENNER">
-						<div class="block1-wrapbtn w-size2">
-
-							<a href="" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-							مشاهده محصول
-							</a>
-						</div>
-					</div>
-					</div>
-				</div>
-			@endforeach
-            @endif
-			</div>
-		</div>
-	</section>
 
 	<section class="newproduct bgwhite p-t-45 p-b-105 ltr-dir">
 		<div class="container">
@@ -198,7 +120,7 @@
 				</div>
 				@endforeach
 				@endif
-				
+
 			</div>
 		</div>
 	</section>

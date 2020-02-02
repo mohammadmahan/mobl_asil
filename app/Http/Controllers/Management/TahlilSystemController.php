@@ -28,7 +28,6 @@ class TahlilSystemController extends Controller
         return view('ManagementViews/site/tahlilslider',compact('topsliders'));
     }
     public function editSingleSlider($topslider_id){
-        
         if($topslider_id && ctype_digit($topslider_id)){
            $topsliderItem = TopSlider::find($topslider_id);
            if($topsliderItem && $topsliderItem instanceof TopSlider){
@@ -61,6 +60,48 @@ class TahlilSystemController extends Controller
                 return redirect()->route('ManagementTahlilSlider');
             }
         }  
+    }
+
+    public function AddSingleSlider(){
+
+        return view('ManagementViews/site/addslider');
+    }
+
+    public function createSingeSlider(Request $request)
+    {
+        $Create_Slider = [
+            'title' => request()->input('title'),
+        ];
+
+        $imageinput = request()->file('imageSlider');
+        if ($imageinput!="") {
+            $new_image_name = request()->file('imageSlider')->getClientOriginalName();
+            $result = request()->file('imageSlider')->move(public_path('Management\images\slider'),$new_image_name);
+        }
+        if ($imageinput!="" && $result instanceof File){
+            $Create_Slider['image'] ="/Management/images/slider/".request()->file('imageSlider')->getClientOriginalName();
+            $new_Slider_object = TopSlider::create($Create_Slider);
+            if ($new_Slider_object) {
+                return redirect()->route('ManagementTahlilSlider');
+            }
+        }
+        else{
+            $new_Slider_object = TopSlider::create($Create_Slider);
+            if ($new_Slider_object) {
+                return redirect()->route('ManagementTahlilSlider');
+            }
+        }
+    }
+
+    public function deleteSlider($Slider_id)
+    {
+        if ($Slider_id && ctype_digit($Slider_id)) {
+            $slider = TopSlider::find($Slider_id);
+            if ($slider && $slider instanceof TopSlider) {
+                $slider->delete();
+                return redirect()->route('ManagementTahlilSlider');
+            }
+        }
     }
 /*************END TAHLIL TOP SLIDER***************/
 

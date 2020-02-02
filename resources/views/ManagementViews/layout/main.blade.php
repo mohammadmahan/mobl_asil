@@ -128,12 +128,6 @@
         <div class="main-menu-content">
             <ul class="navigation navigation-main mt-1" id="main-menu-navigation" data-menu="menu-navigation">
                 <li class="nav-item">
-                    <a href="#">
-                        <i class="fas fa-desktop"></i>
-                        <span class="menu-title ml-1" data-i18n="">داشبورد</span>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a href="{{route('ProductManagement')}}">
                         <i class="fab fa-product-hunt"></i>
                         <span class="menu-title ml-1" data-i18n="">محصولات</span>

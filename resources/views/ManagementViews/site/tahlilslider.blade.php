@@ -1,7 +1,21 @@
 @extends('ManagementViews.layout.main')
+@section("title")
+    اسلایدر
+@stop
+
 
 @section('content')
 <div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-6 col-12 mt-3">
+            <div class="btn-group">
+                <a href="{{route('ManagementAddSlider')}}">
+                    <button class="btn btn-info round box-shadow-2 px-2" type="button"> افزودن محصول</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
     <div class="content-header row mb-1 mt-3">
         <div class="content-header-left col-md-6 col-12">
             <h4 class="content-header-title">اسلایدر</h4>
@@ -32,10 +46,12 @@
                                         <td><img src="{{$topslider->image}}" width="200px" height="100px" /></td>
                                         <td>{{$topslider->title}}</td>
                                         <td>
-                                            <a href="{{route('editSlider', $topslider->id)}}" class="link-edit-product">
+                                            <a href="{{route('editSlider', $topslider->id)}}" data-original-title="ویرایش محصول" class="link-edit-product">
                                                 <i class="fa fa-edit"></i>
                                             </a>
-
+                                            <a class="link-edit-product" href="{{route('delete.slider.management',$topslider->id)}}" data-original-title="حذف پیام">
+                                                <i class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i>
+                                            </a>
                                         </td>
                                     </tr>
                                     @endforeach
