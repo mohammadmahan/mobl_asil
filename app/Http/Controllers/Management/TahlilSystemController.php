@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Management;
 
+use App\Exports\NewslettersExport;
 use App\Http\Controllers\Controller;
+use App\Models\Newsletters;
 use App\Models\productIndex;
 use App\Models\AboutMember;
 use App\Models\categories;
@@ -13,6 +15,7 @@ use App\price;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Maatwebsite\Excel\Facades\Excel;
 use Symfony\Component\HttpFoundation\File\File;
 
 class TahlilSystemController extends Controller
@@ -311,27 +314,52 @@ class TahlilSystemController extends Controller
 
 
 
-public function filtering(){
-    $priceproducts = price::all();
-    $dastebandis = categories::all();
-    return view('ManagementViews/site/filtering', compact('priceproducts','dastebandis'));
-}
-public function FilteringEdit($Filtering_id){
-    if($Filtering_id && ctype_digit($Filtering_id)){
-        $price = price::find($Filtering_id);
-        if($price && $price instanceof price){
-         return view('ManagementViews/site/editFiltering',compact('price')); 
-        } 
-     }
-}
-public function FilteringUpdate($Filtering_id){
-    $filter_data = [
-        'price' => request()->input('price'),
-    ];
-    $price = price::find($Filtering_id);
-    $price->update($filter_data);
-    if ($price) {
-        return redirect()->route('ManagementEditFiltering');
+    public function filtering(){
+        $priceproducts = price::all();
+        $dastebandis = categories::all();
+        return view('ManagementViews/site/filtering', compact('priceproducts','dastebandis'));
     }
-}
+    public function FilteringEdit($Filtering_id){
+        if($Filtering_id && ctype_digit($Filtering_id)){
+            $price = price::find($Filtering_id);
+            if($price && $price instanceof price){
+             return view('ManagementViews/site/editFiltering',compact('price'));
+            }
+         }
+    }
+    public function FilteringUpdate($Filtering_id){
+        $filter_data = [
+            'price' => request()->input('price'),
+        ];
+        $price = price::find($Filtering_id);
+        $price->update($filter_data);
+        if ($price) {
+            return redirect()->route('ManagementEditFiltering');
+        }
+    }
+
+    public function NewslettersShow(){
+        $Newsletters = Newsletters::all();
+        return view('ManagementViews/site/newSletters',compact('Newsletters'));
+    }
+
+    public function Newsletters_delete($newsletters_id)
+    {
+        if ($newsletters_id && ctype_digit($newsletters_id)) {
+            $newsletters = Newsletters::find($newsletters_id);
+            if ($newsletters && $newsletters instanceof Newsletters) {
+                $newsletters->delete();
+                return redirect()->route('NewslettersShow');
+            }
+        }
+    }
+
+    public function ExportNewsletters()
+    {
+        $headings = [
+            'id',
+            'email',
+        ];
+        return Excel::download(new NewslettersExport($headings), 'Newsletters.xlsx');
+    }
 }

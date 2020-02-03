@@ -108,7 +108,7 @@
                                     <div class="card-content single-card">
                                         <div class="card-body">
                                             <div class="media d-flex">
-                                                <div class="media-body text-left">
+                                                <div class="media-body text-center">
                                                     <h5>دسته بندی محصولات</h5>
                                                     <span> دسته بندی محصولات</span>
                                                 </div>
@@ -128,7 +128,7 @@
                                     <div class="card-content single-card">
                                         <div class="card-body">
                                             <div class="media d-flex">
-                                                <div class="media-body text-left">
+                                                <div class="media-body text-center">
                                                 <h5>فیلتر قیمت محصولات</h5>
                                                 <span> فیلتر محصولات</span>
                                                 </div>
@@ -143,13 +143,13 @@
                         </div>
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="card">
-                                <a href="">
+                                <a href="{{route('NewslettersShow')}}">
                                     <div class="card-content single-card">
                                         <div class="card-body">
                                             <div class="media d-flex">
-                                                <div class="media-body text-left">
-                                                    <h3 class="info">423</h3>
-                                                    <span>Support Tickets</span>
+                                                <div class="media-body text-center">
+                                                    <h5>خبرنامه</h5>
+                                                    <span>ایمیل های وارد شده</span>
                                                 </div>
                                                 <div class="align-self-center">
                                                     <i class="icon-support info font-large-2 float-right"></i>

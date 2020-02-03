@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Member;
 
 use App\ContactMember;
 use App\Models\AboutMember;
+use App\Models\categories;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -11,7 +12,8 @@ class ContactMemberController extends Controller
 {
     public function ContactMember(){
         $Abouts = AboutMember::all();
-        return view('memberViews/contact', compact('Abouts'));
+        $dastebandis = categories::all();
+        return view('memberViews/contact', compact('Abouts','dastebandis'));
     }
 
     public function createContactMember(Request $request)

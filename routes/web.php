@@ -84,8 +84,6 @@ Route::get('/ManagementEditFiltering/{Filtering_id}', 'Management\TahlilSystemCo
 Route::post('/ManagementEditFiltering/{Filtering_id}', 'Management\TahlilSystemController@FilteringUpdate')->name('ManagementFilteringUpdate');
 
 
-Route::get('/ManagementFiltering','Management\TahlilSystemController@filtering')->name('filtering');
-
 /////////////////end :: Management//////////////////
 
 
@@ -105,3 +103,12 @@ Route::get('/management/login','Management\UsersController@login')->name('login'
 Route::post('/management/login','Management\UsersController@doLogin')->name('post.login');
 
 Route::get('/management/logout','Management\UsersController@logout')->name('logout');
+
+
+Route::post('/','Member\NewslettersController@Newsletters')->name('Newsletters');
+
+Route::get('/management/newSletters','Management\tahlilSystemController@NewslettersShow')->name('NewslettersShow');
+
+Route::get('/management/newSlettersDelete/{newsletters_id}','Management\tahlilSystemController@Newsletters_delete')->name('delete.NewslettersShow');
+
+Route::get('/management/download/newSletters','Management\tahlilSystemController@ExportNewsletters')->name('Export.Newsletters');

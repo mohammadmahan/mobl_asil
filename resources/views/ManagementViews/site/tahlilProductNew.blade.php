@@ -1,6 +1,6 @@
 @extends('ManagementViews.layout.main')
 @section('title')
-مبل اصیل|اسلایدر محصولات جدید
+مبل اصیل|محصولات جدید
 @stop
 @section('content')
 <script src="/js/myjq.js"></script>
@@ -29,7 +29,7 @@
 <div class="content-wrapper">
     <div class="content-header row mb-1">
         <div class="content-header-left col-md-6 col-12 mb-2">
-            <h4 class="content-header-title">ویرایش اسلایدر محصولات جدید</h4>
+            <h4 class="content-header-title">ویرایش محصولات جدید</h4>
         </div>
     </div>
     <div class="content-body">

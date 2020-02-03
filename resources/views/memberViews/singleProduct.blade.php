@@ -10,11 +10,11 @@
         <div class="flex-w flex-sb">
             <div class="w-size13 p-t-30 respon5">
                 <div class="wrap-slick3 flex-sb flex-w">
-                    <div class="wrap-slick3-dots"></div>
+{{--                    <div class="wrap-slick3-dots"></div>--}}
                     <div class="slick3">
                         <div class="item-slick3">
                             <div class="wrap-pic-w bb">
-                                <img src="{{old('name',isset($productItem) ? $productItem->image : '')}}" alt="تصویر محصول">
+                                <img src="{{old('name',isset($productItems) ? $productItems->image : '')}}" alt="تصویر محصول">
                             </div>
                         </div>
                     </div>

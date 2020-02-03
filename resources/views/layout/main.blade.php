@@ -241,26 +241,16 @@
                 دسته بندی
             </h4>
             <ul>
+                @if($dastebandis && count($dastebandis)>0)
+                    @foreach($dastebandis as $dastebandi)
                 <li class="p-b-9">
                     <a href="#" class="s-text7">
-                        مبلمان راحتی
+                        {{$dastebandi->dastebandi}}
                     </a>
                 </li>
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        مبلمان سلطنتی
-                    </a>
-                </li>
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        کاناپه
-                    </a>
-                </li>
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        مبلمان کلاسیک
-                    </a>
-                </li>
+                    @endforeach
+                @endif
+
             </ul>
         </div>
         <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
@@ -269,23 +259,23 @@
             </h4>
             <ul>
                 <li class="p-b-9">
-                    <a href="#" class="s-text7">
+                    <a href="{{route('homeMember')}}" class="s-text7">
                         صفحه اصلی
                     </a>
                 </li>
                 <li class="p-b-9">
-                    <a href="#" class="s-text7">
+                    <a href="{{route('aboutMember')}}" class="s-text7">
                         درباره ما
                     </a>
                 </li>
                 <li class="p-b-9">
-                    <a href="#" class="s-text7">
+                    <a href="{{route('contactMember')}}" class="s-text7">
                         تماس با ما
                     </a>
                 </li>
                 <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        فروشگاه
+                    <a href="{{route('allProductMember')}}" class="s-text7">
+                        محصولات
                     </a>
                 </li>
             </ul>
@@ -321,9 +311,10 @@
             <h4 class="s-text12 p-b-30">
                 خبرنامه
             </h4>
-            <form>
+            <form action="" method="post">
+                {{csrf_field()}}
                 <div class="effect1 w-size9">
-                    <input class="s-text7 bg6 w-full p-b-5" type="text" name="email"
+                    <input class="s-text7 bg6 w-full p-b-5" type="email" name="email"
                            placeholder="ایمیل خود را وارد کنید">
                     <span class="effect1-line"></span>
                 </div>
