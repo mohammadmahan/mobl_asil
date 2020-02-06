@@ -13,6 +13,13 @@
         <div class="content-body">
             <!-- Table head options start -->
             <div class="row">
+            <div class="col-md-6 col-12 mt-2 mb-2">
+                <div class="btn-group">
+                    <a href="{{route('ManagementAddCategories')}}">
+                        <button class="btn btn-info round box-shadow-2 px-2" type="button"> افزودن دسته بندی</button>
+                    </a>
+                </div>
+            </div>
                 <div class="col-12">
                     <div class="card">
                         <div class="card-content collapse show pad-box">
