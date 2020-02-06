@@ -19,6 +19,7 @@ class AddProductController extends Controller
    }
    public function createProduct(Request $request)
    {
+
       $Create_Product = [
          'name' => request()->input('name'),
          'number_product' => request()->input('number_product'),
@@ -27,8 +28,8 @@ class AddProductController extends Controller
          'Description' => request()->input('Description'),
          'categories_id' => request()->input('categories'),
          'price_id' => request()->input('price'),
-     ];
-
+         'categories_id'=>request()->input('categories'),
+        ];
        $imageinput = request()->file('imageproduct');
        if ($imageinput!="") {
            $new_image_about_name = request()->file('imageproduct')->getClientOriginalName();

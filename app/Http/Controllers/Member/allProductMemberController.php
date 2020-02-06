@@ -19,7 +19,7 @@ class allProductMemberController extends Controller
         $Abouts = AboutMember::all();
         $priceproducts = AppPrice::all();
         $dastebandis = categories::all();
-        $allProductMembers = allProductMember::all();
+        $allProductMembers = allProductMember::paginate(12);
         return view('memberViews/allProduct',compact('allProductMembers','Abouts','priceproducts','dastebandis'));
     }
     public function withcategory($category_id)

@@ -44,10 +44,10 @@
                                 <div class="row">
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput3">دسته بندی</label>
-										<select class="form-control">
+										<select class="form-control" name="categories">
                                         @if($dastebandis && count($dastebandis)>0)
                                         @foreach($dastebandis as $dastebandi)
-                                        <option>{{$dastebandi->dastebandi}}</option>
+                                        <option value="{{$dastebandi->id}}">{{$dastebandi->dastebandi}}</option>
                                         @endforeach
                                         @endif
                                         </select>
@@ -57,7 +57,7 @@
 										<select class="form-control">
                                         @if($priceproducts && count($priceproducts)>0)
                                         @foreach($priceproducts as $priceproduct)
-                                        <option>{{$priceproduct->price}}</option>
+                                        <option value="{{$priceproduct->id}}">{{$priceproduct->price}}</option>
                                         @endforeach
                                         @endif
                                         </select>

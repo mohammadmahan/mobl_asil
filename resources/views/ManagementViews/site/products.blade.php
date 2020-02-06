@@ -125,58 +125,59 @@
                                 </thead>
                                 <tbody id="products_object_management">
                                     @if($allProductMembers && count($allProductMembers)>0)
-                                    
-                                    @foreach($allProductMembers as $allProductMember)
-                                    <tr>
-                                        <th scope="row">{{$allProductMember->id}}</th>
-                                        <td>{{$allProductMember->name}}</td>
-                                        <td>{{$allProductMember->lastcost}}</td>
-                                        <td>{{$allProductMember->number_product}}</td>
-                                        <td><img src="{{$allProductMember->image}}" width="200px" height="150px"/></td>
-                                        
-                                        <td>
-                                            <a href="{{route('ManagementEditProduct',$allProductMember->id)}}" class="link-edit-product" data-original-title="ویرایش محصول">
-                                                <i class="fa fa-edit"></i>
-                                            </a>
-                                            <a id="{{$allProductMember->id}}" class="details" data-toggle="tooltip" data-original-title="جزئیات محصول">
-                                                <i class="fa fa-database" data-toggle="modal" data-target="#modaldetails" aria-hidden="true"></i>
-                                            </a>
-                                            <a class="link-edit-product" data-toggle="tooltip" data-original-title="حذف پیام">
-                                                <i data-toggle="modal" data-target="#exampleModal" class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
+                                        @foreach($allProductMembers as $allProductMember)
+                                        <tr>
+                                            <th scope="row">{{$allProductMember->id}}</th>
+                                            <td>{{$allProductMember->name}}</td>
+                                            <td>{{$allProductMember->lastcost}}</td>
+                                            <td>{{$allProductMember->number_product}}</td>
+                                            <td><img src="{{$allProductMember->image}}" width="200px" height="150px"/></td>
 
-                                    <!------------------start modal delete----------------------------->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                                         aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">حذف پیام</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    ایا میخواهید حذف کنید؟
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
-                                                    <a href="{{route('delete.product.management',$allProductMember->id)}}" type="submit" class="btn btn-primary delete-button">حذف</a>
+                                            <td>
+                                                <a href="{{route('ManagementEditProduct',$allProductMember->id)}}" class="link-edit-product" data-original-title="ویرایش محصول">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <a id="{{$allProductMember->id}}" class="details" data-toggle="tooltip" data-original-title="جزئیات محصول">
+                                                    <i class="fa fa-database" data-toggle="modal" data-target="#modaldetails" aria-hidden="true"></i>
+                                                </a>
+                                                <a class="link-edit-product" data-toggle="tooltip" data-original-title="حذف پیام">
+                                                    <i data-toggle="modal" data-target="#exampleModal" class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <!------------------start modal delete----------------------------->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                             aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">حذف پیام</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        ایا میخواهید حذف کنید؟
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                                                        <a href="{{route('delete.product.management',$allProductMember->id)}}" type="submit" class="btn btn-primary delete-button">حذف</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!------------------end modal delete----------------------------->
-
-                                    @endforeach
+                                        <!------------------end modal delete----------------------------->
+                                        @endforeach
                                     @endif
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
+                    <div class="">
+                        {{$allProductMembers->links()}}
+                    </div>
             </div>
             <!-- Table head options end -->
         </div>

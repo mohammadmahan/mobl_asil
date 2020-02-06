@@ -27,7 +27,7 @@ class TahlilSystemController extends Controller
 
 /*************START TAHLIL TOP SLIDER***************/
     public function TahlilSlider(){
-        $topsliders=TopSlider::all();
+        $topsliders=TopSlider::paginate(7);
         return view('ManagementViews/site/tahlilslider',compact('topsliders'));
     }
     public function editSingleSlider($topslider_id){
@@ -262,7 +262,7 @@ class TahlilSystemController extends Controller
 
 /*************START TAHLIL PAGE BLOG****************/
     public function TahlilBlog(){
-        $informationblogs = InformationBlog::all();
+        $informationblogs = InformationBlog::paginate(7);
         return view('ManagementViews/site/tahlilBlog',compact('informationblogs'));
     }
     public function BlogEdit($Blog_id){
@@ -315,7 +315,7 @@ class TahlilSystemController extends Controller
 
 
     public function filteringPrice(){
-        $priceproducts = price::all();
+        $priceproducts = price::paginate(7);
         return view('ManagementViews/site/filteringPrice', compact('priceproducts'));
     }
     public function FilteringPriceEdit($Filtering_id){
@@ -338,7 +338,7 @@ class TahlilSystemController extends Controller
     }
 
     public function filteringCategories(){
-        $dastebandis = categories::all();
+        $dastebandis = categories::paginate(7);
         return view('ManagementViews/site/categories', compact('dastebandis'));
     }
 
@@ -363,7 +363,7 @@ class TahlilSystemController extends Controller
     }
 
     public function NewslettersShow(){
-        $Newsletters = Newsletters::all();
+        $Newsletters = Newsletters::paginate(7);
         return view('ManagementViews/site/newsLetters',compact('Newsletters'));
     }
 

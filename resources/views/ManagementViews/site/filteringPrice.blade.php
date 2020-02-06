@@ -46,6 +46,9 @@
                                     </div>
                             </div>
                         </form>
+                        <div class="">
+                            {{$priceproducts->links()}}
+                        </div>
                     </div>
                     <!-- Table head options end -->
                 </div>

@@ -46,6 +46,9 @@
                         </div>
                     </div>
                     </form>
+                    <div class="">
+                        {{$dastebandis->links()}}
+                    </div>
                 </div>
                 <!-- Table head options end -->
             </div>
