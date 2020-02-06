@@ -82,10 +82,13 @@ Route::get('/details/blog','Management\TahlilSystemController@detailsblog')->nam
 Route::get('/ManagementFilteringPrice','Management\TahlilSystemController@filteringPrice')->name('filtering.price');
 Route::get('/ManagementEditFilteringPrice/{Filtering_id}', 'Management\TahlilSystemController@FilteringPriceEdit')->name('ManagementFilteringEdit');
 Route::post('/ManagementEditFilteringPrice/{Filtering_id}', 'Management\TahlilSystemController@FilteringPriceUpdate')->name('ManagementFilteringUpdate');
+Route::get('/ManagementAddFilteringPrice','Management\TahlilSystemController@filteringPriceAdd')->name('ManagementAddFilter');
 
 Route::get('/ManagementFilteringCategories','Management\TahlilSystemController@filteringCategories')->name('filtering.categories');
 Route::get('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesEdit')->name('filtering.categories.edit');
 Route::post('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesUpdate')->name('filtering.categories.update');
+
+
 
 /////////////////end :: Management//////////////////
 

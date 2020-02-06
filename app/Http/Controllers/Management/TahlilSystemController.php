@@ -336,6 +336,13 @@ class TahlilSystemController extends Controller
             return redirect()->route('filtering.price');
         }
     }
+    public function filteringPriceAdd(){
+        $dastebandis = categories::all();
+        $priceproducts = price::all();
+        return view('ManagementViews/site/AddFiltering', compact('priceproducts','dastebandis'));
+    }
+
+
 
     public function filteringCategories(){
         $dastebandis = categories::all();
