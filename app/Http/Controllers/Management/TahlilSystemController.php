@@ -341,11 +341,12 @@ class TahlilSystemController extends Controller
         $priceproducts = price::all();
         return view('ManagementViews/site/AddFiltering', compact('priceproducts','dastebandis'));
     }
-    public function createFilter(){
+    public function createFilter(Request $request){
       $Create_Filter = [
         'price' => request()->input('price'),
-        'category_id' => request()->input('category_id'),
+        'category_id' => request()->input('categories'),
        ];
+
        $new_Filter_object = price::create($Create_Filter);
        if ($new_Filter_object) {
            return redirect()->route('filtering.price');

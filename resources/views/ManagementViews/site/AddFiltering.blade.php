@@ -27,12 +27,12 @@
 									</div>
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput2">دسته بندی</label>
-										<select class="form-control" name="category_id">
-                                    @if($dastebandis && count($dastebandis)>0)
-                                    @foreach($dastebandis as $dastebandi)
-                                            <option>{{$dastebandi->dastebandi}}</option>
-                                    @endforeach
-                                    @endif
+                                        <select class="form-control" name="categories">
+                                            @if($dastebandis && count($dastebandis)>0)
+                                                @foreach($dastebandis as $dastebandi)
+                                                    <option value="{{$dastebandi->id}}">{{$dastebandi->dastebandi}}</option>
+                                                @endforeach
+                                            @endif
                                         </select>
 									</div>
 								</div>

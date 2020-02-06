@@ -83,7 +83,7 @@ Route::get('/ManagementFilteringPrice','Management\TahlilSystemController@filter
 Route::get('/ManagementEditFilteringPrice/{Filtering_id}', 'Management\TahlilSystemController@FilteringPriceEdit')->name('ManagementFilteringEdit');
 Route::post('/ManagementEditFilteringPrice/{Filtering_id}', 'Management\TahlilSystemController@FilteringPriceUpdate')->name('ManagementFilteringUpdate');
 Route::get('/ManagementAddFilteringPrice','Management\TahlilSystemController@filteringPriceAdd')->name('ManagementAddFilter');
-Route::post('/ManagementAddFilterPrice','Management\TahlilSystemController@createFilter')->name('ManagementAddFilter.post');
+Route::post('/ManagementAddFilteringPrice','Management\TahlilSystemController@createFilter')->name('ManagementAddFilter.post');
 
 Route::get('/ManagementFilteringCategories','Management\TahlilSystemController@filteringCategories')->name('filtering.categories');
 Route::get('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesEdit')->name('filtering.categories.edit');
