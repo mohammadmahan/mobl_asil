@@ -41,7 +41,28 @@
 										<input type="text" id="projectinput2" class="form-control" name="pastcost">
 									</div>
 								</div>
-
+                                <div class="row">
+									<div class="form-group col-md-6 mb-2">
+										<label for="projectinput3">دسته بندی</label>
+										<select class="form-control">
+                                        @if($dastebandis && count($dastebandis)>0)
+                                        @foreach($dastebandis as $dastebandi)
+                                        <option>{{$dastebandi->dastebandi}}</option>
+                                        @endforeach
+                                        @endif
+                                        </select>
+									</div>
+									<div class="form-group col-md-6 mb-2">
+										<label for="projectinput2">فیلتر</label>
+										<select class="form-control">
+                                        @if($priceproducts && count($priceproducts)>0)
+                                        @foreach($priceproducts as $priceproduct)
+                                        <option>{{$priceproduct->price}}</option>
+                                        @endforeach
+                                        @endif
+                                        </select>
+									</div>
+								</div>
 								<div class="row">
 									<div class="form-group col-12 mb-2">
 										<label>تصویر محصول</label>
