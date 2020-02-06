@@ -1,11 +1,13 @@
 @extends('ManagementViews.layout.main')
-
+@section('title')
+    فیلتر قیمت محصولات
+@stop
 @section('content')
 
 <div class="content-wrapper">
     <div class="content-header row mb-1">
         <div class="content-header-left col-md-6 col-12 mb-2">
-            <h4 class="content-header-title">ویرایش فیلتر محصولات </h4>
+            <h4 class="content-header-title">فیلتر قیمت محصولات </h4>
         </div>
     </div>
     <div class="content-body">
@@ -14,7 +16,6 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-content collapse show pad-box">
-                        <h5>ویرایش فیلتر قیمت</h5>
                         <div class="table-responsive">
                             <table class="table">
                                 <thead class="thead-dark">
@@ -31,7 +32,7 @@
                                         <th scope="row">{{$priceproduct->id}}</th>
                                         <td>{{$priceproduct->price}}</td>
                                         <td>
-                                            <a href="{{route('ManagementFilteringEdit')}}" class="link-edit-product">
+                                            <a href="{{route('ManagementFilteringEdit',$priceproduct->id)}}" class="link-edit-product">
                                                 <i class="fa fa-edit"></i>
                                             </a>
 

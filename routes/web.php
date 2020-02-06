@@ -79,10 +79,13 @@ Route::post('/ManagementEditBlog/{Blog_id}', 'Management\TahlilSystemController@
 Route::get('/details/blog','Management\TahlilSystemController@detailsblog')->name('details.blog');
 
 
-Route::get('/ManagementFiltering','Management\TahlilSystemController@filtering')->name('filtering');
-Route::get('/ManagementEditFiltering/{Filtering_id}', 'Management\TahlilSystemController@FilteringEdit')->name('ManagementFilteringEdit');
-Route::post('/ManagementEditFiltering/{Filtering_id}', 'Management\TahlilSystemController@FilteringUpdate')->name('ManagementFilteringUpdate');
+Route::get('/ManagementFilteringPrice','Management\TahlilSystemController@filteringPrice')->name('filtering.price');
+Route::get('/ManagementEditFilteringPrice/{Filtering_id}', 'Management\TahlilSystemController@FilteringPriceEdit')->name('ManagementFilteringEdit');
+Route::post('/ManagementEditFilteringPrice/{Filtering_id}', 'Management\TahlilSystemController@FilteringPriceUpdate')->name('ManagementFilteringUpdate');
 
+Route::get('/ManagementFilteringCategories','Management\TahlilSystemController@filteringCategories')->name('filtering.categories');
+Route::get('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesEdit')->name('filtering.categories.edit');
+Route::post('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesUpdate')->name('filtering.categories.update');
 
 /////////////////end :: Management//////////////////
 
