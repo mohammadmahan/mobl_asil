@@ -46,21 +46,21 @@
                                 </thead>
                                 <tbody>
                                 @if($informationblogs && count($informationblogs)>0)
-                                @foreach($informationblogs as $informationblog)
-                                    <tr>
-                                        <td scope="row">{{$informationblog->id}}</td>
-                                        <td><img src="{{$informationblog->image}}" width="200px" height="100px" /></td>
-                                        <td>{{$informationblog->title}}</td>
-                                        <td>
-                                            <a href="{{route('ManagementBlogEdit',$informationblog->id)}}" class="link-edit-product">
-                                                <i class="fa fa-edit"></i>
-                                            </a>
-                                            <a id="{{$informationblog->id}}" class="details" data-toggle="tooltip" data-original-title="جزئیات محصول">
-                                                <i class="fa fa-arrows-v" data-toggle="modal" data-target="#modaldetails" aria-hidden="true"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    @endforeach
+                                    @foreach($informationblogs as $informationblog)
+                                        <tr>
+                                            <td scope="row">{{$informationblog->id}}</td>
+                                            <td><img src="{{$informationblog->image}}" width="200px" height="100px" /></td>
+                                            <td>{{$informationblog->title}}</td>
+                                            <td>
+                                                <a href="{{route('ManagementBlogEdit',$informationblog->id)}}" class="link-edit-product">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <a id="{{$informationblog->id}}" class="details" data-toggle="tooltip" data-original-title="جزئیات محصول">
+                                                    <i class="fa fa-arrows-v" data-toggle="modal" data-target="#modaldetails" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        @endforeach
                                     @endif
                                 </tbody>
                             </table>
@@ -68,6 +68,9 @@
                     </div> 
                     </div>
                 </div>
+            <div class="">
+                {{$informationblogs->links()}}
+            </div>
             </div>
         </div>
         <!-- Table head options end -->

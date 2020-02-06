@@ -73,6 +73,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="">
+                    {{$massages->links()}}
+                </div>
             </div>
         </div>
         <!-- Table head options end -->

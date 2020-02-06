@@ -61,6 +61,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="">
+                    {{$topsliders->links()}}
+                </div>
             </div>
         </div>
         <!-- Table head options end -->

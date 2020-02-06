@@ -15,7 +15,7 @@ class ProductsController extends Controller
     {
         $priceproducts =price::all();
         $dastebandis = categories::all();
-        $allProductMembers = allProductMember::all();
+        $allProductMembers = allProductMember::paginate(7);
         return view('ManagementViews/site/products',compact('allProductMembers','priceproducts','dastebandis'));
     }
 

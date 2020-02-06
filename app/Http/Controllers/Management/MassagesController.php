@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class MassagesController extends Controller
 {
     public function AllMassages (){
-        $massages = MassagesManagement::all();
+        $massages = MassagesManagement::paginate(7);
         return view('ManagementViews/site/massages',compact('massages'));
     }
     public function deleteMassages($massages_id)
