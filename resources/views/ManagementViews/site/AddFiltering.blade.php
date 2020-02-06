@@ -17,17 +17,17 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-content collapse show pad-box">
-                    <form class="form" action="" method="post" enctype="multipart/form-data">
+                    <form class="form" action="" method="post">
                         {{csrf_field()}}
                         <div class="form-body">
 								<div class="row">
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput3">فیلتر</label>
-										<input type="text" id="projectinput3" class="form-control" name="lastcost" placeholder="1000000-3000000">
+										<input type="text" id="projectinput3" class="form-control" name="price" placeholder="1000000-3000000">
 									</div>
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput2">دسته بندی</label>
-										<select class="form-control">
+										<select class="form-control" name="category_id">
                                     @if($dastebandis && count($dastebandis)>0)
                                     @foreach($dastebandis as $dastebandi)
                                             <option>{{$dastebandi->dastebandi}}</option>
