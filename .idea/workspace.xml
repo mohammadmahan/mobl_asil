@@ -2,27 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef73566a-e60a-4287-ae57-7391a92f6de5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/newSletters.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mobl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mobl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/editCategories.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/editFilteringPrice.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Member/AboutMemberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Member/AboutMemberController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Member/ContactMemberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Member/ContactMemberController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Member/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Member/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/tahlilProductNew.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/tahlilProductNew.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/categories.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/editFiltering.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/filtering.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/filteringPrice.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/newSletters.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/newsLetters.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/tahlilsystem.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/tahlilsystem.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/memberViews/singleProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/memberViews/singleProduct.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="113" column="68" selection-start-line="113" selection-start-column="68" selection-end-line="113" selection-end-column="68" />
+            <state relative-caret-position="288">
+              <caret line="85" column="108" selection-start-line="85" selection-start-column="108" selection-end-line="85" selection-end-column="128" />
             </state>
           </provider>
         </entry>
@@ -50,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="362" column="62" selection-start-line="362" selection-start-column="62" selection-end-line="362" selection-end-column="62" />
+            <state relative-caret-position="309">
+              <caret line="357" column="32" selection-start-line="357" selection-start-column="32" selection-end-line="357" selection-end-column="32" />
               <folding>
                 <element signature="e#51#85#0#PHP" expanded="true" />
               </folding>
@@ -60,36 +50,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/editCategories.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="229" column="58" selection-start-line="229" selection-start-column="58" selection-end-line="229" selection-end-column="58" />
+            <state relative-caret-position="240">
+              <caret line="26" column="108" selection-start-line="26" selection-start-column="108" selection-end-line="26" selection-end-column="108" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/excel.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/app/Models/categories.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Exports/NewslettersExport.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#31#58#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="175">
+              <caret line="76" column="70" selection-start-line="76" selection-start-column="70" selection-end-line="76" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/newSletters.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/editFilteringPrice.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+            <state relative-caret-position="406">
+              <caret line="41" column="60" selection-start-line="37" selection-start-column="56" selection-end-line="41" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/categories.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="34" column="95" selection-start-line="34" selection-start-column="95" selection-end-line="34" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -98,10 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>class=&quot;arrow-slick2 next-slick2 slick-arrow&quot;</find>
-      <find>صفحه اصلی</find>
-      <find>مشا</find>
-      <find>images/master-slide-02.jpg</find>
       <find>href</find>
       <find>src</find>
       <find>swal-modal</find>
@@ -124,10 +120,14 @@
       <find>createContactMember</find>
       <find>ManagementTahlilProductNew</find>
       <find>$dastebandis</find>
-      <find>categories</find>
-      <find>ManagementTahlilSystem</find>
       <find>TahlilSystem</find>
       <find>filtering</find>
+      <find>/ManagementFiltering</find>
+      <find>ManagementTahlilSystem</find>
+      <find>cate</find>
+      <find>fil</find>
+      <find>class=&quot;dropdown dropdown-notification nav-item&quot;</find>
+      <find>categories</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,11 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Models/AboutMember.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AboutMemberController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ContactMemberController.php" />
-        <option value="$PROJECT_DIR$/app/Models/ContactMember.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_01_05_215121_contactmembers_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_01_05_203821_aboutmembers_table.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/success.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/allProductMember.php" />
@@ -165,7 +160,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Management/AdministratorController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Management/UsersController.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/login/login.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/addproduct.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/addslider.blade.php" />
@@ -181,12 +175,18 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Member/AboutMemberController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Member/ContactMemberController.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/main.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/tahlilsystem.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/newSletters.blade.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php" />
         <option value="$PROJECT_DIR$/app/Exports/NewslettersExport.php" />
+        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/editFiltering.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/filtering.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/tahlilsystem.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/categories.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/editFilteringPrice.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/editCategories.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php" />
+        <option value="$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php" />
       </list>
     </option>
   </component>
@@ -295,6 +295,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,6 +326,14 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobl_asil" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
@@ -386,6 +395,14 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="ManagementViews" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobl_asil" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="ManagementViews" type="462c0819:PsiDirectoryNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -404,7 +421,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -477,7 +493,8 @@
       <workItem from="1580029464915" duration="12874000" />
       <workItem from="1580158742909" duration="20014000" />
       <workItem from="1580378844693" duration="48519000" />
-      <workItem from="1580726404928" duration="5759000" />
+      <workItem from="1580726404928" duration="11414000" />
+      <workItem from="1580893549443" duration="4537000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/mohammadmahan/mobl_asil&#10;&#10;# Conflicts:&#10;#&#9;public/css/style.css&#10;#&#9;resources/views/layout/main.blade.php">
       <created>1578220045821</created>
@@ -654,11 +671,18 @@
       <option name="project" value="LOCAL" />
       <updated>1580605435781</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="خبرنامه در سیستم مدیریتی درست شد - دانلود برای خبرنامه گذاشته شد- ولی خیلی چیزای دیگه">
+      <created>1580736288583</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1580736288583</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214279000" />
+    <option name="totallyTimeSpent" value="224471000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,7 +697,7 @@
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.262945" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.2669903" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50177306" side_tool="true" weight="0.23543689" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -700,7 +724,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new commit 2" />
     <MESSAGE value="لینک های منو درست شد" />
     <MESSAGE value="صفحه محصولات بک زده شد" />
     <MESSAGE value="صفحه محصولات بک زده شد ,ویرایش" />
@@ -725,7 +748,8 @@
     <MESSAGE value="قالب لاگین زده شد" />
     <MESSAGE value="بک اند لاگین کامل زده شد" />
     <MESSAGE value="ادد و دیلیت محصولات در مدیریت زده شد - ارتفاع عکس درست شد" />
-    <option name="LAST_COMMIT_MESSAGE" value="ادد و دیلیت محصولات در مدیریت زده شد - ارتفاع عکس درست شد" />
+    <MESSAGE value="خبرنامه در سیستم مدیریتی درست شد - دانلود برای خبرنامه گذاشته شد- ولی خیلی چیزای دیگه" />
+    <option name="LAST_COMMIT_MESSAGE" value="خبرنامه در سیستم مدیریتی درست شد - دانلود برای خبرنامه گذاشته شد- ولی خیلی چیزای دیگه" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -739,30 +763,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/editInformationBlog.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_05_215121_contactmembers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="587" column="1" selection-start-line="587" selection-start-column="1" selection-end-line="587" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/memberViews/blog.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -901,13 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="128" column="110" selection-start-line="128" selection-start-column="110" selection-end-line="128" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_14_235414_productindex_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1031,13 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/AddProductController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1055,13 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/tahlilsystem.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="149" column="83" selection-start-line="149" selection-start-column="83" selection-end-line="149" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layout/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
@@ -1069,37 +1048,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/newSletters.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/newsLetters.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="113" column="68" selection-start-line="113" selection-start-column="68" selection-end-line="113" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="229" column="58" selection-start-line="229" selection-start-column="58" selection-end-line="229" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/excel.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="362" column="62" selection-start-line="362" selection-start-column="62" selection-end-line="362" selection-end-column="62" />
-          <folding>
-            <element signature="e#51#85#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1110,6 +1062,82 @@
           <folding>
             <element signature="e#31#58#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/excel.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="229" column="58" selection-start-line="229" selection-start-column="58" selection-end-line="229" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/filteringPrice.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="55" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/tahlilsystem.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="106" column="70" selection-start-line="106" selection-start-column="70" selection-end-line="106" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/categories.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="34" column="95" selection-start-line="34" selection-start-column="95" selection-end-line="34" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/editFilteringPrice.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="41" column="60" selection-start-line="37" selection-start-column="56" selection-end-line="41" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/editCategories.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" column="108" selection-start-line="26" selection-start-column="108" selection-end-line="26" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="85" column="108" selection-start-line="85" selection-start-column="108" selection-end-line="85" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="357" column="32" selection-start-line="357" selection-start-column="32" selection-end-line="357" selection-end-column="32" />
+          <folding>
+            <element signature="e#51#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="76" column="70" selection-start-line="76" selection-start-column="70" selection-end-line="76" selection-end-column="70" />
         </state>
       </provider>
     </entry>

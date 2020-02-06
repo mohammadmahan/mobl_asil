@@ -104,7 +104,7 @@
                         </div>
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="card">
-                                <a href="">
+                                <a href="{{route('filtering.categories')}}">
                                     <div class="card-content single-card">
                                         <div class="card-body">
                                             <div class="media d-flex">
@@ -124,7 +124,7 @@
 
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="card">
-                                <a href="{{route('filtering')}}">
+                                <a href="{{route('filtering.price')}}">
                                     <div class="card-content single-card">
                                         <div class="card-body">
                                             <div class="media d-flex">

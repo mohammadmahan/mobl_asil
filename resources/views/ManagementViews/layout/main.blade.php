@@ -71,28 +71,11 @@
 
                     </ul>
                     <ul class="nav navbar-nav float-right">
-                        <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#"
-                                data-toggle="dropdown"><i class="far fa-bell" style="font-size: 21px;"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
-                                <li class="">
-                                    <h6 class="dropdown-header dropdown-menu-header m-0 mb-1"><span
-                                            class="grey darken-2">پیام ها</span></h6>
-                                </li>
-                                <li class="scrollable-container media-list w-100 mt-3 ml-2 ps">
-                                    شما هیچ پیامی ندارید!
-                                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
-                                        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-                                    </div>
-                                    <div class="ps__rail-y" style="top: 0px; right: 0px;">
-                                        <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
                         <li class="dropdown dropdown-user nav-item">
                             <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-                                <span class="avatar avatar-online"><img
-                                        src="/Management/images/portrait/small/avatar-s-9.png" alt="avatar"></span>
+                                <span class="avatar avatar-online">
+                                    <img src="/Management/images/admin.png" alt="avatar">
+                                </span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" style="width: 230px;">
                                 @if(\Illuminate\Support\Facades\Auth::check())

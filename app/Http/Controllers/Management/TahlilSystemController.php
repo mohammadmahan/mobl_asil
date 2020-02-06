@@ -314,33 +314,57 @@ class TahlilSystemController extends Controller
 
 
 
-    public function filtering(){
+    public function filteringPrice(){
         $priceproducts = price::all();
-        $dastebandis = categories::all();
-        return view('ManagementViews/site/filtering', compact('priceproducts','dastebandis'));
+        return view('ManagementViews/site/filteringPrice', compact('priceproducts'));
     }
-    public function FilteringEdit($Filtering_id){
+    public function FilteringPriceEdit($Filtering_id){
         if($Filtering_id && ctype_digit($Filtering_id)){
             $price = price::find($Filtering_id);
             if($price && $price instanceof price){
-             return view('ManagementViews/site/editFiltering',compact('price'));
+             return view('ManagementViews/site/editFilteringPrice',compact('price'));
             }
          }
     }
-    public function FilteringUpdate($Filtering_id){
+    public function FilteringPriceUpdate($Filtering_id){
         $filter_data = [
             'price' => request()->input('price'),
         ];
         $price = price::find($Filtering_id);
         $price->update($filter_data);
         if ($price) {
-            return redirect()->route('ManagementEditFiltering');
+            return redirect()->route('filtering.price');
+        }
+    }
+
+    public function filteringCategories(){
+        $dastebandis = categories::all();
+        return view('ManagementViews/site/categories', compact('dastebandis'));
+    }
+
+    public function filteringCategoriesEdit($dastebandi_id)
+    {
+        if($dastebandi_id && ctype_digit($dastebandi_id)){
+            $dastebandi = categories::find($dastebandi_id);
+            if($dastebandi && $dastebandi instanceof categories){
+                return view('ManagementViews/site/editcategories',compact('dastebandi'));
+            }
+        }
+    }
+    public function FilteringCategoriesUpdate($dastebandi_id){
+        $filter_data = [
+            'dastebandi' => request()->input('dastebandi'),
+        ];
+        $dastebandi = categories::find($dastebandi_id);
+        $dastebandi->update($filter_data);
+        if ($dastebandi) {
+            return redirect()->route('filtering.categories');
         }
     }
 
     public function NewslettersShow(){
         $Newsletters = Newsletters::all();
-        return view('ManagementViews/site/newSletters',compact('Newsletters'));
+        return view('ManagementViews/site/newsLetters',compact('Newsletters'));
     }
 
     public function Newsletters_delete($newsletters_id)
