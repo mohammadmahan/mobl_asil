@@ -9,6 +9,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+///////////////////////////start :: Member route///////////////////////////////////
 Route::get('/mainsss', 'Member\HomeController@main')->name('main');
 
 Route::get('/', 'Member\HomeController@homeMember')->name('homeMember');
@@ -24,8 +26,10 @@ Route::get('/allProduct-member', 'Member\allProductMemberController@allProductMe
 Route::get('/singleProduct-member/{allProductMember_id}', 'Member\allProductMemberController@singleProductMember')->name('singleProduct');
 
 Route::get('/blog/{blog_id}', 'Member\HomeController@blogMember')->name('BlogMember');
-//////////////////start :: Management//////////////////
+///////////////////////////End :: Member route///////////////////////////////////
 
+
+//////////////////////////////////start :: Management////////////////////////////
 Route::get('/ManagementDashboard', 'Management\DashboardController@dashboard');
 
 Route::get('/details/product','Management\ProductsController@details')->name('details.product');
@@ -48,7 +52,6 @@ Route::get('/ManagementTahlilSystem','Management\TahlilSystemController@TahlilSy
 
 Route::get('/delete/place/{massages_id}', 'Management\MassagesController@deleteMassages')->name('delete.massage');
 
-
 Route::get('/ManagementTahlilSlider','Management\TahlilSystemController@TahlilSlider')->name('ManagementTahlilSlider');
 
 Route::get('/ManagementAddSlider','Management\TahlilSystemController@AddSingleSlider')->name('ManagementAddSlider');
@@ -58,7 +61,6 @@ Route::get('/delete/slider{Slider_id}','Management\TahlilSystemController@delete
 
 Route::get('/ManagementEditSingleSlider/{topslider_id}', 'Management\TahlilSystemController@editSingleSlider')->name('editSlider');
 Route::post('/ManagementEditSingleSlider/{topslider_id}', 'Management\TahlilSystemController@updateSingleSlider')->name('updateSlider');
-
 
 Route::get('/ManagementTahlilAbout', 'Management\TahlilSystemController@editAbout')->name('ManagementTahlilAbout');
 Route::post('/ManagementTahlilAbout', 'Management\TahlilSystemController@updateAbout')->name('updateAbout');
@@ -88,34 +90,35 @@ Route::post('/ManagementAddFilteringPrice','Management\TahlilSystemController@cr
 Route::get('/ManagementFilteringCategories','Management\TahlilSystemController@filteringCategories')->name('filtering.categories');
 Route::get('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesEdit')->name('filtering.categories.edit');
 Route::post('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesUpdate')->name('filtering.categories.update');
+Route::get('/ManagementAddCategoriesPrice','Management\TahlilSystemController@CategoriesAdd')->name('ManagementAddCategories');
+Route::post('/ManagementAddCategoriesPrice','Management\TahlilSystemController@createCategories')->name('ManagementAddCategories.post');
+/////////////////////////////end :: Management//////////////////////////////////
 
 
-
-/////////////////end :: Management//////////////////
-
-
+////////////////////////////start ::filter adn categories///////////////////////
 Route::get('/allProduct-member/category/{category_id}', 'Member\allProductMemberController@withcategory')->name('category-products');
 Route::get('/allProduct-member/price/{price_id}', 'Member\allProductMemberController@withprice')->name('price-products');
 Route::get('/allProduct-member/{category_id}/{price_id}', 'Member\allProductMemberController@categoryprice')->name('categoryprice');
+////////////////////////////End ::filter and categories///////////////////////
 
 
-
+///////////////////////////start ::search route//////////////////////////////
 Route::get('/search/allProducts','Member\allProductMemberController@searchAllProducts');
-
 Route::get('/search/allProducts/management','Management\ProductsController@searchAllProductsManagement');
+///////////////////////////End ::search route//////////////////////////////
 
-/////////////////start :: login//////////////////
 
+//////////////////////////start :: login and logout//////////////////////////////////
 Route::get('/management/login','Management\UsersController@login')->name('login');
 Route::post('/management/login','Management\UsersController@doLogin')->name('post.login');
 
 Route::get('/management/logout','Management\UsersController@logout')->name('logout');
+//////////////////////////End :: login and logout//////////////////////////////////
 
 
+//////////////////////////start :: Newsletters//////////////////////////////////
 Route::post('/','Member\NewslettersController@Newsletters')->name('Newsletters');
-
 Route::get('/management/newSletters','Management\tahlilSystemController@NewslettersShow')->name('NewslettersShow');
-
 Route::get('/management/newSlettersDelete/{newsletters_id}','Management\tahlilSystemController@Newsletters_delete')->name('delete.NewslettersShow');
-
 Route::get('/management/download/newSletters','Management\tahlilSystemController@ExportNewsletters')->name('Export.Newsletters');
+//////////////////////////End :: Newsletters//////////////////////////////////

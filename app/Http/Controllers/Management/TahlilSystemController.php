@@ -353,6 +353,22 @@ class TahlilSystemController extends Controller
        }
   }
 
+
+  public function ManagementAddCategories(){
+    $dastebandis = categories::all();
+    $priceproducts = price::all();
+    return view('ManagementViews/site/AddFiltering', compact('priceproducts','dastebandis'));
+  }
+  public function createCategories(){
+    $Create_Filter = [
+        'dastebandi' => request()->input('dastebandi'),
+       ];
+
+       $new_Filter_object = categories::create($Create_Filter);
+       if ($new_Filter_object) {
+           return redirect()->route('filtering.categories');
+       }
+  }
     public function filteringCategories(){
         $dastebandis = categories::paginate(7);
         return view('ManagementViews/site/categories', compact('dastebandis'));
