@@ -353,7 +353,16 @@ class TahlilSystemController extends Controller
        }
   }
 
-
+  public function deleteFilter($Filter_id){
+    if ($Filter_id && ctype_digit($Filter_id)) {
+        $Filter = price::find($Filter_id);
+        if ($Filter && $Filter instanceof price) {
+            $Filter->delete();
+            return redirect()->route('filtering.price');
+        }
+    }
+  }
+/*****************************start page categoriesR******************************/
   public function ManagementAddCategories(){
     $dastebandis = categories::all();
     $priceproducts = price::all();
@@ -393,7 +402,16 @@ class TahlilSystemController extends Controller
             return redirect()->route('filtering.categories');
         }
     }
-
+    public function deletecategories($categories_id){
+        if ($categories_id && ctype_digit($categories_id)) {
+            $categories = categories::find($categories_id);
+            if ($categories && $categories instanceof categories) {
+                $categories->delete();
+                return redirect()->route('filtering.categories');
+            }
+        }
+    }
+/*****************************end page categoriesR******************************/
     public function NewslettersShow(){
         $Newsletters = Newsletters::paginate(7);
         return view('ManagementViews/site/newsLetters',compact('Newsletters'));

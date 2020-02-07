@@ -6,14 +6,14 @@ use App\AddProduct;
 use App\allProductMember;
 use App\Http\Controllers\Controller;
 use App\Models\categories;
-use App\price;
+use App\Price;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\File\File;
 
 class AddProductController extends Controller
 {
    public function AddProduct(){
-      $priceproducts = price::all();
+      $priceproducts = Price::all();
       $dastebandis = categories::all();
     return view('ManagementViews/site/addproduct',compact('priceproducts','dastebandis'));
    }

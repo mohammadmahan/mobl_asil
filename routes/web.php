@@ -86,12 +86,15 @@ Route::get('/ManagementEditFilteringPrice/{Filtering_id}', 'Management\TahlilSys
 Route::post('/ManagementEditFilteringPrice/{Filtering_id}', 'Management\TahlilSystemController@FilteringPriceUpdate')->name('ManagementFilteringUpdate');
 Route::get('/ManagementAddFilteringPrice','Management\TahlilSystemController@filteringPriceAdd')->name('ManagementAddFilter');
 Route::post('/ManagementAddFilteringPrice','Management\TahlilSystemController@createFilter')->name('ManagementAddFilter.post');
+Route::get('/delete/Filter/{Filter_id}', 'Management\TahlilSystemController@deleteFilter')->name('delete.Filter');  
+
 
 Route::get('/ManagementFilteringCategories','Management\TahlilSystemController@filteringCategories')->name('filtering.categories');
 Route::get('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesEdit')->name('filtering.categories.edit');
 Route::post('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesUpdate')->name('filtering.categories.update');
 Route::get('/ManagementAddCategoriesPrice','Management\TahlilSystemController@CategoriesAdd')->name('ManagementAddCategories');
 Route::post('/ManagementAddCategoriesPrice','Management\TahlilSystemController@createCategories')->name('ManagementAddCategories.post');
+Route::get('/delete/categories/{categories_id}', 'Management\TahlilSystemController@deletecategories')->name('delete.categories');  
 /////////////////////////////end :: Management//////////////////////////////////
 
 
