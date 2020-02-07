@@ -92,16 +92,26 @@ Route::get('/delete/Filter/{Filter_id}', 'Management\TahlilSystemController@dele
 Route::get('/ManagementFilteringCategories','Management\TahlilSystemController@filteringCategories')->name('filtering.categories');
 Route::get('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesEdit')->name('filtering.categories.edit');
 Route::post('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesUpdate')->name('filtering.categories.update');
+<<<<<<< HEAD
 Route::get('/ManagementAddCategoriesPrice','Management\TahlilSystemController@CategoriesAdd')->name('ManagementAddCategories');
 Route::post('/ManagementAddCategoriesPrice','Management\TahlilSystemController@createCategories')->name('ManagementAddCategories.post');
 Route::get('/delete/categories/{categories_id}', 'Management\TahlilSystemController@deletecategories')->name('delete.categories');  
+=======
+Route::get('/ManagementAddCategories','Management\TahlilSystemController@CategoriesAdd')->name('ManagementAddCategories');
+Route::post('/ManagementAddCategories','Management\TahlilSystemController@createCategories')->name('ManagementAddCategories.post');
+>>>>>>> 9bacb78384c4261be8872c329cc2c73670e135a3
 /////////////////////////////end :: Management//////////////////////////////////
 
 
-////////////////////////////start ::filter adn categories///////////////////////
+////////////////////////////start ::filter and categories///////////////////////
 Route::get('/allProduct-member/category/{category_id}', 'Member\allProductMemberController@withcategory')->name('category-products');
 Route::get('/allProduct-member/price/{price_id}', 'Member\allProductMemberController@withprice')->name('price-products');
 Route::get('/allProduct-member/{category_id}/{price_id}', 'Member\allProductMemberController@categoryprice')->name('categoryprice');
+
+Route::get('/delete/price{price_id}', 'Management\TahlilSystemController@deletePrice')->name('delete.massage');
+
+Route::get('/delete/Categories{Categories_id}', 'Management\TahlilSystemController@deleteCategories')->name('delete.Categories');
+
 ////////////////////////////End ::filter and categories///////////////////////
 
 

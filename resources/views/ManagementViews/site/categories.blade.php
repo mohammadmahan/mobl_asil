@@ -27,7 +27,7 @@
                                 <table class="table">
                                     <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col">ردیف</th>
+                                        <th scope="col">شناسه</th>
                                         <th scope="col">دسته بندی</th>
                                         <th scope="col">عملیات</th>
                                     </tr>
@@ -41,6 +41,9 @@
                                                 <td>
                                                     <a href="{{route('filtering.categories.edit',$dastebandi->id)}}" class="link-edit-product">
                                                         <i class="fa fa-edit"></i>
+                                                    </a>
+                                                    <a class="link-edit-product" href="{{route('delete.Categories',$dastebandi->id)}}" data-toggle="tooltip" data-original-title="حذف پیام">
+                                                        <i  class="fa fa-minus-square" aria-hidden="true"></i>
                                                     </a>
 
                                                     <a class="link-edit-product" data-toggle="tooltip" data-original-title="حذف پیام">

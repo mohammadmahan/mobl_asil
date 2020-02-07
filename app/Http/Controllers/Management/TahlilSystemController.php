@@ -353,6 +353,7 @@ class TahlilSystemController extends Controller
        }
   }
 
+<<<<<<< HEAD
   public function deleteFilter($Filter_id){
     if ($Filter_id && ctype_digit($Filter_id)) {
         $Filter = price::find($Filter_id);
@@ -367,6 +368,23 @@ class TahlilSystemController extends Controller
     $dastebandis = categories::all();
     $priceproducts = price::all();
     return view('ManagementViews/site/AddFiltering', compact('priceproducts','dastebandis'));
+=======
+
+    public function deletePrice($price_id)
+    {
+        if ($price_id && ctype_digit($price_id)) {
+            $price = price::find($price_id);
+            if ($price && $price instanceof price) {
+                $price->delete();
+                return redirect()->route('filtering.price');
+            }
+        }
+    }
+
+
+  public function CategoriesAdd(){
+    return view('ManagementViews/site/AddCategories');
+>>>>>>> 9bacb78384c4261be8872c329cc2c73670e135a3
   }
   public function createCategories(){
     $Create_Filter = [
@@ -402,16 +420,30 @@ class TahlilSystemController extends Controller
             return redirect()->route('filtering.categories');
         }
     }
+<<<<<<< HEAD
     public function deletecategories($categories_id){
         if ($categories_id && ctype_digit($categories_id)) {
             $categories = categories::find($categories_id);
             if ($categories && $categories instanceof categories) {
                 $categories->delete();
+=======
+
+    public function deleteCategories($Categories_id)
+    {
+        if ($Categories_id && ctype_digit($Categories_id)) {
+            $Categories = categories::find($Categories_id);
+            if ($Categories && $Categories instanceof categories) {
+                $Categories->delete();
+>>>>>>> 9bacb78384c4261be8872c329cc2c73670e135a3
                 return redirect()->route('filtering.categories');
             }
         }
     }
+<<<<<<< HEAD
 /*****************************end page categoriesR******************************/
+=======
+
+>>>>>>> 9bacb78384c4261be8872c329cc2c73670e135a3
     public function NewslettersShow(){
         $Newsletters = Newsletters::paginate(7);
         return view('ManagementViews/site/newsLetters',compact('Newsletters'));

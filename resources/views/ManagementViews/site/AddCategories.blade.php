@@ -23,7 +23,7 @@
 								<div class="row">
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput3">دسته بندی</label>
-										<input type="text" id="projectinput3" class="form-control" name="price" placeholder="مبلمان راحتی">
+										<input type="text" id="projectinput3" class="form-control" name="dastebandi" placeholder="مبلمان راحتی">
 									</div>
 								</div>
                                 
