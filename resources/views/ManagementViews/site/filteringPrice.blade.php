@@ -42,7 +42,7 @@
                                             <a href="{{route('ManagementFilteringEdit',$priceproduct->id)}}" class="link-edit-product">
                                                 <i class="fa fa-edit"></i>
                                             </a>
-                                            <a class="link-edit-product" data-toggle="tooltip" data-original-title="حذف پیام">
+                                            <a class="link-edit-product" href="{{route('delete.massage',$priceproduct->id)}}" data-toggle="tooltip" data-original-title="حذف پیام">
                                                 <i  class="fa fa-minus-square" aria-hidden="true"></i>
                                             </a>
 
@@ -51,26 +51,26 @@
 
 
                                      <!------------------start modal delete----------------------------->
-                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                                             aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">حذف پیام</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        ایا میخواهید حذف کنید؟
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
-                                                        <a href="" type="submit" class="btn btn-primary delete-button">حذف</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+{{--                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"--}}
+{{--                                             aria-hidden="true">--}}
+{{--                                            <div class="modal-dialog" role="document">--}}
+{{--                                                <div class="modal-content">--}}
+{{--                                                    <div class="modal-header">--}}
+{{--                                                        <h5 class="modal-title" id="exampleModalLabel">حذف پیام</h5>--}}
+{{--                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">--}}
+{{--                                                            <span aria-hidden="true">&times;</span>--}}
+{{--                                                        </button>--}}
+{{--                                                    </div>--}}
+{{--                                                    <div class="modal-body">--}}
+{{--                                                        ایا میخواهید حذف کنید؟--}}
+{{--                                                    </div>--}}
+{{--                                                    <div class="modal-footer">--}}
+{{--                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>--}}
+{{--                                                        <a href="" type="submit" class="btn btn-primary delete-button">حذف</a>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
                                         <!------------------end modal delete----------------------------->
                                     @endforeach
                                     @endif

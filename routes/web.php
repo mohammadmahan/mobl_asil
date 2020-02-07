@@ -95,10 +95,15 @@ Route::post('/ManagementAddCategoriesPrice','Management\TahlilSystemController@c
 /////////////////////////////end :: Management//////////////////////////////////
 
 
-////////////////////////////start ::filter adn categories///////////////////////
+////////////////////////////start ::filter and categories///////////////////////
 Route::get('/allProduct-member/category/{category_id}', 'Member\allProductMemberController@withcategory')->name('category-products');
 Route::get('/allProduct-member/price/{price_id}', 'Member\allProductMemberController@withprice')->name('price-products');
 Route::get('/allProduct-member/{category_id}/{price_id}', 'Member\allProductMemberController@categoryprice')->name('categoryprice');
+
+Route::get('/delete/price{price_id}', 'Management\TahlilSystemController@deletePrice')->name('delete.massage');
+
+Route::get('/delete/Categories{Categories_id}', 'Management\TahlilSystemController@deleteCategories')->name('delete.Categories');
+
 ////////////////////////////End ::filter and categories///////////////////////
 
 

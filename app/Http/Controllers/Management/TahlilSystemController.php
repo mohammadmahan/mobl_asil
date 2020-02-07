@@ -354,7 +354,19 @@ class TahlilSystemController extends Controller
   }
 
 
-  public function ManagementAddCategories(){
+    public function deletePrice($price_id)
+    {
+        if ($price_id && ctype_digit($price_id)) {
+            $price = price::find($price_id);
+            if ($price && $price instanceof price) {
+                $price->delete();
+                return redirect()->route('filtering.price');
+            }
+        }
+    }
+
+
+  public function CategoriesAdd(){
     $dastebandis = categories::all();
     $priceproducts = price::all();
     return view('ManagementViews/site/AddFiltering', compact('priceproducts','dastebandis'));
@@ -391,6 +403,17 @@ class TahlilSystemController extends Controller
         $dastebandi->update($filter_data);
         if ($dastebandi) {
             return redirect()->route('filtering.categories');
+        }
+    }
+
+    public function deleteCategories($Categories_id)
+    {
+        if ($Categories_id && ctype_digit($Categories_id)) {
+            $Categories = categories::find($Categories_id);
+            if ($Categories && $Categories instanceof categories) {
+                $Categories->delete();
+                return redirect()->route('filtering.categories');
+            }
         }
     }
 
