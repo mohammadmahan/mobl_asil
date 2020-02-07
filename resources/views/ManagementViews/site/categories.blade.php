@@ -42,12 +42,9 @@
                                                     <a href="{{route('filtering.categories.edit',$dastebandi->id)}}" class="link-edit-product">
                                                         <i class="fa fa-edit"></i>
                                                     </a>
-                                                    <a class="link-edit-product" href="{{route('delete.Categories',$dastebandi->id)}}" data-toggle="tooltip" data-original-title="حذف پیام">
-                                                        <i  class="fa fa-minus-square" aria-hidden="true"></i>
-                                                    </a>
 
                                                     <a class="link-edit-product" data-toggle="tooltip" data-original-title="حذف پیام">
-                                                    <i data-toggle="modal" data-target="#exampleModal" class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i>
+                                                      <i data-toggle="modal" data-target="#exampleModal" class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i>
                                                     </a>
                                                 </td>
                                             </tr>
