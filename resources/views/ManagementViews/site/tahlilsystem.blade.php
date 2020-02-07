@@ -32,22 +32,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6 col-12">
-                            <div class="card">
-                                <a href="{{route('ManagementTahlilProductIndex')}}">
-                                    <div class="card-content single-card">
-                                        <div class="card-body">
-                                            <div class="media d-flex">
-                                                <div class="media-body text-center">
-                                                    <h5> محصولات صفحه اصلی</h5>
-                                                    <span>تصاویر موجود در صفحه اصلی</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="card">
                                 <a href="{{route('ManagementTahlilAbout')}}">
@@ -64,25 +49,6 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6 col-12">
-                            <div class="card">
-                                <a href="{{route('ManagementTahlilProductNew')}}">
-                                    <div class="card-content single-card">
-                                        <div class="card-body">
-                                            <div class="media d-flex">
-                                                <div class="media-body text-center">
-                                                    <h5> محصولات جدید</h5>
-                                                    <span>اطلاعات اسلایدر  محصولات جدید</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="card">
                                 <a href="{{route('ManagementTahlilBlog')}}">
@@ -121,6 +87,11 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row">
+                        
+                        
 
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="card">

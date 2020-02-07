@@ -19,20 +19,20 @@ class HomeController extends Controller
     public function main(){
         $Abouts = AboutMember::all();
         $dastebandis = categories::all();
-        return view('layout/main',compact('Abouts','dastebandis'));
+        $priceproduct = AppPrice::all();
+        return view('layout/main',compact('Abouts','dastebandis','priceproduct'));
     }
    
 
     public function homeMember(){
         $Abouts = AboutMember::all();
-        $newProducts = NewProduct::all();
         $sliders = TopSlider::all();
         $InformationBlogs = InformationBlog::all();
         $Productindexs = ProductIndex::all();
         $priceproduct = AppPrice::all();
         $dastebandis = categories::all();
         $allProductMembers = allProductMember::orderBy('id','desc') ->take(10)->get();
-        return view('memberViews/home',compact('newProducts','sliders','InformationBlogs','Abouts','Productindexs','priceproduct','allProductMembers','dastebandis'));
+        return view('memberViews/home',compact('sliders','InformationBlogs','Abouts','Productindexs','priceproduct','allProductMembers','dastebandis'));
     }
 
     public function blogMember($blog_id){
