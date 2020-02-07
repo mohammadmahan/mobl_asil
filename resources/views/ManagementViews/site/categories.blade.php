@@ -27,7 +27,7 @@
                                 <table class="table">
                                     <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col">ردیف</th>
+                                        <th scope="col">شناسه</th>
                                         <th scope="col">دسته بندی</th>
                                         <th scope="col">عملیات</th>
                                     </tr>

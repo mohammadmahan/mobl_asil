@@ -367,9 +367,7 @@ class TahlilSystemController extends Controller
 
 
   public function CategoriesAdd(){
-    $dastebandis = categories::all();
-    $priceproducts = price::all();
-    return view('ManagementViews/site/AddFiltering', compact('priceproducts','dastebandis'));
+    return view('ManagementViews/site/AddCategories');
   }
   public function createCategories(){
     $Create_Filter = [

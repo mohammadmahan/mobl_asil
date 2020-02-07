@@ -90,8 +90,8 @@ Route::post('/ManagementAddFilteringPrice','Management\TahlilSystemController@cr
 Route::get('/ManagementFilteringCategories','Management\TahlilSystemController@filteringCategories')->name('filtering.categories');
 Route::get('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesEdit')->name('filtering.categories.edit');
 Route::post('/ManagementEditFilteringCategories{dastebandi_id}','Management\TahlilSystemController@filteringCategoriesUpdate')->name('filtering.categories.update');
-Route::get('/ManagementAddCategoriesPrice','Management\TahlilSystemController@CategoriesAdd')->name('ManagementAddCategories');
-Route::post('/ManagementAddCategoriesPrice','Management\TahlilSystemController@createCategories')->name('ManagementAddCategories.post');
+Route::get('/ManagementAddCategories','Management\TahlilSystemController@CategoriesAdd')->name('ManagementAddCategories');
+Route::post('/ManagementAddCategories','Management\TahlilSystemController@createCategories')->name('ManagementAddCategories.post');
 /////////////////////////////end :: Management//////////////////////////////////
 
 
