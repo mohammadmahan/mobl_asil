@@ -42,9 +42,11 @@
                                         <button type="submit" class="btn btn-primary">
                                             ذخیره
                                         </button>
+                                        <a href="{{route('ManagementTahlilSlider')}}">
                                         <button type="button" class="btn btn-warning mr-1">
                                             لغو
                                         </button>
+                                        </a>
                                     </div>
                                 </div>
                             </form>

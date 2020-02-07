@@ -282,29 +282,19 @@
         </div>
         <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
             <h4 class="s-text12 p-b-30">
-                لینکهای کمکی
+                فیلتر قیمت ها
             </h4>
             <ul>
+                @if($priceproduct && count($priceproduct)>0)
+                    @foreach($priceproduct as $priceproduct)
                 <li class="p-b-9">
                     <a href="#" class="s-text7">
-                        رهگیری سفارش
+                        {{$priceproduct->price}}
                     </a>
                 </li>
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        بازده
-                    </a>
-                </li>
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        فروشگاه
-                    </a>
-                </li>
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        پرسش و پاسخ
-                    </a>
-                </li>
+                    @endforeach
+                @endif
+
             </ul>
         </div>
         <div class="w-size8 p-t-30 p-l-15 p-r-15 respon3">
