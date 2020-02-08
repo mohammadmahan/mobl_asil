@@ -3,7 +3,7 @@
     محصولات ثبت شده
 @stop
 @section('content')
-    <script src="/js/myjq.js"></script>
+    <script src="/js/myJq.js"></script>
     <script>
         $(document).ready(function () {
             $(".details").click(function () {
@@ -131,7 +131,7 @@
                                             <td>{{$allProductMember->name}}</td>
                                             <td>{{$allProductMember->lastcost}}</td>
                                             <td>{{$allProductMember->number_product}}</td>
-                                            <td><img src="{{$allProductMember->image}}" width="200px" height="150px"/></td>
+                                            <td><img src="{{$allProductMember->image}}" width="140px" height="90px"/></td>
 
                                             <td>
                                                 <a href="{{route('ManagementEditProduct',$allProductMember->id)}}" class="link-edit-product" data-original-title="ویرایش محصول">

@@ -19,8 +19,7 @@ class HomeController extends Controller
     public function main(){
         $Abouts = AboutMember::all();
         $dastebandis = categories::all();
-        $priceproduct = AppPrice::all();
-        return view('layout/main',compact('Abouts','dastebandis','priceproduct'));
+        return view('layout/main',compact('Abouts','dastebandis'));
     }
    
 

@@ -70,7 +70,7 @@
         </div>
         <div class="wrap_header">
             <a href="#" class="logo">
-                <img src="/images/icons/logo.png" alt="IMG-LOGO">
+                <img src="/images/logo.png" alt="IMG-LOGO">
             </a>
             <div class="wrap_menu">
                 <nav class="menu">
@@ -282,19 +282,14 @@
         </div>
         <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
             <h4 class="s-text12 p-b-30">
-                فیلتر قیمت ها
+
             </h4>
             <ul>
-                @if($priceproduct && count($priceproduct)>0)
-                    @foreach($priceproduct as $priceproduct)
                 <li class="p-b-9">
                     <a href="#" class="s-text7">
-                        {{$priceproduct->price}}
+
                     </a>
                 </li>
-                    @endforeach
-                @endif
-
             </ul>
         </div>
         <div class="w-size8 p-t-30 p-l-15 p-r-15 respon3">

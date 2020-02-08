@@ -54,7 +54,7 @@
 									</div>
 									<div class="form-group col-md-6 mb-2">
 										<label for="projectinput2">فیلتر</label>
-										<select class="form-control">
+										<select class="form-control" name="prices">
                                         @if($priceproducts && count($priceproducts)>0)
                                         @foreach($priceproducts as $priceproduct)
                                         <option value="{{$priceproduct->id}}">{{$priceproduct->price}}</option>
@@ -82,9 +82,11 @@
                                     <button type="submit" class="btn btn-primary">
                                         ذخیره
                                     </button>
-                                    <button type="button" class="btn btn-warning mr-1">
-                                        لغو
-                                    </button>
+                                    <a href="{{route('ProductManagement')}}">
+                                        <button type="button" class="btn btn-warning mr-1">
+                                            لغو
+                                        </button>
+                                    </a>
 
                                 </div>
                             </div>
