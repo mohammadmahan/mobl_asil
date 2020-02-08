@@ -36,10 +36,11 @@ class HomeController extends Controller
 
     public function blogMember($blog_id){
         $Abouts = AboutMember::all();
+        $dastebandis = categories::all();
         if ($blog_id && ctype_digit($blog_id)) {
             $InformationBlogs= InformationBlog::find($blog_id);
             if ($InformationBlogs && $InformationBlogs instanceof InformationBlog) {
-                return view('memberViews/blog',compact('Abouts','InformationBlogs')); 
+                return view('memberViews/blog',compact('Abouts','InformationBlogs','dastebandis')); 
             }
         }
         
