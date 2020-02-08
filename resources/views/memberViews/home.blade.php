@@ -113,7 +113,7 @@
 							{{$InformationBlog->Description}}
 						    </p>
 							<a href="{{route('BlogMember',$InformationBlog->id)}}" class="more-details">
-							<span>بیشتر بدانید<i class="fa fa-chevron-lef"></i></span>
+							<span>بیشتر بدانید</span>
 							</a>
 						</div>
 					</div>

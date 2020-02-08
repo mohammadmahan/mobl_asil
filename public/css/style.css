@@ -24,7 +24,7 @@ body{
 .background-blog{
     background-color: #fff;
     padding: 17px;
-    height: 185px;
+    padding-bottom: 45px;
 }
 .item-slick3{
     position: sticky !important;
