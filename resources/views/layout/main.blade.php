@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="/vendor/daterangepicker/daterangepicker.css">
 
-    <link rel="stylesheet" type="text/css" href="/vendor/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/vendor/slick/slick.css"> 
 
     <link rel="stylesheet" type="text/css" href="/vendor/lightbox2/css/lightbox.min.css">
 
@@ -71,7 +71,7 @@
         </div>
         <div class="wrap_header">
             <a href="#" class="logo">
-                <img src="/images/icons/logo.png" alt="IMG-LOGO">
+                <img src="/images/logo.png" alt="IMG-LOGO">
             </a>
             <div class="wrap_menu">
                 <nav class="menu">
@@ -281,7 +281,22 @@
                 </li>
             </ul>
         </div>
+<<<<<<< HEAD
         
+=======
+        <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+            <h4 class="s-text12 p-b-30">
+
+            </h4>
+            <ul>
+                <li class="p-b-9">
+                    <a href="#" class="s-text7">
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+>>>>>>> c4590b80e3749eb88946b06f67387e0911470d4d
         <div class="w-size8 p-t-30 p-l-15 p-r-15 respon3">
             <h4 class="s-text12 p-b-30">
                 خبرنامه

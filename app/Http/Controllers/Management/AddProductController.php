@@ -6,14 +6,14 @@ use App\AddProduct;
 use App\allProductMember;
 use App\Http\Controllers\Controller;
 use App\Models\categories;
-use App\Price;
+use App\price;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\File\File;
 
 class AddProductController extends Controller
 {
    public function AddProduct(){
-      $priceproducts = Price::all();
+      $priceproducts = price::all();
       $dastebandis = categories::all();
     return view('ManagementViews/site/addproduct',compact('priceproducts','dastebandis'));
    }
@@ -27,7 +27,7 @@ class AddProductController extends Controller
          'pastcost' => request()->input('pastcost'),
          'Description' => request()->input('Description'),
          'categories_id' => request()->input('categories'),
-         'price_id' => request()->input('price'),
+         'price_id' => request()->input('prices'),
          'categories_id'=>request()->input('categories'),
         ];
        $imageinput = request()->file('imageproduct');

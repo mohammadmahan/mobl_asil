@@ -6,7 +6,7 @@
     <title>@yield('title')</title>
     <link rel="apple-touch-icon" href="/Management/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="/image/x-icon" href="">
-    <link href="/css/css.css" rel="stylesheet">
+    <link href="/Management/css/css.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/Management/css/fonts-googleapis.css" rel="stylesheet">
@@ -56,8 +56,8 @@
                             class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
                                 class="ft-menu font-large-1"></i></a></li>
                     <li class="nav-item"><a class="navbar-brand" href="#"><img class="brand-logo"
-                                alt="modern admin logo" src="/Management/images/logo/logo.png">
-                            <h3 class="brand-text">اسم سایت</h3>
+                                alt="modern admin logo" src="/images/logo.png">
+                            <h3 class="brand-text">مبل اصیل</h3>
                         </a></li>
                     <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse"
                             data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
@@ -173,10 +173,6 @@
     <script src="/Management/js/scripts/customizer.min.js"></script>
     <script src="/Management/js/scripts/footer.min.js"></script>
     <!-- END: Theme JS-->
-
-    <!-- BEGIN: Page JS-->
-    <script src="/Management/js/scripts/pages/dashboard-crypto.min.js"></script>
-    <!-- END: Page JS-->
 
     @yield('script')
 
