@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Management;
 
+use App\ContactMember;
 use App\Http\Controllers\Controller;
 use App\Models\MassagesManagement;
 use Illuminate\Http\Request;
@@ -20,6 +21,13 @@ class MassagesController extends Controller
                 $massage->delete();
                 return redirect()->route('massagesManagement');
             }
+        }
+    }
+    public function details_massage(){
+        if (\Illuminate\Support\Facades\Request::ajax()) {
+            $userId = $_GET["userId"];
+            $userItem = ContactMember::find($userId);
+            return $userItem;
         }
     }
 }

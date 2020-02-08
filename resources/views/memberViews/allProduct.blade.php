@@ -82,13 +82,10 @@
             });
         })
     </script>
-<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(/images/heading-pages-02.jpg);">
-    <h2 class="l-text2 t-center">
-        محصولات
-    </h2>
-    <p class="m-text13 t-center">
-        محصولات جدید فروشگاه در سایت مبلمان اصیل قرار گرفت
-    </p>
+<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/sofa/bbb.jpg); height:280px; background-repeat: no-repeat;
+    background-size: cover;">
+   <div class="color-overlay">
+    </div>
 </section>
 
 <section class="bgwhite p-t-55 p-b-65">

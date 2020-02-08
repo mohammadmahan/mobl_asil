@@ -12,13 +12,13 @@
 @stop
 @section("content")
 
-    <section class="bg-title-page p-t-20 p-b-50 flex-col-c-m" style="background-image: url(images/heading-pages-06.jpg);">
-        <h2 class="l-text2 t-center">
-            درباره ما
-        </h2>
+<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/sofa/bbb.jpg); height:280px; background-repeat: no-repeat;
+    background-size: cover;">
+    <div class="color-overlay">
+    </div>
     </section>
 
-    <section class="bgwhite  p-b-38">
+    <section class="bgwhite p-t-66 p-b-38">
         <div class="container">
             @if($Abouts && count($Abouts)>0)
             @foreach($Abouts as $About)
