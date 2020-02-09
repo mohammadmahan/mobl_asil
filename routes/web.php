@@ -35,7 +35,7 @@ Route::get('/ManagementDashboard', 'Management\DashboardController@dashboard');
 Route::get('/details/product','Management\ProductsController@details')->name('details.product');
 Route::get('/delete/product{allProductMember_id}', 'Management\ProductsController@deleteMassages')->name('delete.product.management');
 
-Route::get('/delete/massage{massages_id}', 'Management\MassagesController@deleteMassages')->name('delete.massage');
+Route::post('/delete/massage{massages_id}', 'Management\MassagesController@deleteMassages')->name('delete.massage');
 Route::get('/ManagementMassages', 'Management\MassagesController@AllMassages')->name('massagesManagement');
 
 Route::get('/ManagementProducts', 'Management\ProductsController@AllProducts')->name('ProductManagement');
@@ -49,8 +49,6 @@ Route::get('/ManagementEditProduct/{allProductMember_id}', 'Management\ProductsC
 Route::post('/ManagementEditProduct/{allProductMember_id}', 'Management\ProductsController@updateProduct')->name('ManagementUpdateProduct');
 
 Route::get('/ManagementTahlilSystem','Management\TahlilSystemController@TahlilSystem')->name('ManagementTahlilSystem');
-
-Route::get('/delete/place/{massages_id}', 'Management\MassagesController@deleteMassages')->name('delete.massage');
 
 Route::get('/ManagementTahlilSlider','Management\TahlilSystemController@TahlilSlider')->name('ManagementTahlilSlider');
 
@@ -103,7 +101,7 @@ Route::get('/allProduct-member/category/{category_id}', 'Member\allProductMember
 Route::get('/allProduct-member/price/{price_id}', 'Member\allProductMemberController@withprice')->name('price-products');
 Route::get('/allProduct-member/{category_id}/{price_id}', 'Member\allProductMemberController@categoryprice')->name('categoryprice');
 
-Route::get('/delete/price{price_id}', 'Management\TahlilSystemController@deletePrice')->name('delete.massage');
+Route::get('/delete/price{price_id}', 'Management\TahlilSystemController@deletePrice')->name('delete.price');
 
 ////////////////////////////End ::filter and categories///////////////////////
 
