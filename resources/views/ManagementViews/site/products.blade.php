@@ -211,23 +211,23 @@
                         <table class="table-striped tbl-modal">
                             <tr>
                                 <th>نام محصول</th>
-                                <td id="name"></td>
+                                <td id="name" class="p-1"></td>
                             </tr>
                             <tr>
                                 <th>کد محصول</th>
-                                <td id="number_product"></td>
+                                <td id="number_product" class="p-1"></td>
                             </tr>
                             <tr>
                                 <th>دسته بندی</th>
-                                <td id="categories_id"></td>
+                                <td id="categories_id" class="p-1"></td>
                             </tr>
                             <tr>
                                 <th>فیلترینگ</th>
-                                <td id="price_id"></td>
+                                <td id="price_id" class="p-1"></td>
                             </tr>
                             <tr>
                                 <th>مشخصات محصول</th>
-                                <td id="Description"></td>
+                                <td id="Description" class="p-1 text-justify"></td>
                             </tr>
                         </table>
                     </div>

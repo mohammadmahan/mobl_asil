@@ -15,7 +15,11 @@
 <section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/sofa/bbb.jpg); height:280px; background-repeat: no-repeat;
     background-size: cover;position:relative;">
     <div class="color-overlay">
+    
     </div>
+    <h4 class="l-text2 t-center">
+درباره ما
+</h4>
     </section>
 
     <section class="bgwhite p-t-66 p-b-38">
