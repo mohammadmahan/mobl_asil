@@ -140,30 +140,43 @@
                                                 <a id="{{$allProductMember->id}}" class="details" data-toggle="tooltip" data-original-title="جزئیات محصول">
                                                     <i class="fa fa-database" data-toggle="modal" data-target="#modaldetails" aria-hidden="true"></i>
                                                 </a>
-                                                <a class="link-edit-product" data-toggle="tooltip" data-original-title="حذف پیام">
-                                                    <i data-toggle="modal" data-target="#exampleModal" class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i>
+                                                <a class="link-edit-product" data-target="#productDeleteModal" data-toggle="modal" data-original-title="حذف پیام" data-productid={{$allProductMember->id}}>
+                                                    <i class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i>
                                                 </a>
                                             </td>
                                         </tr>
 
                                         <!------------------start modal delete----------------------------->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                        <div class="modal fade" id="productDeleteModal" tabindex="-1" role="dialog"
+                                             aria-labelledby="productDeleteModalLabel"
                                              aria-hidden="true">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <h5 class="modal-title" id="exampleModalLabel">حذف پیام</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
                                                     </div>
-                                                    <div class="modal-body">
-                                                        ایا میخواهید حذف کنید؟
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
-                                                        <a href="{{route('delete.product.management',$allProductMember->id)}}" type="submit" class="btn btn-primary delete-button">حذف</a>
-                                                    </div>
+                                                    <form action="{{route('delete.product.management','test')}}" method="post">
+                                                        {{csrf_field()}}
+                                                        <div class="modal_bodyfooter">
+                                                            <div class="modal-body">
+                                                                ایا میخواهید حذف کنید؟
+                                                            </div>
+                                                            <input type="hidden" name="products_id" id="product_id"
+                                                                   value="">
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">بستن
+                                                                </button>
+                                                                <button type="submit"
+                                                                        class="btn btn-primary delete-button">حذف
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -229,3 +242,19 @@
     </div>
     </div>
 @stop
+
+@section('script')
+    <script>
+        $('#productDeleteModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+
+            var product_id = button.data('productid');
+            var modal = $(this);
+
+            modal.find('.modal_bodyfooter #product_id').val(product_id);
+        });
+
+    </script>
+@stop
+
+

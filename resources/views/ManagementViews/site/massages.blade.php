@@ -77,7 +77,6 @@
                                                     </button>
                                                 </div>
                                                 <form action="{{route('delete.massage','test')}}" method="post">
-
                                                     {{csrf_field()}}
                                                 <div class="modal_bodyfooter">
                                                     <div class="modal-body">
@@ -141,19 +140,19 @@
         <!------------------------end modal details-------------------------------->
     </div>
 </div>
-
+</div>
 @stop
 
 @section('script')
 {{--    <script src="/js/myJq.js"></script>--}}
     <script>
         $('#deleteModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget)
+            var button = $(event.relatedTarget);
 
-            var massage_id = button.data('massageid')
-            var modal = $(this)
+            var massage_id = button.data('massageid');
+            var modal = $(this);
 
-            modal.find('.modal_bodyfooter #massage_id').val(massage_id)
+            modal.find('.modal_bodyfooter #massage_id').val(massage_id);
         });
 
     </script>

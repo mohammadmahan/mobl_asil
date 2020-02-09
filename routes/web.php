@@ -33,7 +33,7 @@ Route::get('/blog/{blog_id}', 'Member\HomeController@blogMember')->name('BlogMem
 Route::get('/ManagementDashboard', 'Management\DashboardController@dashboard');
 
 Route::get('/details/product','Management\ProductsController@details')->name('details.product');
-Route::get('/delete/product{allProductMember_id}', 'Management\ProductsController@deleteMassages')->name('delete.product.management');
+Route::post('/delete/product{allProductMember_id}', 'Management\ProductsController@deleteMassages')->name('delete.product.management');
 
 Route::post('/delete/massage{massages_id}', 'Management\MassagesController@deleteMassages')->name('delete.massage');
 Route::get('/ManagementMassages', 'Management\MassagesController@AllMassages')->name('massagesManagement');
@@ -57,7 +57,7 @@ Route::get('/ManagementTahlilSlider','Management\TahlilSystemController@TahlilSl
 Route::get('/ManagementAddSlider','Management\TahlilSystemController@AddSingleSlider')->name('ManagementAddSlider');
 Route::post('/ManagementAddSlider','Management\TahlilSystemController@createSingeSlider')->name('ManagementAddSlider.post');
 
-Route::get('/delete/slider{Slider_id}','Management\TahlilSystemController@deleteSlider')->name('delete.slider.management');
+Route::post('/delete/slider{Slider_id}','Management\TahlilSystemController@deleteSlider')->name('delete.slider.management');
 
 Route::get('/ManagementEditSingleSlider/{topslider_id}', 'Management\TahlilSystemController@editSingleSlider')->name('editSlider');
 Route::post('/ManagementEditSingleSlider/{topslider_id}', 'Management\TahlilSystemController@updateSingleSlider')->name('updateSlider');
@@ -124,6 +124,10 @@ Route::get('/management/logout','Management\UsersController@logout')->name('logo
 
 //////////////////////////start :: Newsletters//////////////////////////////////
 Route::post('/','Member\NewslettersController@Newsletters')->name('Newsletters');
+Route::post('/allProduct-member','Member\NewslettersController@Newsletters')->name('Newsletters');
+Route::post('/about-member','Member\NewslettersController@Newsletters')->name('Newsletters');
+Route::post('/contact-member','Member\NewslettersController@Newsletters')->name('Newsletters');
+
 Route::get('/management/newSletters','Management\tahlilSystemController@NewslettersShow')->name('NewslettersShow');
 Route::get('/management/newSlettersDelete/{newsletters_id}','Management\tahlilSystemController@Newsletters_delete')->name('delete.NewslettersShow');
 Route::get('/management/download/newSletters','Management\tahlilSystemController@ExportNewsletters')->name('Export.Newsletters');

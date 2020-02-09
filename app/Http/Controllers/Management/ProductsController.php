@@ -19,15 +19,11 @@ class ProductsController extends Controller
         return view('ManagementViews/site/products',compact('allProductMembers','priceproducts','dastebandis'));
     }
 
-    public function deleteMassages($allProductMember_id)
+    public function deleteMassages(Request $request)
     {
-        if ($allProductMember_id && ctype_digit($allProductMember_id)) {
-            $product = allProductMember::find($allProductMember_id);
-            if ($product && $product instanceof allProductMember) {
-                $product->delete();
-                return redirect()->route('ProductManagement');
-            }
-        }
+        $massage = allProductMember::find($request->products_id);
+        $massage->delete();
+        return back();
     }
 
     /*************START EDIT ALL PRODUCT***************/

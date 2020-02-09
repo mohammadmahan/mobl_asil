@@ -15,7 +15,6 @@ class MassagesController extends Controller
     }
     public function deleteMassages(Request $request)
     {
-//        dd($request->massages_id);
         $massage = MassagesManagement::find($request->massages_id);
         $massage->delete();
         return back();

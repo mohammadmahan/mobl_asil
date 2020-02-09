@@ -96,15 +96,11 @@ class TahlilSystemController extends Controller
         }
     }
 
-    public function deleteSlider($Slider_id)
+    public function deleteSlider(Request $request)
     {
-        if ($Slider_id && ctype_digit($Slider_id)) {
-            $slider = TopSlider::find($Slider_id);
-            if ($slider && $slider instanceof TopSlider) {
-                $slider->delete();
-                return redirect()->route('ManagementTahlilSlider');
-            }
-        }
+        $slider= TopSlider::find($request->sliders_id);
+        $slider->delete();
+        return back();
     }
 /*************END TAHLIL TOP SLIDER***************/
 
