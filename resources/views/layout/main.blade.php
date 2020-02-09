@@ -230,7 +230,6 @@
             </form>
         </div>
     </div>
-    <hr>
     <div class="t-center p-l-15 p-r-15">
         <a href="#">
             <img class="h-size2" src="/images/icons/iconfinder_instagram_1107220 (1).png" title="اینستاگرام" alt="ایکن اینستاگرام">
