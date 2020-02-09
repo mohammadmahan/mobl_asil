@@ -13,15 +13,11 @@ class MassagesController extends Controller
         $massages = MassagesManagement::paginate(7);
         return view('ManagementViews/site/massages',compact('massages'));
     }
-    public function deleteMassages($massages_id)
+    public function deleteMassages(Request $request)
     {
-        if ($massages_id && ctype_digit($massages_id)) {
-            $massage = MassagesManagement::find($massages_id);
-            if ($massage && $massage instanceof MassagesManagement) {
-                $massage->delete();
-                return redirect()->route('massagesManagement');
-            }
-        }
+        $massage = MassagesManagement::find($request->massages_id);
+        $massage->delete();
+        return back();
     }
     public function details_massage(){
         if (\Illuminate\Support\Facades\Request::ajax()) {

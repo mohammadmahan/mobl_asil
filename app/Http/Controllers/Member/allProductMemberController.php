@@ -50,11 +50,11 @@ class allProductMemberController extends Controller
      public function singleProductMember($allProductMember_id)
      {
         $Abouts = AboutMember::all();
-        
+        $dastebandis = categories::all();
          if ($allProductMember_id && ctype_digit($allProductMember_id)) {
              $productItems = allProductMember::find($allProductMember_id);
              if ($productItems && $productItems instanceof allProductMember) {
-                 return view('memberViews/singleProduct', compact('productItems','Abouts'));
+                 return view('memberViews/singleProduct', compact('productItems','Abouts','dastebandis'));
              }
          }
      }

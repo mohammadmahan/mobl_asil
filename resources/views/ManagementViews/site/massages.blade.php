@@ -56,8 +56,8 @@
                                         <td>{{$massage->number}}</td>
                                         <td>{{$massage->email}}</td>
                                         <td>
-                                            <a class="link-edit-product" data-toggle="tooltip" data-original-title="حذف پیام">
-                                                <i data-toggle="modal" data-target="#exampleModal" class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i>
+                                            <a class="link-edit-product" data-toggle="modal" data-target="#deleteModal" data-original-title="حذف پیام" data-massageid={{$massage->id}}>
+                                                <i class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i>
                                             </a>
                                             <a id="{{$massage->id}}" class="details" data-toggle="tooltip" data-original-title="جزئیات محصول">
                                                 <i class="fa fa-database" data-toggle="modal" data-target="#modaldetails" aria-hidden="true"></i>
@@ -66,7 +66,7 @@
                                     </tr>
 
                                     <!------------------start modal delete----------------------------->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
                                          aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
@@ -76,13 +76,19 @@
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
-                                                <div class="modal-body">
-                                                    ایا میخواهید حذف کنید؟
+                                                <form action="{{route('delete.massage','test')}}" method="post">
+                                                    {{csrf_field()}}
+                                                <div class="modal_bodyfooter">
+                                                    <div class="modal-body">
+                                                        ایا میخواهید حذف کنید؟
+                                                    </div>
+                                                        <input type="hidden" name="massages_id" id="massage_id" value="">
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                                                        <button type="submit" class="btn btn-primary delete-button">حذف</button>
+                                                    </div>
                                                 </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
-                                                    <a href="{{route('delete.massage',$massage->id)}}" type="submit" class="btn btn-primary delete-button">حذف</a>
-                                                </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -134,5 +140,20 @@
         <!------------------------end modal details-------------------------------->
     </div>
 </div>
+</div>
+@stop
 
+@section('script')
+{{--    <script src="/js/myJq.js"></script>--}}
+    <script>
+        $('#deleteModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+
+            var massage_id = button.data('massageid');
+            var modal = $(this);
+
+            modal.find('.modal_bodyfooter #massage_id').val(massage_id);
+        });
+
+    </script>
 @stop

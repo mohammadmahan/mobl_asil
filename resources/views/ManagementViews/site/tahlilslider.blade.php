@@ -49,11 +49,41 @@
                                             <a href="{{route('editSlider', $topslider->id)}}" data-original-title="ویرایش محصول" class="link-edit-product">
                                                 <i class="fa fa-edit"></i>
                                             </a>
-                                            <a class="link-edit-product" href="{{route('delete.slider.management',$topslider->id)}}" data-original-title="حذف پیام">
+                                            <a class="link-edit-product" data-toggle="modal" data-target="#deleteSliderModal" data-original-title="حذف پیام" data-sliderid={{$topslider->id}}>
                                                 <i class="fa fa-minus-square" aria-hidden="true" style="color: red;"></i>
                                             </a>
                                         </td>
                                     </tr>
+
+                                    <!------------------start modal delete----------------------------->
+                                    <div class="modal fade" id="deleteSliderModal" tabindex="-1" role="dialog" aria-labelledby="deleteSliderModalLabel"
+                                         aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">حذف پیام</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <form action="{{route('delete.slider.management','test')}}" method="post">
+                                                    {{csrf_field()}}
+                                                    <div class="modal_bodyfooter">
+                                                        <div class="modal-body">
+                                                            ایا میخواهید حذف کنید؟
+                                                        </div>
+                                                        <input type="hidden" name="sliders_id" id="slider_id" value="">
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                                                            <button type="submit" class="btn btn-primary delete-button">حذف</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!------------------end modal delete----------------------------->
+
                                     @endforeach
                                     @endif
                                 </tbody>
@@ -69,4 +99,19 @@
         <!-- Table head options end -->
     </div>
 </div>
+@stop
+
+@section('script')
+    {{--    <script src="/js/myJq.js"></script>--}}
+    <script>
+        $('#deleteSliderModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+
+            var slider_id = button.data('sliderid');
+            var modal = $(this);
+
+            modal.find('.modal_bodyfooter #slider_id').val(slider_id);
+        });
+
+    </script>
 @stop
