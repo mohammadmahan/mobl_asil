@@ -22,16 +22,16 @@
                                     @foreach($Abouts as $About)
                                         <div class="col-md-6 mt-2">
                                             <div class="row">
-                                                <div class="form-group col-md-6 mb-2">
+                                                <div class="form-group col-md-8 mb-2">
                                                 <label>عنوان</label>
                                                     <input type="text" id="projectinput1" class="form-control" name="title"
                                                         placeholder="عنوان" value="{{$About->title}}">
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="form-group col-md-6 mb-2">
+                                                <div class="form-group col-md-8 mb-2">
                                                 <label>تلفن</label>
-                                                    <input type="text" id="projectinput1" class="form-control" name="phone"
+                                                    <input type="number" id="projectinput1" class="form-control" name="phone"
                                                         placeholder="تلفن" value="{{$About->phone}}">
                                                 </div>
                                             </div>
@@ -43,16 +43,16 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="form-group col-md-6 mb-2">
+                                                <div class="form-group col-md-8 mb-2">
                                                 <label>ایمیل</label>
-                                                    <input type="text" id="projectinput1" class="form-control" name="email"
+                                                    <input type="email" id="projectinput1" class="form-control" name="email"
                                                         value="{{$About->email}}">
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="form-group col-md-8 mb-2">
+                                                <div class="form-group col-md-10 mb-2">
                                                 <label>توضیحات</label>
-                                                    <textarea class="form-control" row="5" name="Description"
+                                                    <textarea class="form-control row-custom" name="Description"
                                                        >{{$About->Description}}</textarea>
                                                 </div>
                                             </div>

@@ -56,13 +56,16 @@ body{
     color: rgb(160, 160, 160);
   }
   .block2:hover{
-      box-shadow: 0 1px 5px 0px rgba(0,0,0,0.2);
+      box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.2);
       transition: 400ms;
+      
   }
   .block2-txt{
     padding: 20px;
   }
-
+.block2{
+width: 260px;
+}
   .color-overlay{
     left: 0;
     z-index: 1;
@@ -71,5 +74,8 @@ body{
     height: 287px;
     background-image: linear-gradient(to right top, rgb(102, 18, 18), rgb(0, 0, 0));
     opacity: 0.5;
+  }
+  .top-header-email{
+      font-size: 12px;
   }
 

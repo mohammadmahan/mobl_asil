@@ -10,7 +10,7 @@
         <div class="col-md-6 col-12 mt-3">
             <div class="btn-group">
                 <a href="{{route('ManagementAddSlider')}}">
-                    <button class="btn btn-info round box-shadow-2 px-2" type="button"> افزودن اسلاید جدید</button>
+                    <button class="btn btn-info round box-shadow-2 px-2" type="button"> افزودن اسلایدر جدید</button>
                 </a>
             </div>
         </div>

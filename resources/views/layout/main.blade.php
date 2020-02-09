@@ -62,8 +62,13 @@
 					<span class="topbar-email">
                     @if($Abouts && count($Abouts)>0)
                        @foreach($Abouts as $About) 
-						<a href="#" class="__cf_email__ font-13">
+						<a href="#" class="top-header-email">
+                        <span>ایمیل:</span>
                        {{$About->email}}
+                       </a>
+                       <a href="#" class="top-header-email mr-3">
+                        <span>تلفن:</span>
+                       {{$About->phone}}
                        </a>
                        @endforeach
                        @endif
@@ -137,7 +142,7 @@
 <!--END :: content-->
 
 <footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
-    <div class="flex-w p-b-90">
+    <div class="flex-w p-b-50">
         <div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
             @if($Abouts && count($Abouts)>0)
                 @foreach($Abouts as $About)

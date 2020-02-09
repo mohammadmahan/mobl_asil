@@ -105,4 +105,10 @@ html,body,div,header,span,h1,h2,h3,h4,h5,h6,a,p,table,button,input{
     background-color: rgb(221, 86, 86) !important;
     border: 1px solid rgb(221, 86, 86) !important; 
   }
- 
+ .login-top-logo{
+   width: 120px;
+   height: 120px;
+ }
+ .row-custom{
+   height: 230px !important;
+ }

@@ -74,11 +74,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="block2-txt direction-rtl p-t-20">
+                                        <div class="block2-txt direction-rtl p-t-20 text-center">
                                             <a href="" class="block2-name dis-block s-text3 p-b-5">
                                                 {{$allProductMember->name}}
                                             </a>
                                             <span class="block2-newprice m-text8 p-r-5">
+												<span>قیمت:</span>
                                                 {{$allProductMember->lastcost}}
                                             </span>
                                         </div>
@@ -109,15 +110,11 @@
 						</a>
 						<div class="block3-txt background-blog p-t-14">
 						<h4 class="card-title">{{$InformationBlog->title}}</h4>
-							<p class="s-text8 p-t-16">
+							<p class="s-text8 p-t-16 text-justify">
 							{{$InformationBlog->Description}}
 						    </p>
 							<a href="{{route('BlogMember',$InformationBlog->id)}}" class="more-details">
-<<<<<<< HEAD
 							<span>بیشتر بدانید&nbsp;<i class="fa fa-chevron-left"></i></span>
-=======
-							<span>بیشتر بدانید</span>
->>>>>>> 1246cba14aa7b7ac337f9240cc21adb684d1157f
 							</a>
 						</div>
 					</div>

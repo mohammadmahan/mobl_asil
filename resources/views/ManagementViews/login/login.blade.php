@@ -53,7 +53,7 @@
                         <div class="card border-grey border-lighten-3 m-0">
                             <div class="card-header border-0">
                                 <div class="card-title text-center">
-                                    <div class="p-1"><img src="/Management/images/logo/logo.png" alt="branding logo"></div>
+                                    <div class="p-1"><img src="/../images/logo.png" alt="لوگو مبل اصیل" class="login-top-logo"></div>
                                 </div>
                                 <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2"><span>ورود به بخش مدیریت</span></h6>
                             </div>
@@ -87,7 +87,7 @@
                                                     <label for="remember-me">بخاطر بسپار</label>
                                                 </fieldset>
                                             </div>
-                                            <div class="col-sm-6 col-12 text-center text-sm-right"><a href="recover-password.html" class="card-link">فراموش کرده اید؟</a></div>
+                                            
                                         </div>
                                         <button type="submit" class="btn btn-info btn-block">ورود</button>
                                     </form>

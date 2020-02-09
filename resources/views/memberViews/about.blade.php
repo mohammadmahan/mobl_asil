@@ -13,7 +13,7 @@
 @section("content")
 
 <section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/sofa/bbb.jpg); height:280px; background-repeat: no-repeat;
-    background-size: cover;">
+    background-size: cover;position:relative;">
     <div class="color-overlay">
     </div>
     </section>
