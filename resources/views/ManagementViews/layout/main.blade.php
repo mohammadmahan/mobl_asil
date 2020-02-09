@@ -29,10 +29,7 @@
     <link rel="stylesheet" type="text/css" href="/Management/css/cryptocoins/cryptocoins.css">
     <!-- END: Page CSS-->
 
-    <!-- BEGIN: Font-->
-    <link rel="stylesheet" href=" /css/all.min.css">
-    <!-- END: Font-->
-
+    <link rel="stylesheet" href="/Management/css/font-awesome.min.css">
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="/Management/css/style-rtl.css">
     <!-- END: Custom CSS-->

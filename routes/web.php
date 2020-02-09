@@ -37,6 +37,8 @@ Route::get('/delete/product{allProductMember_id}', 'Management\ProductsControlle
 
 Route::post('/delete/massage{massages_id}', 'Management\MassagesController@deleteMassages')->name('delete.massage');
 Route::get('/ManagementMassages', 'Management\MassagesController@AllMassages')->name('massagesManagement');
+Route::get('/details/massage','Management\MassagesController@details_massage')->name('details.massage');
+
 
 Route::get('/ManagementProducts', 'Management\ProductsController@AllProducts')->name('ProductManagement');
 Route::get('/ManagementEditProduct/{allProductMember_id}','Management\ProductsController@editProduct')->name('ManagementEditProduct');
