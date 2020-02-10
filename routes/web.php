@@ -127,6 +127,7 @@ Route::post('/','Member\NewslettersController@Newsletters')->name('Newsletters')
 Route::post('/allProduct-member','Member\NewslettersController@Newsletters')->name('Newsletters');
 Route::post('/about-member','Member\NewslettersController@Newsletters')->name('Newsletters');
 Route::post('/contact-member','Member\NewslettersController@Newsletters')->name('Newsletters');
+Route::post('/blog/{blog_id}','Member\NewslettersController@Newsletters')->name('Newsletters');
 
 Route::get('/management/newSletters','Management\tahlilSystemController@NewslettersShow')->name('NewslettersShow');
 Route::get('/management/newSlettersDelete/{newsletters_id}','Management\tahlilSystemController@Newsletters_delete')->name('delete.NewslettersShow');

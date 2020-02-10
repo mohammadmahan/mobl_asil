@@ -174,7 +174,9 @@
                     @endif
                 </div>
                 <div class="pagination_number">
-                    {{$allProductMembers->links()}}
+
+                        {{$allProductMembers->links()}}
+
                 </div>
             </div>
         </div>
