@@ -86,6 +86,9 @@
     background-size: cover;">
    <div class="color-overlay">
     </div>
+    <h4 class="l-text2 t-center">
+محصولات ما
+</h4>
 </section>
 
 <section class="bgwhite p-t-55 p-b-65">

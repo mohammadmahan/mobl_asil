@@ -3391,6 +3391,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	color: white;
 	line-height: 1.2;
 	text-transform: uppercase;
+	z-index: 1;
 }
 
 /*[ XL-Text >= 51 ]

@@ -51,13 +51,13 @@
                 <ul class="nav navbar-nav flex-row">
                     <li class="nav-item mobile-menu d-md-none mr-auto"><a
                             class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
-                                class="ft-menu font-large-1"></i></a></li>
+                                class="fa fa-bars"></i></a></li>
                     <li class="nav-item"><a class="navbar-brand" href="#"><img class="brand-logo"
                                 alt="modern admin logo" src="/images/logo.png">
                             <h3 class="brand-text">مبل اصیل</h3>
                         </a></li>
                     <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse"
-                            data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
+                            data-target="#navbar-mobile"><i class="fa fa-ellipsis-v"></i></a></li>
                 </ul>
             </div>
             <div class="navbar-container content">
@@ -84,14 +84,18 @@
                                 </a>
 
                                 <div class="dropdown-divider"></div><a class="dropdown-item"
-                                    href="{{route('logout')}}"><i class="fa fa-close mr-1"></i> خروج</a>
+                                    href="{{route('logout')}}"><i class="fa fa-check-square mr-1"></i> خروج</a>
 
                                 @else
                                     <span class="dropdown-item center" style="display: flex;">
                                         مدیریت : شما وارد نشدید
                                     </span>
                                     <a class="dropdown-item"
-                                       href="{{route('login')}}"><i class="fa fa-close mr-1"></i> ورود</a>
+                                       href="{{route('login')}}"><i class="fa fa-check-square mr-1"></i> ورود</a>
+
+                                       <a class="dropdown-item" href="{{route('homeMember')}}">
+                                    <i class="fa fa-reply-all mr-1"></i>مشاهده سایت
+                                </a>
                                 @endif
                             </div>
                         </li>

@@ -56,7 +56,7 @@
                                                     <i class="fa fa-edit"></i>
                                                 </a>
                                                 <a id="{{$informationblog->id}}" class="details" data-toggle="tooltip" data-original-title="جزئیات محصول">
-                                                    <i class="fa fa-arrows-v" data-toggle="modal" data-target="#modaldetails" aria-hidden="true"></i>
+                                                    <i class="fa fa-database" data-toggle="modal" data-target="#modaldetails" aria-hidden="true"></i>
                                                 </a>
                                             </td>
                                         </tr>
@@ -92,11 +92,11 @@
                         <table class="table-striped tbl-modal">
                         <tr>
                                 <th> عنوان</th>
-                                <td id="title"></td>
+                                <td id="title" class=" p-2"></td>
                             </tr>
                             <tr>
                                 <th>مشخصات محصول</th>
-                                <td id="Description"></td>
+                                <td id="Description" class="text-justify p-2"></td>
                             </tr>
                         </table>
                     </div>

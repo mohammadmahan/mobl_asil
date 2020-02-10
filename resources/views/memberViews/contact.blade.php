@@ -15,7 +15,9 @@
     background-size: cover;">
     <div class="color-overlay">
     </div>
-    
+    <h4 class="l-text2 t-center">
+تماس با ما
+</h4>
 </section>
 
 <section class="bgwhite p-t-66 p-b-60">
