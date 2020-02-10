@@ -25,7 +25,7 @@ class allProductMemberController extends Controller
     public function withcategory($category_id)
     {
         # code...
-        $allProductMembers = allProductMember::where("categories_id",$category_id)->with('category')->get();
+        $allProductMembers = allProductMember::where("categories_id",$category_id)->with('category')->paginate(10);
         $Abouts = AboutMember::all();
         $priceproducts = price::all();
         $dastebandis = categories::all();
@@ -34,7 +34,7 @@ class allProductMemberController extends Controller
     public function withprice($price_id)
     {
         # code...
-        $allProductMembers = allProductMember::where("price_id",$price_id)->with('price')->get();
+        $allProductMembers = allProductMember::where("price_id",$price_id)->with('price')->paginate(10);
         $Abouts = AboutMember::all();
         $priceproducts = price::all();
         $dastebandis = categories::all();

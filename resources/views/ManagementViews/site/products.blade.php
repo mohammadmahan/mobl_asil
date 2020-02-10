@@ -19,7 +19,6 @@
                     var Description = data["Description"];
                     var price_id = data["price_id"];
                     var categories_id = data["categories_id"];
-
                     //set values in modal
                     $("#name").text(name);
                     $("#number_product").text(number_product);

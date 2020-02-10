@@ -28,7 +28,6 @@ class AddProductController extends Controller
          'Description' => request()->input('Description'),
          'categories_id' => request()->input('categories'),
          'price_id' => request()->input('prices'),
-         'categories_id'=>request()->input('categories'),
         ];
        $imageinput = request()->file('imageproduct');
        if ($imageinput!="") {

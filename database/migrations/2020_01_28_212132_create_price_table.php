@@ -16,8 +16,8 @@ class CreatePriceTable extends Migration
         Schema::create('price', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
             $table->string('price');
-            $table->unsignedBigInteger('category_id');
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->unsignedBigInteger('category_id')->nullable();
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('set null');
             $table->timestamps();
         });
     }

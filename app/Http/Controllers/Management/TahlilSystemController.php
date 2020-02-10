@@ -349,14 +349,10 @@ class TahlilSystemController extends Controller
        }
   }
 
-  public function deleteFilter($Filter_id){
-    if ($Filter_id && ctype_digit($Filter_id)) {
-        $Filter = price::find($Filter_id);
-        if ($Filter && $Filter instanceof price) {
-            $Filter->delete();
-            return redirect()->route('filtering.price');
-        }
-    }
+  public function deleteFilter(Request $request){
+    $price = price::find($request->prices_id);
+    $price->delete();
+    return back();
   }
 /*****************************start page categoriesR******************************/
   public function CategoriesAdd(){
@@ -398,14 +394,10 @@ class TahlilSystemController extends Controller
             return redirect()->route('filtering.categories');
         }
     }
-    public function deletecategories($categories_id){
-        if ($categories_id && ctype_digit($categories_id)) {
-            $categories = categories::find($categories_id);
-            if ($categories && $categories instanceof categories){
-                $categories->delete();
-                return redirect()->route('filtering.categories');
-            }
-        }
+    public function deletecategories(Request $request){
+      $categorie= categories::find($request->categories_id);
+      $categorie->delete();
+      return back();
     }
 
 
