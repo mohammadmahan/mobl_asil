@@ -17,7 +17,7 @@ class UsersController extends Controller
     {
         $remember = $request->has('remember-me');
         if(Auth::attempt(['email' => $request->input('user-name'),'password'=> $request->input('user-password')],$remember)){
-            return redirect('/ManagementDashboard');
+            return redirect('/ManagementProducts');
         }
             return redirect()->back()->with('loginError','ایمیل یا کلمه عبور اشتباه میباشد');
     }

@@ -111,7 +111,7 @@
 						<div class="block3-txt background-blog p-t-14 text-justify">
 						<h4 class="card-title">{{$InformationBlog->title}}</h4>
 							<p class="s-text8 p-t-16">
-							{{$InformationBlog->Description}}
+							{{\Illuminate\Support\Str::words($InformationBlog->Description,$words=50)}}
 						    </p>
 							<a href="{{route('BlogMember',$InformationBlog->id)}}" class="more-details">
 							<span>بیشتر بدانید&nbsp;<i class="fa fa-chevron-left"></i></span>

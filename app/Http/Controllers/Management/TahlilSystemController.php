@@ -14,6 +14,7 @@ use App\Models\TopSlider;
 use App\price;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
 use Symfony\Component\HttpFoundation\File\File;
@@ -22,13 +23,23 @@ class TahlilSystemController extends Controller
 {
 
     public function TahlilSystem(){
+        if (Auth::check()){
         return view('ManagementViews/site/tahlilsystem');
+        }
+        else{
+            return redirect('/management/login');
+        }
     }
 
 /*************START TAHLIL TOP SLIDER***************/
     public function TahlilSlider(){
         $topsliders=TopSlider::paginate(7);
+        if (Auth::check()){
         return view('ManagementViews/site/tahlilslider',compact('topsliders'));
+        }
+        else{
+            return redirect('/management/login');
+        }
     }
     public function editSingleSlider($topslider_id){
         if($topslider_id && ctype_digit($topslider_id)){
@@ -66,8 +77,12 @@ class TahlilSystemController extends Controller
     }
 
     public function AddSingleSlider(){
-
+        if (Auth::check()){
         return view('ManagementViews/site/addslider');
+        }
+        else{
+            return redirect('/management/login');
+        }
     }
 
     public function createSingeSlider(Request $request)
@@ -108,7 +123,12 @@ class TahlilSystemController extends Controller
 /************START TAHLIL PRODUCT INDEX**********/
     public function ManagementTahlilProductIndex(){
         $productindexs = productIndex::all();
+        if (Auth::check()){
         return view('ManagementViews/site/tahlilProduct',compact('productindexs'));
+        }
+        else{
+            return redirect('/management/login');
+        }
     }
      public function productindexedit($productindex_id){
         
@@ -161,12 +181,21 @@ class TahlilSystemController extends Controller
 /*************START TAHLIL PAGE ABOUT***************/
     public function TahlilAboout(){
         $aboutsystems = AboutMember::all();
+        if (Auth::check()){
         return view('ManagementViews/site/tahlilAbout', compact('aboutsystems'));
+        }
+        else{
+            return redirect('/management/login');
+        }
     }
-    public function editAbout()
-    {
+    public function editAbout(){
             $Abouts = AboutMember::all();
+            if (Auth::check()){
             return view('ManagementViews/site/tahlilAbout', compact('Abouts'));
+            }
+            else{
+                return redirect('/management/login');
+            }
     }
 
     public function updateAbout()
@@ -207,7 +236,12 @@ class TahlilSystemController extends Controller
 /*************START TAHLIL PRODUCT NEW***************/
     public function TahlilProductNew(){
         $newproducts = NewProduct::all();
+        if (Auth::check()){
         return view('ManagementViews/site/tahlilProductNew',compact('newproducts'));
+        }
+        else{
+            return redirect('/management/login');
+        }
     }
     public function productNewedit($productNew_id){
         
@@ -259,7 +293,12 @@ class TahlilSystemController extends Controller
 /*************START TAHLIL PAGE BLOG****************/
     public function TahlilBlog(){
         $informationblogs = InformationBlog::paginate(7);
+        if (Auth::check()){
         return view('ManagementViews/site/tahlilBlog',compact('informationblogs'));
+        }
+        else{
+            return redirect('/management/login');
+        }
     }
     public function BlogEdit($Blog_id){
         
@@ -312,7 +351,12 @@ class TahlilSystemController extends Controller
 
     public function filteringPrice(){
         $priceproducts = price::paginate(7);
+        if (Auth::check()){
         return view('ManagementViews/site/filteringPrice', compact('priceproducts'));
+        }
+        else{
+            return redirect('/management/login');
+        }
     }
     public function FilteringPriceEdit($Filtering_id){
         if($Filtering_id && ctype_digit($Filtering_id)){
@@ -335,7 +379,13 @@ class TahlilSystemController extends Controller
     public function filteringPriceAdd(){
         $dastebandis = categories::all();
         $priceproducts = price::all();
+        if (Auth::check()){
         return view('ManagementViews/site/AddFiltering', compact('priceproducts','dastebandis'));
+        }
+        else{
+            return redirect('/management/login');
+        }
+
     }
     public function createFilter(Request $request){
       $Create_Filter = [
@@ -358,7 +408,12 @@ class TahlilSystemController extends Controller
   public function CategoriesAdd(){
     $dastebandis = categories::all();
     $priceproducts = price::all();
+    if (Auth::check()){
     return view('ManagementViews/site/AddCategories', compact('priceproducts','dastebandis'));
+    }
+    else{
+        return redirect('/management/login');
+    }
   }
   public function createCategories(){
     $Create_Filter = [
@@ -372,7 +427,12 @@ class TahlilSystemController extends Controller
   }
     public function filteringCategories(){
         $dastebandis = categories::paginate(7);
+        if (Auth::check()){
         return view('ManagementViews/site/categories', compact('dastebandis'));
+        }
+        else{
+            return redirect('/management/login');
+        }
     }
 
     public function filteringCategoriesEdit($dastebandi_id)
@@ -404,7 +464,12 @@ class TahlilSystemController extends Controller
 /*****************************end page categoriesR******************************/
     public function NewslettersShow(){
         $Newsletters = Newsletters::paginate(7);
-        return view('ManagementViews/site/newsLetters',compact('Newsletters'));
+        if (Auth::check()){
+            return view('ManagementViews/site/newsLetters',compact('Newsletters'));
+        }
+        else{
+            return redirect('/management/login');
+        }
     }
 
     public function Newsletters_delete($newsletters_id)

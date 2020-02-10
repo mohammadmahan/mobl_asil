@@ -80,21 +80,10 @@
                                     <span class="dropdown-item center" style="display: flex;">
                                         مدیریت : شما وارد شدید
                                     </span>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fa fa-edit mr-1"></i>ویرایش پروفایل
-                                </a>
 
                                 <div class="dropdown-divider"></div><a class="dropdown-item"
                                     href="{{route('logout')}}"><i class="fa fa-check-square mr-1"></i> خروج</a>
-
-
-                                    <span class="dropdown-item center" style="display: flex;">
-                                        مدیریت : شما وارد نشدید
-                                    </span>
-                                    <a class="dropdown-item"
-                                       href="{{route('login')}}"><i class="fa fa-check-square mr-1"></i> ورود</a>
-
-                                       <a class="dropdown-item" href="{{route('homeMember')}}">
+                                       <a class="dropdown-item" target="_blank" href="{{route('homeMember')}}">
                                     <i class="fa fa-reply-all mr-1"></i>مشاهده سایت
                                 </a>
 

@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\categories;
 use App\price;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\File\File;
 
 class ProductsController extends Controller
@@ -16,7 +17,12 @@ class ProductsController extends Controller
         $priceproducts =price::all();
         $dastebandis = categories::all();
         $allProductMembers = allProductMember::paginate(7);
+        if (Auth::check()){
         return view('ManagementViews/site/products',compact('allProductMembers','priceproducts','dastebandis'));
+        }
+        else{
+            return redirect('/management/login');
+        }
     }
 
     public function deleteMassages(Request $request)

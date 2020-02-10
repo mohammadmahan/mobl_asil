@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Models\categories;
 use App\price;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\File\File;
 
 class AddProductController extends Controller
@@ -15,7 +16,12 @@ class AddProductController extends Controller
    public function AddProduct(){
       $priceproducts = price::all();
       $dastebandis = categories::all();
-    return view('ManagementViews/site/addproduct',compact('priceproducts','dastebandis'));
+       if(Auth::check()) {
+           return view('ManagementViews/site/addproduct', compact('priceproducts', 'dastebandis'));
+       }
+       else{
+           return redirect('/management/login');
+       }
    }
    public function createProduct(Request $request)
    {

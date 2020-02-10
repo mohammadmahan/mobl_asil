@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef73566a-e60a-4287-ae57-7391a92f6de5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Management/AddProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Management/AddProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Management/MassagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Management/MassagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Member/allProductMemberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Member/allProductMemberController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_28_212132_create_price_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_28_212132_create_price_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_28_213406_allproductmember.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_28_213406_allproductmember.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/categories.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/filteringPrice.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/filteringPrice.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/site/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/site/products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Management/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Management/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/memberViews/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/memberViews/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -34,97 +30,28 @@
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
+              <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/DashboardController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+            <state relative-caret-position="396">
+              <caret line="17" column="9" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="9" />
               <folding>
-                <element signature="e#51#76#0#PHP" expanded="true" />
+                <element signature="e#51#87#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Member/allProductMemberController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="27" column="114" selection-start-line="27" selection-start-column="114" selection-end-line="27" selection-end-column="114" />
-              <folding>
-                <element signature="e#47#72#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_28_185903_create_categories_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_28_212132_create_price_table.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/memberViews/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/allProductMember.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="302" column="36" selection-start-line="302" selection-start-column="29" selection-end-line="302" selection-end-column="36" />
-              <folding>
-                <element signature="e#51#85#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/filteringPrice.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="69" column="92" selection-start-line="69" selection-start-column="83" selection-end-line="69" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/products.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-48">
-              <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="151" column="50" selection-start-line="151" selection-start-column="50" selection-end-line="151" selection-end-column="50" />
+            <state relative-caret-position="216">
+              <caret line="113" column="100" selection-start-line="113" selection-start-column="100" selection-end-line="113" selection-end-column="100" />
             </state>
           </provider>
         </entry>
@@ -133,8 +60,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>css</find>
-      <find>ProductManagement</find>
       <find>singleProduct-member</find>
       <find>deletePrice</find>
       <find>deletePrice</find>
@@ -160,9 +85,11 @@
       <find>ManagementFilteringEdit</find>
       <find>/details/product</find>
       <find>allProduct-member/price</find>
+      <find>deleteFilter</find>
       <find>with</find>
       <find>ManagementAddProduct</find>
-      <find>deleteFilter</find>
+      <find>login</find>
+      <find>ManagementDashboard</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,13 +98,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/editslider.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/InformationBlog.php" />
         <option value="$PROJECT_DIR$/resources/views/memberViews/contact.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/memberViews/about.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/editproduct.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Management/AdministratorController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/UsersController.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/login/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/addslider.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_02_012100_newsletters_table.php" />
@@ -199,29 +124,31 @@
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/AddCategories.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Member/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/main.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/massages.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/MassagesController.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/tahlilslider.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Member/ContactMemberController.php" />
         <option value="$PROJECT_DIR$/resources/views/memberViews/singleProduct.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/memberViews/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/memberViews/blog.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/migrations/2020_01_28_213406_allproductmember.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/AddProductController.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/categories.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/filteringPrice.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/addproduct.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php" />
         <option value="$PROJECT_DIR$/resources/views/ManagementViews/site/products.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Member/allProductMemberController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_01_28_212132_create_price_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/DashboardController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/AddProductController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/MassagesController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php" />
+        <option value="$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Management/UsersController.php" />
+        <option value="$PROJECT_DIR$/resources/views/memberViews/home.blade.php" />
       </list>
     </option>
   </component>
@@ -366,6 +293,14 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobl_asil" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mobl_asil" type="b2602c69:ProjectViewProjectNode" />
@@ -555,7 +490,7 @@
       <workItem from="1580726404928" duration="11414000" />
       <workItem from="1580893549443" duration="16051000" />
       <workItem from="1581003826190" duration="16962000" />
-      <workItem from="1581171914231" duration="42911000" />
+      <workItem from="1581171914231" duration="48752000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/mohammadmahan/mobl_asil&#10;&#10;# Conflicts:&#10;#&#9;public/css/style.css&#10;#&#9;resources/views/layout/main.blade.php">
       <created>1578220045821</created>
@@ -816,11 +751,25 @@
       <option name="project" value="LOCAL" />
       <updated>1581324610240</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="یه سری مشکلات درست شد">
+      <created>1581353464915</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1581353464915</updated>
+    </task>
+    <task id="LOCAL-00039" summary="لاگین درست شد با شرط">
+      <created>1581364243143</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1581364243143</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295858000" />
+    <option name="totallyTimeSpent" value="301699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -835,7 +784,7 @@
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.27508092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.27508092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50177306" side_tool="true" weight="0.23543689" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -862,8 +811,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="بک اند مسیج نوشته شد" />
-    <MESSAGE value="محصولات جدید زده شددهه" />
     <MESSAGE value="last commitedddd" />
     <MESSAGE value="neew commmiiiit" />
     <MESSAGE value="commit fixed" />
@@ -887,7 +834,9 @@
     <MESSAGE value="برای مسیج دلیت درست شد" />
     <MESSAGE value="خبرنامه مشکل داشت درست شد" />
     <MESSAGE value="یه سری تغییرات" />
-    <option name="LAST_COMMIT_MESSAGE" value="یه سری تغییرات" />
+    <MESSAGE value="یه سری مشکلات درست شد" />
+    <MESSAGE value="لاگین درست شد با شرط" />
+    <option name="LAST_COMMIT_MESSAGE" value="لاگین درست شد با شرط" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -906,27 +855,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_14_235414_productindex_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/NewProduct.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_02_012100_newsletters_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Newsletters.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1036,13 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/newsLetters.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1104">
@@ -1057,13 +978,6 @@
           <folding>
             <element signature="e#3568#3575#1#HTML" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/MassagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1174,16 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/memberViews/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="112" column="54" lean-forward="true" selection-start-line="112" selection-start-column="54" selection-end-line="112" selection-end-column="54" />
-          <folding>
-            <element signature="e#4404#4410#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/massages.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -1225,20 +1129,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
-          <folding>
-            <element signature="e#51#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/site/products.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-48">
           <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="151" column="50" selection-start-line="151" selection-start-column="50" selection-end-line="151" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_28_212132_create_price_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_28_185903_create_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1252,51 +1167,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
+        <state relative-caret-position="-410">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/AddProductController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="37" column="66" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="66" />
+        <state relative-caret-position="310">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding>
             <element signature="e#51#70#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/MassagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="19" column="9" selection-start-line="17" selection-start-column="8" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/ProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1466">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="e#51#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="17" column="9" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="e#51#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/TahlilSystemController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="302" column="36" selection-start-line="302" selection-start-column="29" selection-end-line="302" selection-end-column="36" />
+        <state relative-caret-position="358">
+          <caret line="382" column="54" selection-start-line="382" selection-start-column="21" selection-end-line="382" selection-end-column="54" />
           <folding>
             <element signature="e#51#85#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/memberViews/allProduct.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/ManagementViews/layout/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="151" column="50" selection-start-line="151" selection-start-column="50" selection-end-line="151" selection-end-column="50" />
+        <state relative-caret-position="871">
+          <caret line="85" column="78" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_28_185903_create_categories_table.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state relative-caret-position="161">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_28_212132_create_price_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Management/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+        <state relative-caret-position="216">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/memberViews/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="113" column="100" selection-start-line="113" selection-start-column="100" selection-end-line="113" selection-end-column="100" />
         </state>
       </provider>
     </entry>

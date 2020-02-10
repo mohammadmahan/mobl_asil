@@ -30,7 +30,7 @@ Route::get('/blog/{blog_id}', 'Member\HomeController@blogMember')->name('BlogMem
 
 
 //////////////////////////////////start :: Management////////////////////////////
-Route::get('/ManagementDashboard', 'Management\DashboardController@dashboard');
+Route::get('/ManagementDashboard/blank', 'Management\DashboardController@dashboard');
 
 Route::get('/details/product','Management\ProductsController@details')->name('details.product');
 Route::post('/delete/product{allProductMember_id}', 'Management\ProductsController@deleteMassages')->name('delete.product.management');
