@@ -78,9 +78,9 @@
                                             <a href="" class="block2-name dis-block s-text3 p-b-5">
                                                 {{$allProductMember->name}}
                                             </a>
-                                            <span class="block2-newprice m-text8 p-r-5">
+                                            <span class="block2-newprice m-text8 p-r-5" style="font-family: NumIRANSansWeb;">
 												<span>قیمت:</span>
-                                                {{$allProductMember->lastcost}}
+                                                {{$allProductMember->lastcost}}تومان
                                             </span>
                                         </div>
                                     </div>
