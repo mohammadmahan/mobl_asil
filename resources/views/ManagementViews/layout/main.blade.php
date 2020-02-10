@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="rtl">
 <!-- BEGIN: Head-->
 
@@ -75,7 +76,7 @@
                                 </span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" style="width: 230px;">
-                                @if(\Illuminate\Support\Facades\Auth::check())
+
                                     <span class="dropdown-item center" style="display: flex;">
                                         مدیریت : شما وارد شدید
                                     </span>
@@ -86,7 +87,7 @@
                                 <div class="dropdown-divider"></div><a class="dropdown-item"
                                     href="{{route('logout')}}"><i class="fa fa-check-square mr-1"></i> خروج</a>
 
-                                @else
+
                                     <span class="dropdown-item center" style="display: flex;">
                                         مدیریت : شما وارد نشدید
                                     </span>
@@ -96,7 +97,7 @@
                                        <a class="dropdown-item" href="{{route('homeMember')}}">
                                     <i class="fa fa-reply-all mr-1"></i>مشاهده سایت
                                 </a>
-                                @endif
+
                             </div>
                         </li>
                     </ul>
