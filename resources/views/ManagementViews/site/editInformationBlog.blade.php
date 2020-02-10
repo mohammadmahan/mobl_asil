@@ -36,7 +36,7 @@
                                                         <div class="row">
                                                             <div class="form-group col-md-8 mb-2">
                                                                 <label>توضیحات</label>
-                                                                <textarea class="form-control" row="5"
+                                                                <textarea class="form-control row-custom"
                                                                     name="Description"
                                                                     >{{old('name',isset($informationblogItem) ? $informationblogItem -> Description: '')}}</textarea>
                                                             </div>

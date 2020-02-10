@@ -20,7 +20,7 @@ class Allproductmember extends Migration
             $table->string('number_product');
             $table->string('pastcost');
             $table->string('lastcost');
-            $table->string('Description');
+            $table->text('Description');
             $table->unsignedBigInteger('price_id');
             $table->foreign('price_id')->references('id')->on('price');
             $table->unsignedBigInteger('categories_id');

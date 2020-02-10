@@ -17,7 +17,7 @@ class InformationBlogTable extends Migration
             $table->bigIncrements('id');
             $table->string('image');
             $table->string('title');
-            $table->string('Description');
+            $table->text('Description');
             $table->timestamps();
         });
     }
