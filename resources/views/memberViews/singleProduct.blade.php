@@ -34,7 +34,7 @@
                 </p>
 
                 <span>
-                    قیمت قبلی:<s> {{old('name',isset($productItems) ? $productItems->pastcost : '')}} </s>تومان
+                    قیمت قبلی : <span> {{old('name',isset($productItems) ? $productItems->pastcost : '')}} </span>تومان
                    
                 </span><br>
                 <span> قیمت جدید : </span><span>{{old('name',isset($productItems) ? $productItems->lastcost : '')}} تومان  </span>
