@@ -12,7 +12,7 @@
 
                     <div class="item-blog p-b-80">
                         <a class="item-blog-img pos-relative dis-block hov-img-zoom">
-                            <img src="{{old('name',isset($InformationBlogs) ? $InformationBlogs->image : '')}}" alt="IMG-BLOG">
+                            <img src="/{{old('name',isset($InformationBlogs) ? $InformationBlogs->image : '')}}" alt="IMG-BLOG">
                         </a>
                         <div class="item-blog-txt p-t-33">
                             <h4 class="p-b-11">

@@ -4,12 +4,12 @@ namespace App\Http\Controllers\Member;
 
 use App\allProductMember;
 use App\Models\AboutMember;
+use App\price;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\categories;
 use App\Models\NewProduct;
-use App\Models\price;
-use App\price as AppPrice;
+
 use Illuminate\Support\Facades\DB;
 
 class allProductMemberController extends Controller
@@ -17,7 +17,7 @@ class allProductMemberController extends Controller
     public function allProductMember()
     {
         $Abouts = AboutMember::all();
-        $priceproducts = AppPrice::all();
+        $priceproducts = price::all();
         $dastebandis = categories::all();
         $allProductMembers = allProductMember::paginate(12);
         return view('memberViews/allProduct',compact('allProductMembers','Abouts','priceproducts','dastebandis'));
@@ -27,7 +27,7 @@ class allProductMemberController extends Controller
         # code...
         $allProductMembers = allProductMember::where("categories_id",$category_id)->with('category')->get();
         $Abouts = AboutMember::all();
-        $priceproducts = AppPrice::all();
+        $priceproducts = price::all();
         $dastebandis = categories::all();
         return view('memberViews/allProduct',compact('allProductMembers','Abouts','priceproducts','dastebandis'));
     }
@@ -36,7 +36,7 @@ class allProductMemberController extends Controller
         # code...
         $allProductMembers = allProductMember::where("price_id",$price_id)->with('price')->get();
         $Abouts = AboutMember::all();
-        $priceproducts = AppPrice::all();
+        $priceproducts = price::all();
         $dastebandis = categories::all();
         return view('memberViews/allProduct',compact('allProductMembers','Abouts','priceproducts','dastebandis'));
     }
