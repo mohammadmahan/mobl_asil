@@ -13,7 +13,7 @@
                     <div class="slick3">
                         <div class="item-slick3">
                             <div class="wrap-pic-w bb">
-                                <img src="/{{old('name',isset($productItems) ? $productItems->image : '')}}" alt="تصویر محصول">
+                                <img src="{{old('name',isset($productItems) ? $productItems->image : '')}}" alt="تصویر محصول">
                             </div>
                         </div>
                     </div>
