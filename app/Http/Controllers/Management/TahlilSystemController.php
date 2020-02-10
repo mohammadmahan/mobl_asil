@@ -57,7 +57,7 @@ class TahlilSystemController extends Controller
             }
         }
         else{
-            $slider = productIndex::find($topslider_id);
+            $slider = TopSlider::find($topslider_id);
             $slider->update($slider_data);
             if ($slider) {
                 return redirect()->route('ManagementTahlilSlider');

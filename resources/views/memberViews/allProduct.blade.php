@@ -82,14 +82,15 @@
             });
         })
     </script>
-<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/sofa/bbb.jpg); height:280px; background-repeat: no-repeat;
-    background-size: cover;">
-   <div class="color-overlay">
+<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(/images/sofa/bbb.jpg); height:280px; background-repeat: no-repeat;
+    background-size: cover;position:relative;">
+    <div class="color-overlay">
+    
     </div>
     <h4 class="l-text2 t-center">
 محصولات ما
 </h4>
-</section>
+    </section>
 
 <section class="bgwhite p-t-55 p-b-65">
     <div class="container">

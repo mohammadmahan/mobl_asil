@@ -20,7 +20,7 @@ class AboutmembersTable extends Migration
             $table->string('phone');
             $table->string('address');
             $table->string('email');
-            $table->string('Description');
+            $table->text('Description');
             $table->timestamps();
         });
     }

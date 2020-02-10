@@ -18,7 +18,7 @@ class ContactmembersTable extends Migration
             $table->string('fullname');
             $table->string('number');
             $table->string('email');
-            $table->string('massage');
+            $table->text('massage');
             $table->timestamps();
 
         });
