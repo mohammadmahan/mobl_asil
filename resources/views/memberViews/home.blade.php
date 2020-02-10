@@ -78,9 +78,9 @@
                                             <a href="" class="block2-name dis-block s-text3 p-b-5">
                                                 {{$allProductMember->name}}
                                             </a>
-                                            <span class="block2-newprice m-text8 p-r-5">
+                                            <span class="block2-newprice m-text8 p-r-5" style="font-family: NumIRANSansWeb;">
 												<span>قیمت:</span>
-                                                {{$allProductMember->lastcost}}
+                                                {{$allProductMember->lastcost}}تومان
                                             </span>
                                         </div>
                                     </div>
@@ -108,7 +108,7 @@
 						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
 							<img src="{{$InformationBlog->image}}" alt="IMG-BLOG" height="220px">
 						</a>
-						<div class="block3-txt background-blog p-t-14">
+						<div class="block3-txt background-blog p-t-14 text-justify">
 						<h4 class="card-title">{{$InformationBlog->title}}</h4>
 							<p class="s-text8 p-t-16">
 							{{$InformationBlog->Description}}

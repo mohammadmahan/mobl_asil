@@ -6,7 +6,11 @@
         url('../fonts/font-sanse/ttf/IRANSansWeb.ttf') format('truetype');
     font-weight: normal;
 }
-
+@font-face{
+    font-family: IRANSansWeb;
+    src: url('../fonts/irsnum.ttf') format('truetype');;
+    src: url('../fonts/irsnum1.ttf') format('truetype');;
+}
 
 html,body,div,header,span,h1,h2,h3,h4,h5,h6,a,p,table,button,input,textarea{
     font-family: IRANSansWeb !important;

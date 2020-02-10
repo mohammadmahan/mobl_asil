@@ -165,7 +165,7 @@
                                            {{$allProductMember->name}}
                                         </a>
                                         <span class="block2-price m-text6 p-r-5">
-                                  <span class="custom-style-cost"><s>{{$allProductMember->pastcost}}</s></span> <br>{{$allProductMember->lastcost}}<span>تومان</span>
+                                  <span class="custom-style-cost"><s>{{$allProductMember->pastcost}}تومان</s></span> <br>{{$allProductMember->lastcost}}<span>تومان</span>
                                 </span>
                                     </div>
                                 </div>
