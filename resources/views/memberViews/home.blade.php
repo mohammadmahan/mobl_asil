@@ -108,17 +108,13 @@
 						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
 							<img src="{{$InformationBlog->image}}" alt="IMG-BLOG" height="220px">
 						</a>
-						<div class="block3-txt background-blog p-t-14">
+						<div class="block3-txt background-blog p-t-14 text-justify">
 						<h4 class="card-title">{{$InformationBlog->title}}</h4>
 							<p class="s-text8 p-t-16">
 							{{$InformationBlog->Description}}
 						    </p>
 							<a href="{{route('BlogMember',$InformationBlog->id)}}" class="more-details">
-<<<<<<< HEAD
 							<span>بیشتر بدانید&nbsp;<i class="fa fa-chevron-left"></i></span>
-=======
-							<span>بیشتر بدانید</span>
->>>>>>> 1246cba14aa7b7ac337f9240cc21adb684d1157f
 							</a>
 						</div>
 					</div>
