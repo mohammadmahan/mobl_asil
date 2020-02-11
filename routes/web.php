@@ -15,9 +15,9 @@ Route::get('/mainsss', 'Member\HomeController@main')->name('main');
 
 Route::get('/', 'Member\HomeController@homeMember')->name('homeMember');
 
-Route::get('/contact-member', 'Member\ContactMemberController@ContactMember')->name('contactMember');
+Route::get('/contact-members', 'Member\ContactMemberController@ContactMember')->name('contactMember');
 
-Route::post('/contact-member', 'Member\ContactMemberController@createContactMember')->name('contactMember.post');
+Route::post('/contact-members', 'Member\ContactMemberController@createContactMember')->name('contactMember.post');
 
 Route::get('/about-member', 'Member\AboutMemberController@aboutMember')->name('aboutMember');
 
@@ -123,11 +123,7 @@ Route::get('/management/logout','Management\UsersController@logout')->name('logo
 
 
 //////////////////////////start :: Newsletters//////////////////////////////////
-Route::post('/','Member\NewslettersController@Newsletters')->name('Newsletters');
-Route::post('/allProduct-member','Member\NewslettersController@Newsletters')->name('Newsletters');
-Route::post('/about-member','Member\NewslettersController@Newsletters')->name('Newsletters');
-Route::post('/contact-member','Member\NewslettersController@Newsletters')->name('Newsletters');
-Route::post('/blog/{blog_id}','Member\NewslettersController@Newsletters')->name('Newsletters');
+Route::post('/khabarname','Member\NewslettersController@Newsletters')->name('Newsletters');
 
 Route::get('/management/newSletters','Management\tahlilSystemController@NewslettersShow')->name('NewslettersShow');
 Route::get('/management/newSlettersDelete/{newsletters_id}','Management\tahlilSystemController@Newsletters_delete')->name('delete.NewslettersShow');

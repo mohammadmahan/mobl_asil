@@ -219,7 +219,8 @@
             <h4 class="s-text12 p-b-30">
                 خبرنامه
             </h4>
-            <form action="" method="post">
+            <form action="/khabarname" method="post">
+
                 {{csrf_field()}}
                 <div class="effect1 w-size9">
                     <input class="s-text7 bg6 w-full p-b-5" type="email" name="email"

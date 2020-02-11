@@ -26,7 +26,7 @@ class ContactMemberController extends Controller
         ];
         $new_Contact_object = ContactMember::create($Contact_data);
         if ($new_Contact_object && $new_Contact_object instanceof ContactMember) {
-            return redirect()->route('contactMember');
+            return redirect()->back()->with('contactsError','پیغام شما با موفقیت ثبت شد');
         }
     }
 }

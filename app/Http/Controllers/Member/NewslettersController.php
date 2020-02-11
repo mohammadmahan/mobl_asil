@@ -15,7 +15,7 @@ class NewslettersController extends Controller
         ];
         $new_Newsletters_object = Newsletters::create($Newsletters_data);
         if ($new_Newsletters_object && $new_Newsletters_object instanceof Newsletters) {
-            return redirect()->route('homeMember');
+            return redirect()->back();
         }
     }
 }
